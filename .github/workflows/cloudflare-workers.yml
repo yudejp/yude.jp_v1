@@ -36,8 +36,6 @@ jobs:
 
     - name: add nojekyll
       run: touch ./out/.nojekyll
-    
-    - uses: actions/checkout@v2
 
     - name: Publish
       uses: cloudflare/wrangler-action@1.3.0
