@@ -46,4 +46,4 @@ jobs:
           USER: root
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          workingDirectory: './'
+          workingDirectory: './out'
