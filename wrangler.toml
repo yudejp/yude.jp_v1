@@ -6,5 +6,5 @@ route = "yude.jp"
 zone_id = ""
 
 [site]
-bucket = "docs"
+bucket = "out"
 entry-point = "workers-site"
