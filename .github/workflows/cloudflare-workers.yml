@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Workers
+name: Build and Deploy
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v2
@@ -36,7 +36,7 @@ jobs:
     - name: add nojekyll
       run: touch ./out/.nojekyll
 
-  deploy-cf:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
