@@ -7,10 +7,11 @@ const Index = () => (
     <Layout title="ホーム">
       <div>
         <Image className="avatar"
-            src    = "/static/images/avatar.png"
-            alt    = "yude's avatar"
-            width  = {200}
-            height = {200}
+            src         = "/static/images/avatar.png"
+            alt         = "yude's avatar"
+            width       = {200}
+            height      = {200}
+            unoptimized = {true}
         />
         <p>🔨 This page is under the construction. 🔨</p>
         <p>For now, please visit <Link href="https://yude.moe"><a>yude.moe</a></Link>.
