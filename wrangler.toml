@@ -1,8 +1,8 @@
-name = "yude-front"
+name = "jp"
 type = "webpack"
 account_id = "996274e995fd60596f330964c55997cc"
 workers_dev = true
-route = "yude.moe"
+route = "yude.jp"
 zone_id = ""
 
 [site]
