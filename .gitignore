@@ -6,3 +6,4 @@ aero-deploy.tar.gz
 aero-debug.log
 debug.log
 dist
+.next
