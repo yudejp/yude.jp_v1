@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "deploy": "aero deploy"
+    },
+    "dependencies": {
+        "aerobatic-cli": "^2.1.4"
+    }
+}

@@ -1,0 +1,7 @@
+.vercel
+firebase-debug.log
+.firebase/hosting..cache
+node_modules
+aero-deploy.tar.gz
+aero-debug.log
+debug.log

@@ -1,0 +1,10 @@
+name = "yude-front"
+type = "webpack"
+account_id = "996274e995fd60596f330964c55997cc"
+workers_dev = true
+route = "yude.moe"
+zone_id = ""
+
+[site]
+bucket = "docs"
+entry-point = "workers-site"
