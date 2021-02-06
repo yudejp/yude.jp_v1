@@ -18,7 +18,6 @@ export default function Index(props) {
     <Layout title="ホーム">
       <Navbar />
       <div className="my-9">
-        <p>[Debug] Current locale: {locale}</p>
         <Image className="rounded-full"
             src         = "/static/images/avatar.png"
             alt         = "yude's avatar"
