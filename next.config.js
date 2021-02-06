@@ -1,9 +1,6 @@
 const nextTranslate = require('next-translate')
 
 module.exports = nextTranslate({
-    images: {
-      loader: "imgix",
-    },
     i18n: {
       // These are all the locales you want to support in
       // your application
