@@ -11,6 +11,7 @@ const Layout = (props) => {
         <title>{title ? `${title} - ${siteTitle}` : siteTitle}</title>
         <link rel="icon" href="/static/images/favicon.ico" />
       </Head>
+      
       <main>
         {/*
         {title ? <h1 className="page-title">{title}</h1> : ``}

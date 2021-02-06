@@ -1,10 +1,12 @@
 import Layout from "./components/Layout"
+import Navbar from "./components/Navbar"
 import Link from 'next/link'
 import Image from 'next/image'
 
 const Index = () => (
 
     <Layout title="ホーム">
+      <Navbar />
       <div className="my-9">
         <Image className="rounded-full"
             src         = "/static/images/avatar.png"
