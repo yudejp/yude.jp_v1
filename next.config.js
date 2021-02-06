@@ -1,4 +1,6 @@
-module.exports = {
+const nextTranslate = require('next-translate')
+
+module.exports = nextTranslate({
     images: {
       loader: "imgix",
     },
@@ -10,4 +12,4 @@ module.exports = {
       // a non-locale prefixed path e.g. `/hello`
       defaultLocale: 'ja-JP',
     }
-  }
+  })

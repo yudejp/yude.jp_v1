@@ -2,13 +2,17 @@ import Layout from "./components/Layout"
 import Navbar from "./components/Navbar"
 import Link from 'next/link'
 import Image from 'next/image'
-
+import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
 
 export default function Index(props) {
   const router = useRouter()
   const { locale, locales, defaultLocale, pathname } = router
 
+  const { t, lang } = useTranslation("index")
+  const welcome = t('welcome')
+  const instead_1 = t('instead_1')
+  const instead_2 = t('instead_2')
   return (
 
     <Layout title="ホーム">
@@ -22,9 +26,8 @@ export default function Index(props) {
             height      = {200}
             unoptimized = {true}
         />
-        <p>🔨 This page is under development. 🔨</p>
-        <p>For now, please visit <Link href="https://yude.moe"><a>yude.moe</a></Link>.
-        </p>
+        <p>🔨 {welcome} 🔨</p>
+        <p>{instead_1}<Link href="https://yude.moe"><a>yude.moe</a></Link>{instead_2}</p>
       </div>
       
     </Layout>
