@@ -1,6 +1,9 @@
 const nextTranslate = require('next-translate')
 
 module.exports = nextTranslate({
+  experimental: {
+    darkModeVariant: true
+  },
     i18n: {
       // These are all the locales you want to support in
       // your application

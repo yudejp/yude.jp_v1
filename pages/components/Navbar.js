@@ -2,6 +2,7 @@ import "tailwindcss/tailwind.css";
 import Popper from "popper.js";
 import Link from 'next/link';
 import LangSelector from "./LangSelector"
+import Toggle from "./toggle"
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -21,9 +22,9 @@ const Navbar = () => {
             </span>
           </a>
         </Link>
-            
             <div className="origin-top-right absolute right-0">
                 <LangSelector />
+                <Toggle />
             </div>
       </nav>
       </>

@@ -3,7 +3,6 @@ import Link from "next/link"
 import "tailwindcss/tailwind.css";
 import React, { useEffect, useState } from 'react'
 import { ThemeProvider } from "./themeContext"
-import Toggle from "./toggle"
 
 const Layout = (props) => {
   const { title, children } = props
@@ -23,24 +22,26 @@ const Layout = (props) => {
         <div className="page-main">
           {children}
         </div>
-      </main>
+      
       <style jsx global>{`
         body {
             text-align: center;
         }
+        
       `}</style>
       <footer>
       <div className="container mx-auto px-6">
         <div className="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
             <div className="sm:w-full text-left py-6">
                 <p className="text-sm text-gray-700 font-bold mb-2">
-                    This page is licensed under the MIT License. / Powered by Tailwind CSS and Next.js.
+                    This page is licensed under the MIT License.
                 </p>
-                <Toggle />
+                
             </div>
           </div>
         </div>
       </footer>
+      </main>
       </body>
       </ThemeProvider>
     </div>
