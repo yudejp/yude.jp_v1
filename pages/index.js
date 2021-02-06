@@ -5,8 +5,8 @@ import Image from 'next/image'
 const Index = () => (
 
     <Layout title="ホーム">
-      <div>
-        <Image className="avatar"
+      <div className="my-9">
+        <Image className="rounded-full"
             src         = "/static/images/avatar.png"
             alt         = "yude's avatar"
             width       = {200}
@@ -17,8 +17,8 @@ const Index = () => (
         <p>For now, please visit <Link href="https://yude.moe"><a>yude.moe</a></Link>.
         </p>
       </div>
+      
     </Layout>
-    
   )
   
 export default Index

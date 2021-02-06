@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
+import "tailwindcss/tailwind.css";
 
 const Layout = (props) => {
   const { title, children } = props
@@ -18,13 +19,9 @@ const Layout = (props) => {
           {children}
         </div>
       </main>
-      
       <style jsx global>{`
         body {
             text-align: center;
-        }
-        .avatar{
-            border-radius: 50%;
         }
       `}</style>
     </div>
