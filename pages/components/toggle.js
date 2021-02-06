@@ -26,7 +26,7 @@ const Toggle = () => {
     <div
       className="ml-3 font-medium"
     >
-      <span class="text-black dark:text-white">ダークモード</span>
+      <span class="text-black dark:text-white">🌙</span>
     </div>
   </label>
         <style jsx>
