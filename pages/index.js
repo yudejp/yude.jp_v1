@@ -3,11 +3,18 @@ import Navbar from "./components/Navbar"
 import Link from 'next/link'
 import Image from 'next/image'
 
-const Index = () => (
+import { useRouter } from 'next/router'
+
+export default function Index(props) {
+  const router = useRouter()
+  const { locale, locales, defaultLocale, pathname } = router
+
+  return (
 
     <Layout title="ホーム">
       <Navbar />
       <div className="my-9">
+        <p>[Debug] Current locale: {locale}</p>
         <Image className="rounded-full"
             src         = "/static/images/avatar.png"
             alt         = "yude's avatar"
@@ -15,12 +22,11 @@ const Index = () => (
             height      = {200}
             unoptimized = {true}
         />
-        <p>🔨 This page is under the construction. 🔨</p>
+        <p>🔨 This page is under development. 🔨</p>
         <p>For now, please visit <Link href="https://yude.moe"><a>yude.moe</a></Link>.
         </p>
       </div>
       
     </Layout>
   )
-  
-export default Index
+}

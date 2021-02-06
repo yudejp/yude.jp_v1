@@ -1,7 +1,12 @@
 import React from "react";
 import Popper from "popper.js";
+import { useRouter } from 'next/router'
+import Link from 'next/link';
 
 const Dropdown = ({ color }) => {
+  const router = useRouter()
+  const { locale, locales, defaultLocale, pathname } = router
+
   // dropdown props
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
   const btnDropdownRef = React.createRef();
@@ -23,7 +28,7 @@ const Dropdown = ({ color }) => {
   return (
     <>
       <div className="flex flex-wrap">
-        <div className="w-full ">
+        <div className="w-full">
           <div className="relative inline-flex align-middle w-full">
             <button
               className={
@@ -50,26 +55,26 @@ const Dropdown = ({ color }) => {
               }
               style={{ minWidth: "12rem" }}
             >
+              <Link href="/" locale="ja-JP">
               <a
-                href="#pablo"
                 className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
-                  (color === "white" ? " text-gray-800" : "text-white")
+                  "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent"
                 }
-                onClick={e => e.preventDefault()}
               >
                 Japanese
               </a>
+              </Link>
+              <Link href="/" locale="en-US">
               <a
-                href="#pablo"
+                href="/"
+                locale="en-US"
                 className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
-                  (color === "white" ? " text-gray-800" : "text-white")
+                  "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent"
                 }
-                onClick={e => e.preventDefault()}
               >
                 English
               </a>
+              </Link>
               
             </div>
           </div>
