@@ -2,7 +2,6 @@ import Head from "next/head"
 import Link from "next/link"
 import "tailwindcss/tailwind.css";
 import React, { useEffect, useState } from 'react'
-import ToggleDarkMode from '../components/ToggleDarkMode'
 
 const Layout = (props) => {
   const { title, children } = props
@@ -34,9 +33,6 @@ const Layout = (props) => {
                 <p className="text-sm text-gray-700 font-bold mb-2">
                     This page is licensed under the MIT License. / Powered by Tailwind CSS and Next.js.
                 </p>
-                <div className="flex justify-center">
-                  <ToggleDarkMode />
-                </div>
             </div>
           </div>
         </div>
