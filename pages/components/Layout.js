@@ -2,12 +2,15 @@ import Head from "next/head"
 import Link from "next/link"
 import "tailwindcss/tailwind.css";
 import React, { useEffect, useState } from 'react'
+import { ThemeProvider } from "./themeContext"
+import Toggle from "./toggle"
 
 const Layout = (props) => {
   const { title, children } = props
   const siteTitle = "yude.jp"
   return (
     <div className="page">
+      <ThemeProvider>
       <Head>
         <title>{title ? `${title} - ${siteTitle}` : siteTitle}</title>
         <link rel="icon" href="/static/images/favicon.ico" />
@@ -33,11 +36,13 @@ const Layout = (props) => {
                 <p className="text-sm text-gray-700 font-bold mb-2">
                     This page is licensed under the MIT License. / Powered by Tailwind CSS and Next.js.
                 </p>
+                <Toggle />
             </div>
           </div>
         </div>
       </footer>
       </body>
+      </ThemeProvider>
     </div>
   )
 }
