@@ -1,6 +1,6 @@
 import React from 'react'
 
-const getInitialTheme = _ => {
+const getServerSideTheme = _ => {
     if (typeof window !== "undefined" && window.localStorage) {
       const storedPrefs = window.localStorage.getItem("color-theme")
       if (typeof storedPrefs === "string") {
@@ -22,7 +22,7 @@ const ThemeContext = React.createContext()
 export default ThemeContext
 
 export const ThemeProvider = ({ initialTheme, children }) => {
-    const [theme, setTheme] = React.useState(getInitialTheme)
+    const [theme, setTheme] = React.useState(getServerSideTheme)
   
     const rawSetTheme = theme => {
       const root = window.document.documentElement
