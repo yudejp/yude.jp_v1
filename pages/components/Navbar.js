@@ -2,15 +2,8 @@ import "tailwindcss/tailwind.css";
 import Popper from "popper.js";
 import Link from 'next/link';
 import LangSelector from "./LangSelector"
-import { useState } from 'react';
 
 const Navbar = () => {
-    const [active, setActive] = useState(false);
-  
-    const handleClick = () => {
-      setActive(!active);
-    };
-
     return (
       <>
         <nav className='flex items-center flex-wrap p-3'>
