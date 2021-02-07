@@ -2,7 +2,7 @@ import "tailwindcss/tailwind.css";
 import Popper from "popper.js";
 import Link from 'next/link';
 import LangSelector from "./LangSelector"
-import ThemeChanger from './ThemeChanger';
+import ThemeChanger from './themeChanger';
 
 const Navbar = () => {
     return (
