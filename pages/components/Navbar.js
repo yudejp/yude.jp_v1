@@ -2,6 +2,7 @@ import "tailwindcss/tailwind.css";
 import Popper from "popper.js";
 import Link from 'next/link';
 import LangSelector from "./LangSelector"
+import ThemeChanger from './ThemeChanger';
 
 const Navbar = () => {
     return (
@@ -16,8 +17,10 @@ const Navbar = () => {
         </Link>
             <div className="origin-top-right absolute right-0">
                 <LangSelector />
+                
             </div>
       </nav>
+      <ThemeChanger />
       </>
         );
     };
