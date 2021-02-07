@@ -12,6 +12,7 @@ const Layout = (props) => {
         <title>{title ? `${title} - ${siteTitle}` : siteTitle}</title>
         <link rel="icon" href="/static/images/favicon.ico" />
       </Head>
+      <Background>
       <body className="bg-white text-black dark:bg-black dark:text-white">
       <main>
         {/*
@@ -40,6 +41,7 @@ const Layout = (props) => {
       </footer>
       </main>
       </body>
+      </Background>
     </div>
   )
 }
