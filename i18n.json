@@ -2,7 +2,7 @@
     "locales": ["en-US", "ja-JP"],
     "defaultLocale": "ja-JP",
     "pages": {
-      "/": ["index"],
-      "/about": ["about"]
+      "/": ["index", "common"],
+      "/about": ["about", "common"]
     }
   }
