@@ -48,10 +48,10 @@ const Dropdown = ({ color }) => {
   <div ref={popoverDropdownRef} className={
               (dropdownPopoverShow ? "block " : "hidden ") + "origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"}>
     <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-    <Link href="/" locale="ja-JP">
+    <Link href="#" locale="ja-JP">
       <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">日本語</a>
     </Link>
-    <Link href="/" locale="en-US">
+    <Link href="#" locale="en-US">
       <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">English</a>
     </Link>
     </div>

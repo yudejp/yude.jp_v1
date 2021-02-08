@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar"
 import Link from 'next/link'
 import { ReactElement } from 'react'
 import { faDiscord, faGit } from '@fortawesome/free-brands-svg-icons'
-import { faBlog, faBook } from '@fortawesome/free-solid-svg-icons'
+import { faBlog, faBook, faUser } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import useTranslation from 'next-translate/useTranslation'
@@ -34,7 +34,8 @@ export default function Index(props) {
             unoptimized = {true}
         />
         </div>
-        <span><Link href="https://blog.yude.jp"><a><FontAwesomeIcon icon={faBlog} className="w-10 h-10 inline"/></a></Link></span>
+        <span><Link href="/profile"><a><FontAwesomeIcon icon={faUser} className="w-10 h-10 inline"/></a></Link></span>
+        <span className="ml-4"><Link href="https://blog.yude.jp"><a><FontAwesomeIcon icon={faBlog} className="w-10 h-10 inline"/></a></Link></span>
         <span className="ml-4"><Link href="https://wiki.yude.jp"><a><FontAwesomeIcon icon={faBook} className="w-10 h-10 inline"/></a></Link></span>
         <span className="ml-4"><Link href="https://discord.gg/X6srY7X"><a><FontAwesomeIcon icon={faDiscord} className="w-10 h-10 inline"/></a></Link></span>
         <span className="ml-4"><Link href="https://git.yude.jp"><a><FontAwesomeIcon icon={faGit} className="w-10 h-10 inline"/></a></Link></span>

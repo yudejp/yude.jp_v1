@@ -3,6 +3,6 @@
     "defaultLocale": "ja-JP",
     "pages": {
       "/": ["index", "common"],
-      "/about": ["about", "common"]
+      "/profile": ["profile", "common"]
     }
   }
