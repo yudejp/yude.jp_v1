@@ -7,3 +7,4 @@ aero-debug.log
 debug.log
 dist
 .next
+yarn-error.log
