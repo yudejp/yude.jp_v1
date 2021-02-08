@@ -15,6 +15,10 @@ export default function Index(props) {
   const router = useRouter()
   const { locale, locales, defaultLocale, pathname } = router
   const { t, lang } = useTranslation("index")
+  // Define translation objects
+  const welcome = t('welcome')
+  const instead_1 = t('instead_1')
+  const instead_2 = t('instead_2')
 
   return (
 
