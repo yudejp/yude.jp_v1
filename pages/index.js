@@ -1,6 +1,10 @@
 import Layout from "./components/Layout"
 import Navbar from "./components/Navbar"
 import Link from 'next/link'
+import { ReactElement } from 'react'
+import { faCoffee } from '@fortawesome/free-brands-svg-icons'
+import { faBlog, faBook } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
@@ -19,7 +23,7 @@ export default function Index(props) {
       <Navbar />
       <div className="my-9">
         <div class="m-10">
-        <Image className="animate-blur"
+        <Image
             src         = "/static/images/avatar.png"
             alt         = "yude's avatar"
             width       = {200}
@@ -27,8 +31,10 @@ export default function Index(props) {
             unoptimized = {true}
         />
         </div>
-        <p>🔨 {welcome} 🔨</p>
-        <p>{instead_1}<Link href="https://yude.moe"><a>yude.moe</a></Link>{instead_2}</p>
+        <span><Link href="https://blog.yude.jp"><a><FontAwesomeIcon icon={faBlog} className="w-10 h-10 inline"/></a></Link></span>
+        <span className="ml-4"><Link href="https://wiki.yude.jp"><a><FontAwesomeIcon icon={faBook} className="w-10 h-10 inline"/></a></Link></span>
+
+        <p></p>
       </div>
       
     </Layout>
