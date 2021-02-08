@@ -19,7 +19,7 @@ export default function Index(props) {
 
   return (
 
-    <Layout title="{home}">
+    <Layout title={home}>
       <Navbar />
       <div className="my-9">
         <div className="m-10">
