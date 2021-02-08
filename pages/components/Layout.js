@@ -36,7 +36,7 @@ const Layout = (props) => {
         <div className="mt-16 flex flex-col items-center">
             <div className="sm:w-full text-center py-6">
                 <p className="text-sm font-bold mb-2 text-gray-400">
-                    {footer} / <Link href="https://github.com/yudemoe/yude.jp"><a>{source}</a></Link>
+                    {footer} / <Link href="https://github.com/yudemoe/yude.jp"><a className="hover:underline">{source}</a></Link>
                 </p>
             </div>
           </div>
