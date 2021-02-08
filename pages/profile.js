@@ -13,8 +13,8 @@ export default function About(props) {
 
     <Layout title="ホーム">
       <Navbar />
-      <div className="my-9">
-        <p>まだできてないわね・・・</p>
+      <div className="my-9 mx-8">
+        <h1 className="text-left">yude について</h1>
       </div>
       
     </Layout>
