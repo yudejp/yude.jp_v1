@@ -22,7 +22,7 @@ export default function Index(props) {
     <Layout title="{home}">
       <Navbar />
       <div className="my-9">
-        <div class="m-10">
+        <div className="m-10">
         <Image
             src         = "/static/images/avatar.png"
             alt         = "yude's avatar"
