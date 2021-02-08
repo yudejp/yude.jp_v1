@@ -15,10 +15,11 @@ export default function Index(props) {
   const router = useRouter()
   const { locale, locales, defaultLocale, pathname } = router
   const { t, lang } = useTranslation("index")
+  const home = t('home')
 
   return (
 
-    <Layout title="ホーム">
+    <Layout title="{home}">
       <Navbar />
       <div className="my-9">
         <div class="m-10">
