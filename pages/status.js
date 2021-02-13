@@ -65,7 +65,7 @@ export default function About(props) {
         {
             // raspberry Datadog
         }
-        <h2 class="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">raspberry</h2>
+        <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">raspberry</h2>
         <div className="flex xl:w-2/3">
         <div className="flex-1 bg-gray-900 text-white text-center rounded border border-gray-600"><p className="font-bold">Model </p>Raspberry Pi 4 Model B Rev 1.2</div>
         <div className="flex-1 bg-gray-900 text-white text-center rounded border border-gray-600"><p className="font-bold">RAM </p>4GB</div>
