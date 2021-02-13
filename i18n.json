@@ -3,6 +3,7 @@
     "defaultLocale": "ja-JP",
     "pages": {
       "/": ["index", "common"],
-      "/profile": ["profile", "common"]
+      "/profile": ["profile", "common"],
+      "/status": ["status", "common"]
     }
   }
