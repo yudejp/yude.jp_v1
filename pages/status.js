@@ -17,6 +17,7 @@ export default function About(props) {
   const location = t('location')
   const tottori = t('tottori')
   const hiroshima = t('hiroshima')
+  const model = t('model')
 
   return (
 
@@ -67,7 +68,7 @@ export default function About(props) {
         }
         <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">raspberry</h2>
         <div className="flex xl:w-2/3">
-        <div className="flex-1 bg-gray-900 text-white text-center rounded border border-gray-600"><p className="font-bold">Model </p>Raspberry Pi 4 Model B Rev 1.2</div>
+        <div className="flex-1 bg-gray-900 text-white text-center rounded border border-gray-600"><p className="font-bold">{model} </p>Raspberry Pi 4 Model B Rev 1.2</div>
         <div className="flex-1 bg-gray-900 text-white text-center rounded border border-gray-600"><p className="font-bold">RAM </p>4GB</div>
         <div className="flex-1 bg-gray-900 text-white text-center rounded border border-gray-600"><p className="font-bold">OS </p>Raspbian GNU/Linux 10 (buster)</div>
         <div className="flex-1 bg-gray-900 text-white text-center rounded border border-gray-600"><p className="font-bold">{location} </p>{tottori}</div>
