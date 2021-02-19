@@ -4,7 +4,7 @@
   "description": "Front page of yude.jp",
   "main": "index.js",
   "scripts": {
-    "dev": "next -p 30501",
+    "dev": "next -p 3000",
     "build": "next build",
     "start": "next start",
     "export": "next export"
