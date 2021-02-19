@@ -1,2 +1,2 @@
-# [yudemoe](https://github.com/yudemoe) / yude.jp
+# yude.jp
 Front page of [yude.jp](https://yude.jp).
