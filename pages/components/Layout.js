@@ -14,6 +14,7 @@ const Layout = (props) => {
   const { t, lang } = useTranslation("common")
   const footer = t('footer')
   const source = t('source')
+  const tos = t('tos')
   return (
     <div className="page">
       <Head>
@@ -37,6 +38,9 @@ const Layout = (props) => {
             <div className="sm:w-full text-center py-6">
                 <p className="text-sm font-bold mb-2 text-gray-400">
                     {footer} / <Link href="https://github.com/yudemoe/yude.jp"><a className="hover:underline">{source}</a></Link>
+                </p>
+                <p className="text-sm font-bold mb-2 text-gray-400">
+                    <Link href="https://wiki.yude.jp/terms"><a className="hover:underline">{tos}</a></Link>
                 </p>
             </div>
           </div>
