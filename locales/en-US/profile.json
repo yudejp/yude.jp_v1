@@ -2,10 +2,16 @@
     "about": "About yude",
     "desc": "Description",
     "school": "Faculty of Information Science, Hiroshima City University. (1st grade)",
-    "location": "Hiroshima, Japan",
+    "hiroshima": "Hiroshima, Japan",
+    "location": "Location",
     "link": "Links",
     "link_all": "To see all of yude's account, please visit ",
     "link_all_late": ".",
     "here": "here",
-    "mail": "E-mail"
+    "mail": "E-mail",
+    "birth": "Birthday",
+    "date": "November the 19th, 2001",
+    "contact": "Get in touch",
+    "belongs": "Organization",
+    "more": "More..."
 }

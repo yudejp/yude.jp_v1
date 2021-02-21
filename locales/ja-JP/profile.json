@@ -2,10 +2,16 @@
     "about": "yude について",
     "desc": "概要",
     "school": "広島市立大学 情報科学部 1年",
-    "location": "日本, 広島県",
+    "hiroshima": "日本, 広島県",
+    "location": "所在地",
     "link": "リンク",
     "link_all": "yude が所持しているすべてのアカウントの一覧は、",
     "link_all_late": "にあります。",
     "here": "こちら",
-    "mail": "メール"
+    "mail": "メール",
+    "birth": "生年月日",
+    "date": "2001年11月19日",
+    "contact": "連絡先",
+    "belongs": "所属",
+    "more": "さらに見る..."
 }
