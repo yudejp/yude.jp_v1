@@ -1,7 +1,7 @@
 {
     "about": "About yude",
     "desc": "Description",
-    "school": "Faculty of Information Science, Hiroshima City University. (1st grade)",
+    "school": "Faculty of Information Science, Hiroshima City University.",
     "hiroshima": "Hiroshima, Japan",
     "location": "Location",
     "link": "Links",
@@ -13,5 +13,8 @@
     "date": "November the 19th, 2001",
     "contact": "Get in touch",
     "belongs": "Organization",
-    "more": "More..."
+    "more": "More...",
+    "grade": "(1st grade)",
+    "icon_1": "Icon: ",
+    "icon_2": ""
 }

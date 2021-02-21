@@ -27,7 +27,10 @@ export default function About(props) {
   const birth = t('birth')
   const date = t('date')
   const more = t('more')
-
+  const grade = t('grade')
+  const icon_1 = t('icon_1')
+  const icon_2 = t('icon_2')
+  
   return (
 
     <Layout title={about}>
@@ -54,6 +57,8 @@ export default function About(props) {
         {
          // Description 
         }
+        {/* <div className="2xl:mx-96 xl:mx-40 lg:mx-32 md:mx-8 sm:mx-8"> */}
+        <div className="container mx-auto max-w-3xl">
         <div className="text-left">
             <p className="text-2xl"><FontAwesomeIcon icon={faInfo} className="w-5 h-5 inline"/> {desc}</p>
         </div>
@@ -62,6 +67,7 @@ export default function About(props) {
             <FontAwesomeIcon icon={faSchool} className="w-5 h-5 inline"/>
             <p className="inline ml-4">{belongs}</p>
             <p className="ml-9">{school}</p>
+            <p className="ml-9">{grade}</p>
           </div>
           <div>
             <FontAwesomeIcon icon={faBirthdayCake} className="w-5 h-5 inline"/>
@@ -79,7 +85,7 @@ export default function About(props) {
          // Contact 
         }
         <div className="text-left my-6">
-            <p className="text-2xl"><FontAwesomeIcon icon={faPhone} className="w-5 h-5 inline"/> {contact} / SNS</p>
+            <p className="text-2xl"><FontAwesomeIcon icon={faPhone} className="w-5 h-5 inline"/> {contact}</p>
         </div>
         <div className="my-2 grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 justify-items-center gap-y-6">
           <div className="hover:underline">
@@ -125,9 +131,11 @@ export default function About(props) {
         <div>
         </div>
       </div>
-      <Link href="https://wiki.yude.jp/links">
-          <button class="border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-800 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3 w-60">{more}</button>
-      </Link>
+        <Link href="https://wiki.yude.jp/links">
+            <button className="border border-transparent rounded-md shadow-sm text-sm font-medium mt-3 text-white bg-indigo-800 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3 w-60">{more}</button>
+        </Link>
+        <p className="mt-3 text-sm font-bold mb-2 text-gray-400">{icon_1}<Link href="https://twitter.com/xmnts"><a className="hover:underline">Minkasy {icon_2}</a></Link></p>
+      </div>
     </Layout>
   )
 }
