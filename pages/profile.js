@@ -1,7 +1,7 @@
 import Layout from "./components/Layout"
 import Navbar from "./components/Navbar"
 import useTranslation from 'next-translate/useTranslation'
-import { faDiscord, faTwitter, faGithub, faKeybase, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faDiscord, faTwitter, faGithub, faKeybase, faInstagram, faMastodon } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faBirthdayCake, faMapPin, faSchool, faPhone, faInfo } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
@@ -89,6 +89,14 @@ export default function About(props) {
         </div>
         <div className="my-2 grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 justify-items-center gap-y-6">
           <div className="hover:underline">
+            <Link href="https://twitter.com/yudejp">
+            <a>
+            <FontAwesomeIcon icon={faTwitter} className="w-7 h-7 inline lg:w-10 lg:h-10 md:w-7 md:h-7"/>
+            <p className="font-mono text-xl">@yudejp</p>
+            </a>
+            </Link>
+          </div>
+          <div className="hover:underline">
             <a>
             <FontAwesomeIcon icon={faDiscord} className="w-7 h-7 inline lg:w-10 lg:h-10 md:w-7 md:h-7"/>
             <p className="font-mono text-xl">yude#3205</p>
@@ -107,6 +115,14 @@ export default function About(props) {
             <a>
             <FontAwesomeIcon icon={faGithub} className="w-7 h-7 inline lg:w-10 lg:h-10 md:w-7 md:h-7"/>
             <p className="font-mono text-xl">yudejp</p>
+            </a>
+            </Link>
+          </div>
+          <div className="hover:underline">
+            <Link href="https://don.yude.jp/@yude">
+            <a>
+            <FontAwesomeIcon icon={faMastodon} className="w-7 h-7 inline lg:w-10 lg:h-10 md:w-7 md:h-7"/>
+            <p className="font-mono text-xl">@yude@don.yude.jp</p>
             </a>
             </Link>
           </div>
