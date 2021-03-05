@@ -9,7 +9,7 @@ const Navbar = () => {
         <nav className='flex items-center flex-wrap p-3'>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4'>
-            <span className='text-xl text-white font-bold tracking-wide dark:text-white font-mono animate-heartbeat'>
+            <span className='text-xl text-black font-bold tracking-wide dark:text-white font-mono animate-heartbeat'>
               yude.jp
             </span>
           </a>

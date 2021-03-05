@@ -21,7 +21,7 @@ const Layout = (props) => {
         <title>{title ? `${title} - ${siteTitle}` : siteTitle}</title>
         <link rel="icon" href="/static/images/favicon.ico" />
       </Head>
-      <body className="min-h-screen bg-gray-900 text-white subpixel-antialiased">
+      <body className="min-h-screen dark:bg-gray-900 text-white subpixel-antialiased">
       <main>
         <div className="page-main">
           {children}
@@ -36,10 +36,10 @@ const Layout = (props) => {
       <div className="container mx-auto px-6">
         <div className="mt-16 flex flex-col items-center">
             <div className="sm:w-full text-center py-6">
-                <p className="text-sm font-bold mb-2 text-gray-400">
+                <p className="text-sm font-bold mb-2 text-gray-900 dark:text-gray-400">
                     {footer} / <Link href="https://github.com/yudemoe/yude.jp"><a className="hover:underline">{source}</a></Link>
                 </p>
-                <p className="text-sm font-bold mb-2 text-gray-400">
+                <p className="text-sm font-bold mb-2 text-gray-900 dark:text-gray-400">
                     <Link href="https://wiki.yude.jp/terms"><a className="hover:underline">{tos}</a></Link>
                 </p>
             </div>
