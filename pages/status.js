@@ -34,11 +34,11 @@ export default function About(props) {
             // cherry Datadog
         }
         <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">cherry</h2>
-        <div className="flex xl:w-2/3">
-        <div className="flex-1 bg-gray-900 text-white text-center rounded border border-gray-600"><p className="font-bold">CPU </p>i7-2600</div>
-        <div className="flex-1 bg-gray-900 text-white text-center rounded border border-gray-600"><p className="font-bold">RAM </p>DDR3 16GB</div>
-        <div className="flex-1 bg-gray-900 text-white text-center rounded border border-gray-600"><p className="font-bold">OS </p>Ubuntu Server 20.04.2 LTS</div>
-        <div className="flex-1 bg-gray-900 text-white text-center rounded border border-gray-600"><p className="font-bold">{location} </p>{hiroshima}</div>
+        <div className="flex xl:w-2/3 text-center">
+        <div className="flex-1"><p className="font-bold">CPU </p>i7-2600</div>
+        <div className="flex-1"><p className="font-bold">RAM </p>DDR3 16GB</div>
+        <div className="flex-1"><p className="font-bold">OS </p>Ubuntu Server 20.04.2 LTS</div>
+        <div className="flex-1"><p className="font-bold">{location} </p>{hiroshima}</div>
         </div>
         <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-1 my-2">
             <div>
@@ -67,11 +67,11 @@ export default function About(props) {
             // raspberry Datadog
         }
         <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">raspberry</h2>
-        <div className="flex xl:w-2/3">
-        <div className="flex-1 bg-gray-900 text-white text-center rounded border border-gray-600"><p className="font-bold">{model} </p>Raspberry Pi 4 Model B Rev 1.2</div>
-        <div className="flex-1 bg-gray-900 text-white text-center rounded border border-gray-600"><p className="font-bold">RAM </p>4GB</div>
-        <div className="flex-1 bg-gray-900 text-white text-center rounded border border-gray-600"><p className="font-bold">OS </p>Raspbian GNU/Linux 10 (buster)</div>
-        <div className="flex-1 bg-gray-900 text-white text-center rounded border border-gray-600"><p className="font-bold">{location} </p>{tottori}</div>
+        <div className="flex xl:w-2/3 text-center">
+        <div className="flex-1"><p className="font-bold">{model} </p>Raspberry Pi 4 Model B Rev 1.2</div>
+        <div className="flex-1"><p className="font-bold">RAM </p>4GB</div>
+        <div className="flex-1"><p className="font-bold">OS </p>Raspbian GNU/Linux 10 (buster)</div>
+        <div className="flex-1"><p className="font-bold">{location} </p>{tottori}</div>
         
         </div>
         <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-1 my-2">

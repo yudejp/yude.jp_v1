@@ -150,7 +150,7 @@ export default function About(props) {
         <Link href="https://wiki.yude.jp/links">
             <button className="border border-transparent rounded-md shadow-sm text-sm font-medium mt-3 text-white bg-indigo-800 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3 w-60">{more}</button>
         </Link>
-        <p className="mt-3 text-sm font-bold mb-2 text-gray-400">{icon_1}<Link href="https://twitter.com/xmnts"><a className="hover:underline">Minkasy {icon_2}</a></Link></p>
+        <p className="mt-3 text-sm font-bold mb-2 text-gray-900 dark:text-gray-400">{icon_1}<Link href="https://twitter.com/xmnts"><a className="hover:underline">Minkasy {icon_2}</a></Link></p>
       </div>
     </Layout>
   )
