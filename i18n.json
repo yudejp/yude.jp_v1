@@ -1,6 +1,6 @@
 {
-    "locales": ["en-US", "ja-JP"],
-    "defaultLocale": "ja-JP",
+    "locales": ["en", "ja"],
+    "defaultLocale": "ja",
     "pages": {
       "/": ["index", "common"],
       "/profile": ["profile", "common"],
