@@ -1,8 +1,8 @@
 import Layout from "./components/Layout"
 import Navbar from "./components/Navbar"
 import useTranslation from 'next-translate/useTranslation'
-import { faDiscord, faTwitter, faGithub, faKeybase, faInstagram, faMastodon } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faBirthdayCake, faMapPin, faSchool, faPhone, faInfo } from '@fortawesome/free-solid-svg-icons'
+import { faDiscord, faTwitter, faGithub, faKeybase, faInstagram, faMastodon, faSteam } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faBirthdayCake, faMapPin, faSchool, faPhone, faInfo, faKey, faDownload, faEye } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -30,7 +30,11 @@ export default function About(props) {
   const grade = t('grade')
   const icon_1 = t('icon_1')
   const icon_2 = t('icon_2')
-  
+  const keys = t('keys')
+  const download = t('download')
+  const fingerprint = t('fingerprint')
+  const view = t('view')
+
   return (
 
     <Layout title={about}>
@@ -142,8 +146,50 @@ export default function About(props) {
             </a>
             </Link>
           </div>
-          
+          <div className="hover:underline">
+            <Link href="https://steamcommunity.com/id/yudejp">
+            <a>
+            <FontAwesomeIcon icon={faSteam} className="w-7 h-7 inline lg:w-10 lg:h-10 md:w-7 md:h-7"/>
+            <p className="font-mono text-xl">id/yudejp</p>
+            </a>
+            </Link>
+          </div>
         </div>
+
+        {
+         // Keys
+        }
+        <div className="text-left my-6">
+            <p className="text-2xl"><FontAwesomeIcon icon={faKey} className="w-5 h-5 inline"/> {keys}</p>
+          <ul class="list-disc mx-5 my-2">
+          <li>
+            <span className="font-bold">GPG&nbsp;</span>
+            <Link href="/static/yudejp.gpg">
+              <a className="hover:underline">
+                <FontAwesomeIcon icon={faDownload} className="w-5 h-5 inline"/>&nbsp;
+                {download}
+              </a>
+            </Link>
+            <p>{fingerprint}:&nbsp;
+            <code>3745 F270 DB4E 8975 6B07  62BE EB0F E5D9 25C4 A968</code>
+            </p>
+          </li>
+          <li>
+            <span className="font-bold">SSH&nbsp;</span>
+            <Link href="https://github.com/yudejp.keys">
+              <a className="hover:underline">
+                <FontAwesomeIcon icon={faEye} className="w-5 h-5 inline"/>&nbsp;
+                {view}
+              </a>
+            </Link>
+            <p>{fingerprint}:&nbsp;
+            <code>2048 SHA256:xwSL4DORWmroWdC6P0GU1m1yZl/cXqjo9rCCWqqO+Dc no comment (RSA)</code>
+            </p>
+          </li>
+            </ul>
+        </div>
+        
+
         <div>
         </div>
       </div>
