@@ -1,6 +1,6 @@
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: "class", // or 'media' or 'class'
+  darkMode: "class",
   theme: {
     aspectRatio: {
       none: 0,
@@ -47,14 +47,15 @@ module.exports = {
     }
   },
   variants: {
-    animation: ['hover', 'focus'], // allow animate-* to use hover: and focus:
-    filter: ['responsive'], // defaults to ['responsive']
-    backdropFilter: ['responsive'], // defaults to ['responsive']
+    animation: ['hover', 'focus'],
+    filter: ['responsive'],
+    backdropFilter: ['responsive'],
     aspectRatio: ['responsive'],
+    nightwind: ['group-hover', 'active', 'focus'],
   },
   plugins: [
     require('tailwindcss-filters'),
     require("tailwindcss-responsive-embed"),
-    require("tailwindcss-aspect-ratio"),
+    require("tailwindcss-aspect-ratio")
   ]
 }
