@@ -88,10 +88,10 @@ export default function About(props) {
                 <iframe src="https://app.datadoghq.com/graph/embed?token=89bf832a795aa61af12a403d9fb1827cad3a9f661f8dc0ab3752a70034685684&height=300&width=380&legend=true" className="w-96 h-64" frameBorder="0"></iframe>
             </div>
             <div>
-                <iframe src="https://app.datadoghq.com/graph/embed?token=48a62405818c27c2bd3be2daf4398494f444e33ea1f5784f8f42d20ffe8782b8&height=300&width=380&legend=true" className="w-96 h-64" frameBorder="0"></iframe>
+                <iframe src="https://app.datadoghq.com/graph/embed?token=c83f40c0b1c81b82d3bf4b9cbf2f0f98894ed3128604af511c27989fe5aef6a1&height=300&width=380&legend=true" className="w-96 h-64" frameBorder="0"></iframe>
             </div>
             <div>
-                <iframe src="https://app.datadoghq.com/graph/embed?token=c83f40c0b1c81b82d3bf4b9cbf2f0f98894ed3128604af511c27989fe5aef6a1&height=300&width=380&legend=true" className="w-96 h-64" frameBorder="0"></iframe>
+                <iframe src="https://app.datadoghq.com/graph/embed?token=582b0ad1150877d36edf3cc6ef171923dfefab2451289c5e3b5ffea89e94736d&height=300&width=600&legend=true" className="w-96 h-64" frameBorder="0"></iframe>
             </div>
             <div>
                 <iframe src="https://app.datadoghq.com/graph/embed?token=e111dbe6960f3c9427d4738ff23a7e55b89633978b539f1db3d0d69a9334e801&height=300&width=380&legend=true" className="w-96 h-64" frameBorder="0"></iframe>
