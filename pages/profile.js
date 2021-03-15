@@ -161,7 +161,7 @@ export default function About(props) {
         }
         <div className="text-left my-6">
             <p className="text-2xl"><FontAwesomeIcon icon={faKey} className="w-5 h-5 inline"/> {keys}</p>
-          <ul class="list-disc mx-5 my-2">
+          <ul className="list-disc mx-5 my-2">
           <li>
             <span className="font-bold">GPG&nbsp;</span>
             <Link href="/static/yudejp.gpg">
@@ -170,9 +170,12 @@ export default function About(props) {
                 {download}
               </a>
             </Link>
-            <p>{fingerprint}:&nbsp;
-            <code>3745 F270 DB4E 8975 6B07  62BE EB0F E5D9 25C4 A968</code>
-            </p>
+            <p>{fingerprint}:</p>
+            <div class="w-full overflow-x-auto ...">
+              <div class="whitespace-nowrap ...">
+                3745 F270 DB4E 8975 6B07  62BE EB0F E5D9 25C4 A968
+                </div>
+            </div>
           </li>
           <li>
             <span className="font-bold">SSH&nbsp;</span>
@@ -182,9 +185,12 @@ export default function About(props) {
                 {view}
               </a>
             </Link>
-            <p>{fingerprint}:&nbsp;
-            <code>2048 SHA256:xwSL4DORWmroWdC6P0GU1m1yZl/cXqjo9rCCWqqO+Dc no comment (RSA)</code>
-            </p>
+            <p>{fingerprint}:</p>
+            <div class="w-full overflow-x-auto ...">
+              <div class="whitespace-nowrap ...">
+                2048 SHA256:xwSL4DORWmroWdC6P0GU1m1yZl/cXqjo9rCCWqqO+Dc
+              </div>
+            </div>
           </li>
             </ul>
         </div>
