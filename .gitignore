@@ -8,3 +8,5 @@ debug.log
 dist
 .next
 yarn-error.log
+.vimrc~
+..vimrc.un~
