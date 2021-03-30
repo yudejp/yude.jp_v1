@@ -115,10 +115,10 @@ export default function About(props) {
             </Link>
           </div>
           <div className="hover:underline">
-            <Link href="https://github.com/yudejp">
+            <Link href="https://github.com/yude">
             <a>
             <FontAwesomeIcon icon={faGithub} className="w-7 h-7 inline lg:w-10 lg:h-10 md:w-7 md:h-7"/>
-            <p className="font-mono text-xl">yudejp</p>
+            <p className="font-mono text-xl">yude</p>
             </a>
             </Link>
           </div>
