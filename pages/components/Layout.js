@@ -37,7 +37,7 @@ const Layout = (props) => {
         <div className="mt-16 flex flex-col items-center">
             <div className="sm:w-full text-center py-6">
                 <p className="text-sm font-bold mb-2 text-gray-900 dark:text-gray-400">
-                    {footer} / <Link href="https://github.com/yudemoe/yude.jp"><a className="hover:underline">{source}</a></Link>
+                    {footer} / <Link href="https://github.com/yudejp/yude.jp"><a className="hover:underline">{source}</a></Link>
                 </p>
                 <p className="text-sm font-bold mb-2 text-gray-900 dark:text-gray-400">
                     <Link href="https://wiki.yude.jp/services/terms"><a className="hover:underline">{tos}</a></Link>

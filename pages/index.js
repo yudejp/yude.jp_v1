@@ -2,7 +2,7 @@ import Layout from "./components/Layout"
 import Navbar from "./components/Navbar"
 import Link from 'next/link'
 import { ReactElement } from 'react'
-import { faDiscord, faGit, faMastodon } from '@fortawesome/free-brands-svg-icons'
+import { faDiscord, faGit, faMastodon, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faBlog, faBook, faUser, faServer } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
@@ -38,6 +38,7 @@ export default function Index(props) {
         <span className="ml-4"><Link href="https://git.yude.jp"><a><FontAwesomeIcon icon={faGit} className="w-10 h-10 fill-current inline transition duration-200 text-gray-900 dark:text-white ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
         <span className="ml-4"><Link href="/status"><a><FontAwesomeIcon icon={faServer} className="w-10 h-10 fill-current inline transition duration-200 text-gray-900 dark:text-white ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
         <span className="ml-4"><Link href="https://don.yude.jp"><a><FontAwesomeIcon icon={faMastodon} className="w-10 h-10 fill-current inline transition duration-200 text-gray-900 dark:text-white ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
+        <span className="ml-4"><Link href="https://github.com/yudejp"><a><FontAwesomeIcon icon={faGithub} className="w-10 h-10 fill-current inline transition duration-200 text-gray-900 dark:text-white ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
         <p></p>
       </div>
       
