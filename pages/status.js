@@ -36,7 +36,7 @@ export default function About(props) {
         <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">cherry</h2>
         <div className="flex xl:w-2/3 text-center">
         <div className="flex-1"><p className="font-bold">CPU </p>i7-2600</div>
-        <div className="flex-1"><p className="font-bold">RAM </p>DDR3 16GB</div>
+        <div className="flex-1"><p className="font-bold">RAM </p>DDR3 24GB</div>
         <div className="flex-1"><p className="font-bold">OS </p>Ubuntu Server 20.04.2 LTS</div>
         <div className="flex-1"><p className="font-bold">{location} </p>{hiroshima}</div>
         </div>
