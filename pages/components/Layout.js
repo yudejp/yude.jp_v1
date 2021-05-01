@@ -40,7 +40,7 @@ const Layout = (props) => {
                     {footer} / <Link href="https://github.com/yudejp/yude.jp"><a className="hover:underline">{source}</a></Link>
                 </p>
                 <p className="text-sm font-bold mb-2 text-gray-900 dark:text-gray-400">
-                    <Link href="https://wiki.yude.jp/services/terms"><a className="hover:underline">{tos}</a></Link>
+                    <Link href="https://wiki.yude.jp/service/terms"><a className="hover:underline">{tos}</a></Link>
                 </p>
             </div>
           </div>
