@@ -199,7 +199,7 @@ export default function About(props) {
         <div>
         </div>
       </div>
-        <Link href="https://wiki.yude.jp/accounts/links">
+        <Link href="https://scrapbox.io/yude/%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88">
             <button className="border border-transparent rounded-md shadow-sm text-sm font-medium mt-3 text-white bg-indigo-800 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3 w-60">{more}</button>
         </Link>
         <p className="mt-3 text-sm font-bold mb-2 text-gray-900 dark:text-gray-400">{icon_1}<Link href="https://twitter.com/xmnts"><a className="hover:underline">Minkasy {icon_2}</a></Link></p>
