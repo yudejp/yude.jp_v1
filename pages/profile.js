@@ -93,10 +93,10 @@ export default function About(props) {
         </div>
         <div className="my-2 grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 justify-items-center gap-y-6">
           <div className="hover:underline">
-            <Link href="https://twitter.com/yudejp">
+            <Link href="https://twitter.com/yude_jp">
             <a>
             <FontAwesomeIcon icon={faTwitter} className="w-7 h-7 inline lg:w-10 lg:h-10 md:w-7 md:h-7"/>
-            <p className="font-mono text-xl">@yudejp</p>
+            <p className="font-mono text-xl">@yude_jp</p>
             </a>
             </Link>
           </div>
@@ -123,10 +123,10 @@ export default function About(props) {
             </Link>
           </div>
           <div className="hover:underline">
-            <Link href="https://don.yude.jp/@yude">
+            <Link href="https://mstdn.yude.jp/@yude">
             <a>
             <FontAwesomeIcon icon={faMastodon} className="w-7 h-7 inline lg:w-10 lg:h-10 md:w-7 md:h-7"/>
-            <p className="font-mono text-xl">@yude@don.yude.jp</p>
+            <p className="font-mono text-xl">@yude@mstdn.yude.jp</p>
             </a>
             </Link>
           </div>
@@ -179,7 +179,7 @@ export default function About(props) {
           </li>
           <li>
             <span className="font-bold">SSH&nbsp;</span>
-            <Link href="https://github.com/yudejp.keys">
+            <Link href="https://github.com/yude.keys">
               <a className="hover:underline">
                 <FontAwesomeIcon icon={faEye} className="w-5 h-5 inline"/>&nbsp;
                 {view}
