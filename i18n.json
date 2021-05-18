@@ -4,6 +4,7 @@
     "pages": {
       "/": ["index", "common"],
       "/profile": ["profile", "common"],
-      "/status": ["status", "common"]
+      "/status": ["status", "common"],
+      "/house": ["house", "common"]
     }
   }
