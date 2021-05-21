@@ -2,6 +2,7 @@ import "tailwindcss/tailwind.css";
 import Popper from "popper.js";
 import Link from 'next/link';
 import LangSelector from "./LangSelector"
+import DarkmodeSwitcher from "./DarkmodeSwitcher"
 
 const Navbar = () => {
     return (
@@ -15,6 +16,7 @@ const Navbar = () => {
           </a>
         </Link>
             <div className="origin-top-right absolute right-0">
+                <DarkmodeSwitcher />
                 <LangSelector />
             </div>
       </nav>
