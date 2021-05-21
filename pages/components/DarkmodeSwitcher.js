@@ -11,11 +11,6 @@ const Layout = (props) => {
   const siteTitle = "yude.jp"
   const router = useRouter()
   const { locale, locales, defaultLocale, pathname } = router
-
-  const { t, lang } = useTranslation("common")
-  const footer = t('footer')
-  const source = t('source')
-  const tos = t('tos')
   
   const [isMounted, setIsMounted] = useState(false);
   const { theme, setTheme } = useTheme();

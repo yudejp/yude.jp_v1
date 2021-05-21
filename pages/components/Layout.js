@@ -41,7 +41,6 @@ const Layout = (props) => {
                 </p>
                 <p className="text-sm font-bold mb-2">
                     <Link href="https://scrapbox.io/yude/yude.jp_%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84"><a className="hover:underline">{tos}</a></Link>
-                    
                 </p>
             </div>
           </div>

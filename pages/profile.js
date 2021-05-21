@@ -61,7 +61,6 @@ export default function About(props) {
         {
          // Description 
         }
-        {/* <div className="2xl:mx-96 xl:mx-40 lg:mx-32 md:mx-8 sm:mx-8"> */}
         <div className="container mx-auto max-w-3xl">
         <div className="text-left">
             <p className="text-2xl"><FontAwesomeIcon icon={faInfo} className="w-5 h-5 inline"/> {desc}</p>
@@ -171,8 +170,8 @@ export default function About(props) {
               </a>
             </Link>
             <p>{fingerprint}:</p>
-            <div class="w-full overflow-x-auto ...">
-              <div class="whitespace-nowrap ...">
+            <div className="w-full overflow-x-auto ...">
+              <div className="whitespace-nowrap ...">
                 3745 F270 DB4E 8975 6B07  62BE EB0F E5D9 25C4 A968
                 </div>
             </div>
@@ -186,8 +185,8 @@ export default function About(props) {
               </a>
             </Link>
             <p>{fingerprint}:</p>
-            <div class="w-full overflow-x-auto ...">
-              <div class="whitespace-nowrap ...">
+            <div className="w-full overflow-x-auto ...">
+              <div className="whitespace-nowrap ...">
                 2048 SHA256:xwSL4DORWmroWdC6P0GU1m1yZl/cXqjo9rCCWqqO+Dc
               </div>
             </div>
