@@ -14,7 +14,6 @@ const Layout = (props) => {
   
   const [isMounted, setIsMounted] = useState(false);
   const { theme, setTheme, getTheme } = useTheme();
-  let moon = "🌙";
   useEffect(() => {
     setIsMounted(true);
   }, []);
@@ -22,8 +21,6 @@ const Layout = (props) => {
     if (isMounted) {
       setTheme(theme === "light" ? "dark" : "light");
     }
-    if (theme == "light") moon = "🌙";
-    if (theme == "dark") moon = "🌅";
   };
   console.log(theme);
   return (
