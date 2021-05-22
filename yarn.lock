@@ -1833,11 +1833,6 @@ native-url@0.3.4:
   dependencies:
     querystring "^0.2.0"
 
-next-themes@^0.0.14:
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.0.14.tgz#2b9861990bc453149e23d8e6ef1a25a119e36675"
-  integrity sha512-x09OaM+wg3SIlEjOv8B21aw/E36jxTtfW3Dm/DPwMsSMluGt7twe1LigA6nc+mXP1u0qu9MxBaIrPPH6UTiKnA==
-
 next-translate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/next-translate/-/next-translate-1.0.2.tgz#af93208221d08a09b96545b2e3d853b69a6ddeb5"
@@ -2892,6 +2887,11 @@ supports-color@^7.1.0:
   integrity sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
   dependencies:
     has-flag "^4.0.0"
+
+tailwind-darkmode-toggle@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/tailwind-darkmode-toggle/-/tailwind-darkmode-toggle-1.0.5.tgz#5db99164edb0a00240dc1462ee03d10c1ab3e4bd"
+  integrity sha512-TJA8CaP7pFN5ckYckBhdKtv39U4hLroHC1k2NaokwuB29P0t906OjhCilygi+74ee/iRzcvInMczfXKkJ0EU8g==
 
 tailwindcss-aspect-ratio@^3.0.0:
   version "3.0.0"
