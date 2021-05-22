@@ -4,15 +4,26 @@ import "tailwindcss/tailwind.css";
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
-import { DarkModeToggle } from 'tailwind-darkmode-toggle';
+import { useTheme } from "next-themes";
 
 const Layout = (props) => {
   const { title, children } = props
   const siteTitle = "yude.jp"
   const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router;
+  const { locale, locales, defaultLocale, pathname } = router
+  
+  const [isMounted, setIsMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+useEffect(() => {
+    setIsMounted(true);
+  }, []);
+const switchTheme = () => {
+    if (isMounted) {
+      setTheme(theme === "light" ? "dark" : "light");
+    }
+  };
   return (
-    <DarkModeToggle className='inline-block my-3 mx-2 w-10 h-10 text-gray-800 dark:text-gray-300' />
+    <button className="my-4 mx-3 text-2xl" onClick={switchTheme}>🌙</button>
   )
 }
 export default Layout

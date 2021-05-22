@@ -1,5 +1,5 @@
 import 'tailwindcss/tailwind.css';
-import { ThemeProvider } from 'tailwind-darkmode-toggle';
+import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   return (
