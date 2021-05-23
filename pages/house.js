@@ -1,6 +1,5 @@
 import Layout from "./components/Layout"
 import useTranslation from 'next-translate/useTranslation'
-
 import { useRouter } from 'next/router'
 
 export default function About(props) {
@@ -10,7 +9,6 @@ export default function About(props) {
   const house = t('house')
 
   return (
-
     <Layout title={house}>
       <p className="my-2 text-3xl">{house}</p>
       <div className="mx-9">
