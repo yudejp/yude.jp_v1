@@ -5,7 +5,7 @@ import { faEnvelope, faBirthdayCake, faMapPin, faSchool, faPhone, faInfo, faKey,
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import Image from 'next/image'
-
+import DiscordStatus from './components/DiscordStatus'
 import { useRouter } from 'next/router'
 
 export default function About(props) {
@@ -40,14 +40,18 @@ export default function About(props) {
         }
         <div className="mb-5 flex justify-center">
           <div>
+          <div className="z-50 transform translate-x-40 translate-y-48">
+          <DiscordStatus />
+          </div>
           <Image
-            className   = "object-contain rounded-full animate-pulse hover:animate-rumble"
+            className   = "object-contain rounded-full hover:animate-rumble z-0"
             src         = "/static/images/avatar.png"
             alt         = "yude's avatar"
             width       = {200}
             height      = {200}
             unoptimized = {true}
         />
+        
           <p className="text-center text-4xl subpixel-antialiased">yude</p>
           </div>
         </div>
