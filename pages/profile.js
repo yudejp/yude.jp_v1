@@ -1,5 +1,4 @@
 import Layout from "./components/Layout"
-import Navbar from "./components/Navbar"
 import useTranslation from 'next-translate/useTranslation'
 import { faDiscord, faTwitter, faGithub, faKeybase, faInstagram, faMastodon, faSteam } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faBirthdayCake, faMapPin, faSchool, faPhone, faInfo, faKey, faDownload, faEye } from '@fortawesome/free-solid-svg-icons'
@@ -34,7 +33,6 @@ export default function About(props) {
   return (
 
     <Layout title={about}>
-      <Navbar />
       <div className="my-9 mx-8">
 
         {

@@ -1,5 +1,4 @@
 import Layout from "./components/Layout"
-import Navbar from "./components/Navbar"
 import useTranslation from 'next-translate/useTranslation'
 
 import { useRouter } from 'next/router'
@@ -17,7 +16,6 @@ export default function About(props) {
   return (
 
     <Layout title={status}>
-      <Navbar />
         <div className="my-9 mx-9">
         {
          // Heading

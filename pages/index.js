@@ -1,5 +1,4 @@
 import Layout from "./components/Layout"
-import Navbar from "./components/Navbar"
 import Link from 'next/link'
 import { faDiscord, faGit, faMastodon, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faBlog, faBook, faUser, faServer, faHouseUser } from '@fortawesome/free-solid-svg-icons'
@@ -19,7 +18,6 @@ export default function Index(props) {
   return (
 
     <Layout title={home}>
-      <Navbar />
       <div className="my-9">
         <div className="m-10">
         <Image
