@@ -56,6 +56,7 @@ module.exports = {
   plugins: [
     require('tailwindcss-filters'),
     require("tailwindcss-responsive-embed"),
-    require("tailwindcss-aspect-ratio")
+    require("tailwindcss-aspect-ratio"),
+    require('@tailwindcss/typography'),
   ]
 }
