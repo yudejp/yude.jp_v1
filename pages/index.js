@@ -18,7 +18,7 @@ export default function Index(props) {
   return (
 
     <Layout title={home}>
-      <div className="my-9">
+      <div className="my-9 text-center">
         <div className="m-10">
         <Image
             src         = "/static/images/avatar.png"

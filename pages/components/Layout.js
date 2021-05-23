@@ -27,12 +27,6 @@ const Layout = (props) => {
         <div className="page-main">
           {children}
         </div>
-      
-      <style jsx global>{`
-        body {
-            text-align: center;
-        }
-      `}</style>
       <Footer />
       </main>
     </div>
