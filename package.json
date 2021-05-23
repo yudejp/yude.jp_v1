@@ -33,7 +33,7 @@
     "next-translate": "^1.0.2",
     "nightwind": "^1.1.6",
     "popper.js": "^1.16.1",
-    "postcss": "^8.2.4",
+    "postcss": "^8.2.10",
     "raw-loader": "^4.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
