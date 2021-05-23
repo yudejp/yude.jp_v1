@@ -4,9 +4,12 @@
 
 @layer base {
     h1 {
-      @apply text-4xl sm:text-5xl font-bold mt-8 mb-4;
+      @apply text-3xl my-3;
     }
     h2 {
-      @apply mb-4 text-xl sm:text-2xl font-bold;
+      @apply text-xl;
+    }
+    ul {
+      @apply list-disc mx-10
     }
    }
