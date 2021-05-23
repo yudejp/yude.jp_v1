@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import React from "react"
 import ReactMarkdown from "react-markdown"
 import gfm from 'remark-gfm';
-import input from '../docs/test.md'
+import input from '../docs/tos.md'
 
 export default function Tos(props) {
     const router = useRouter()
