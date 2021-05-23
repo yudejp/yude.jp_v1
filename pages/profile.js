@@ -33,7 +33,7 @@ export default function About(props) {
   return (
 
     <Layout title={about}>
-      <div className="my-9 mx-8">
+      <div className="my-9 mx-8 text-center">
 
         {
          // Heading
