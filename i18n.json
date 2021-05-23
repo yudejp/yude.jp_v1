@@ -2,9 +2,11 @@
     "locales": ["en", "ja"],
     "defaultLocale": "ja",
     "pages": {
+      "*": ["common"],
       "/": ["index", "common"],
       "/profile": ["profile", "common"],
       "/status": ["status", "common"],
-      "/house": ["house", "common"]
+      "/house": ["house", "common"],
+      "/tos": ["tos", "common"]
     }
   }
