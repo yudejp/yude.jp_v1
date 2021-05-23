@@ -1,7 +1,6 @@
 import Layout from "./components/Layout"
 import Navbar from "./components/Navbar"
 import Link from 'next/link'
-import { ReactElement } from 'react'
 import { faDiscord, faGit, faMastodon, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faBlog, faBook, faUser, faServer, faHouseUser } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

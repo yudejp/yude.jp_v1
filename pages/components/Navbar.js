@@ -1,5 +1,4 @@
 import "tailwindcss/tailwind.css";
-import Popper from "popper.js";
 import Link from 'next/link';
 import LangSelector from "./LangSelector"
 import ThemeSelector from "./ThemeSelector"
