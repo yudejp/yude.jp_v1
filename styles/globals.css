@@ -1,4 +1,12 @@
-/* Start purging... */
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Stop purging. */
+
+@layer base {
+    h1 {
+      @apply text-2xl;
+    }
+    h2 {
+      @apply text-xl;
+    }
+  }
