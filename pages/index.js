@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
-import MatrixOrg from '../public/static/images/matrix-org.svg'
 
 export default function Index(props) {
   
@@ -29,13 +28,16 @@ export default function Index(props) {
             unoptimized = {true}
         />
         </div>
+        <div className="space-x-7 mx-9">
         <span><Link href="/profile"><a><FontAwesomeIcon icon={faUser} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <span className="ml-4"><Link href="https://blog.yude.jp"><a><FontAwesomeIcon icon={faBlog} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <span className="ml-4"><Link href="/status"><a><FontAwesomeIcon icon={faServer} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <span className="ml-4"><Link href="/house"><a><FontAwesomeIcon icon={faHouseUser} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <span className="ml-4"><Link href="https://scrapbox.io/yude"><a><FontAwesomeIcon icon={faBook} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <span className="ml-4"><Link href="https://discord.gg/X6srY7X"><a><FontAwesomeIcon icon={faDiscord} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <span className="ml-4"><Link href="https://matrix.to/#/!oriLSKSTauvVrpdzZX:matrix.org?via=matrix.org"><a>
+        <span><Link href="https://blog.yude.jp"><a><FontAwesomeIcon icon={faBlog} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
+        <span><Link href="/status"><a><FontAwesomeIcon icon={faServer} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
+        <span><Link href="/house"><a><FontAwesomeIcon icon={faHouseUser} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
+        <span><Link href="https://scrapbox.io/yude"><a><FontAwesomeIcon icon={faBook} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
+        </div>
+        <div className="space-x-7 mt-7 mx-9">
+        <span><Link href="https://discord.gg/X6srY7X"><a><FontAwesomeIcon icon={faDiscord} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
+        <span><Link href="https://matrix.to/#/!oriLSKSTauvVrpdzZX:matrix.org?via=matrix.org"><a>
         <svg version="1.1" viewBox="0 0 27.9 32" className="fill-current text-black dark:text-white w-10 h-10 inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110">
          <g transform="translate(-.095 .005)">
           <path d="m27.1 31.2v-30.5h-2.19v-0.732h3.04v32h-3.04v-0.732z"/>
@@ -44,10 +46,10 @@ export default function Index(props) {
          </g>
         </svg>
         </a></Link></span>
-        <span className="ml-4"><Link href="https://github.com/yudejp"><a><FontAwesomeIcon icon={faGithub} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <span className="ml-4"><Link href="https://git.yude.jp"><a><FontAwesomeIcon icon={faGit} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <span className="ml-4"><Link href="https://mstdn.yude.jp"><a><FontAwesomeIcon icon={faMastodon} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <p></p>
+        <span><Link href="https://github.com/yudejp"><a><FontAwesomeIcon icon={faGithub} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
+        <span><Link href="https://git.yude.jp"><a><FontAwesomeIcon icon={faGit} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
+        <span><Link href="https://mstdn.yude.jp"><a><FontAwesomeIcon icon={faMastodon} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
+        </div>
       </div>
       
     </Layout>
