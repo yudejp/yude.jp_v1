@@ -1,3 +1,9 @@
 {
-    "home": "ホーム"
+    "home": "ホーム",
+    "profile": "yude のプロフィール",
+    "blog": "yude のブログ",
+    "status": "yude.jp サーバー情報",
+    "house": "ゆでハウス",
+    "discord": "yude.jp Discord サーバー",
+    "mastodon": "Mastodon インスタンス"
 }

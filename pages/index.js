@@ -14,6 +14,12 @@ export default function Index(props) {
   const { locale, locales, defaultLocale, pathname } = router
   const { t, lang } = useTranslation("index")
   const home = t('home')
+  const profile = t('profile')
+  const blog = t('blog')
+  const status = t('status')
+  const house = t('house')
+  const discord = t('discord')
+  const mastodon = t('mastodon')
 
   return (
 
@@ -28,16 +34,14 @@ export default function Index(props) {
             unoptimized = {true}
         />
         </div>
-        <div className="space-x-7 mx-9">
-        <span><Link href="/profile"><a><FontAwesomeIcon icon={faUser} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <span><Link href="https://blog.yude.jp"><a><FontAwesomeIcon icon={faBlog} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <span><Link href="/status"><a><FontAwesomeIcon icon={faServer} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <span><Link href="/house"><a><FontAwesomeIcon icon={faHouseUser} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <span><Link href="https://scrapbox.io/yude"><a><FontAwesomeIcon icon={faBook} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        </div>
-        <div className="space-x-7 mt-7 mx-9">
-        <span><Link href="https://discord.gg/X6srY7X"><a><FontAwesomeIcon icon={faDiscord} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <span><Link href="https://matrix.to/#/!oriLSKSTauvVrpdzZX:matrix.org?via=matrix.org"><a>
+        <div className="grid grid-cols-5 gap-10 max-w-xl mx-auto">
+        <div className="has-tooltip"><span className="tooltip rounded shadow-lg p-1 bg-yellow-600 transform translate-y-10 -translate-x-10">{profile}</span><Link href="/profile"><a><FontAwesomeIcon icon={faUser} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></div>
+        <div className="has-tooltip"><span className="tooltip rounded shadow-lg p-1 bg-yellow-600 transform translate-y-10 -translate-x-9">{blog}</span><Link href="https://blog.yude.jp"><a><FontAwesomeIcon icon={faBlog} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></div>
+        <div className="has-tooltip"><span className="tooltip rounded shadow-lg p-1 bg-yellow-600 transform translate-y-10 -translate-x-12">{status}</span><Link href="/status"><a><FontAwesomeIcon icon={faServer} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></div>
+        <div className="has-tooltip"><span className="tooltip rounded shadow-lg p-1 bg-yellow-600 transform translate-y-10 -translate-x-5">{house}</span><Link href="/house"><a><FontAwesomeIcon icon={faHouseUser} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></div>
+        <div className="has-tooltip"><span className="tooltip rounded shadow-lg p-1 bg-yellow-600 transform translate-y-10 -translate-x-4">Scrapbox</span><Link href="https://scrapbox.io/yude"><a><FontAwesomeIcon icon={faBook} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></div>
+        <div className="has-tooltip"><span className="tooltip rounded shadow-lg p-1 bg-yellow-600 transform translate-y-10 -translate-x-16">{discord}</span><Link href="https://discord.gg/X6srY7X"><a><FontAwesomeIcon icon={faDiscord} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></div>
+        <div className="has-tooltip"><span className="tooltip rounded shadow-lg p-1 bg-yellow-600 transform translate-y-10 -translate-x-10">Spaces on Matrix</span><Link href="https://matrix.to/#/!oriLSKSTauvVrpdzZX:matrix.org?via=matrix.org"><a>
         <svg version="1.1" viewBox="0 0 27.9 32" className="fill-current text-black dark:text-white w-10 h-10 inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110">
          <g transform="translate(-.095 .005)">
           <path d="m27.1 31.2v-30.5h-2.19v-0.732h3.04v32h-3.04v-0.732z"/>
@@ -45,13 +49,12 @@ export default function Index(props) {
           <path d="m0.936 0.732v30.5h2.19v0.732h-3.04v-32h3.03v0.732z"/>
          </g>
         </svg>
-        </a></Link></span>
-        <span><Link href="https://github.com/yudejp"><a><FontAwesomeIcon icon={faGithub} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <span><Link href="https://git.yude.jp"><a><FontAwesomeIcon icon={faGit} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
-        <span><Link href="https://mstdn.yude.jp"><a><FontAwesomeIcon icon={faMastodon} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></span>
+        </a></Link></div>
+        <div className="has-tooltip"><span className="tooltip rounded shadow-lg p-1 bg-yellow-600 transform translate-y-10 -translate-x-16">GitHub Organization</span><Link href="https://github.com/yudejp"><a><FontAwesomeIcon icon={faGithub} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></div>
+        <div className="has-tooltip"><span className="tooltip rounded shadow-lg p-1 bg-yellow-600 transform translate-y-10">Gitea</span><Link href="https://git.yude.jp"><a><FontAwesomeIcon icon={faGit} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></div>
+        <div className="has-tooltip"><span className="tooltip rounded shadow-lg p-1 bg-yellow-600 transform translate-y-10 -translate-x-12">{mastodon}</span><Link href="https://mstdn.yude.jp"><a><FontAwesomeIcon icon={faMastodon} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></div>
         </div>
       </div>
-      
     </Layout>
   )
 }

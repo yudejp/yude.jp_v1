@@ -1,3 +1,9 @@
 {
-    "home": "Home"
+    "home": "Home",
+    "profile": "yude's profile",
+    "blog": "yude's blog",
+    "status": "yude.jp Server Status",
+    "house": "yude's house",
+    "discord": "yude.jp Discord Server",
+    "mastodon": "Mastodon instance"
 }
