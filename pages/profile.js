@@ -39,7 +39,7 @@ export default function About(props) {
         {
          // Heading
         }
-        <div>
+        <div className="flex justify-center">
           <div>
           <div className="z-50 transform translate-x-40 translate-y-48">
           <DiscordStatus />
