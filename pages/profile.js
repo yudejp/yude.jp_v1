@@ -7,6 +7,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import DiscordStatus from './components/DiscordStatus'
 import { useRouter } from 'next/router'
+import DiscordPlaying from './components/DiscordPlaying'
 
 export default function About(props) {
   const router = useRouter()
@@ -53,6 +54,7 @@ export default function About(props) {
         />
         
           <p className="text-center text-4xl subpixel-antialiased">yude</p>
+          <DiscordPlaying />
           </div>
         </div>
         

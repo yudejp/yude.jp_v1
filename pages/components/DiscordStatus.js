@@ -1,12 +1,12 @@
 import React from "react";
 
-const url = "https://discordapp.com/api/guilds/550309736214691840/widget.json";
+const url = "https://discord.com/api/guilds/723409709306216498/widget.json";
 const App = () => {
   const [status, setStatus] = React.useState(0);
   React.useEffect(() => {
     fetch(url)
       .then((r) => r.json())
-      .then((j) => setStatus(j.members[15].status))
+      .then((j) => setStatus(j.members[0].status))
   }, []);
     
   if (status === "online") {
