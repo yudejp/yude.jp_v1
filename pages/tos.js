@@ -13,7 +13,7 @@ export default function Tos(props) {
     const tos = t('tos')
     return(
         <Layout title={tos}>
-        <div className="mx-9">
+        <div>
             <ReactMarkdown plugins={[gfm]} children={input} />
         </div>
         </Layout>

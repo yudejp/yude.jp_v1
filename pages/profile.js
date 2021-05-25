@@ -34,7 +34,7 @@ export default function About(props) {
   return (
 
     <Layout title={about}>
-      <div className="my-9 mx-8 text-center">
+      <div className="my-9 text-center">
 
         {
          // Heading
@@ -53,7 +53,7 @@ export default function About(props) {
             unoptimized = {true}
         />
         
-          <p className="text-center text-4xl subpixel-antialiased">yude</p>
+          <p className="text-4xl subpixel-antialiased">yude</p>
           <DiscordPlaying />
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function About(props) {
         {
          // Description 
         }
-        <div className="container mx-auto max-w-3xl">
+        <div className="max-w-3xl">
         <div className="text-left">
             <p className="text-2xl"><FontAwesomeIcon icon={faInfo} className="w-5 h-5 inline"/> {desc}</p>
         </div>
@@ -160,7 +160,7 @@ export default function About(props) {
         }
         <div className="text-left my-6">
             <p className="text-2xl"><FontAwesomeIcon icon={faKey} className="w-5 h-5 inline"/> {keys}</p>
-          <ul className="list-disc mx-5 my-2">
+          <ul className="list-disc my-2">
           <li>
             <span className="font-bold">GPG&nbsp;</span>
             <Link href="/static/yudejp.gpg">
@@ -170,8 +170,8 @@ export default function About(props) {
               </a>
             </Link>
             <p>{fingerprint}:</p>
-            <div className="w-full overflow-x-auto ...">
-              <div className="whitespace-nowrap ...">
+            <div className="w-full overflow-x-auto">
+              <div className="whitespace-nowrap">
                 3745 F270 DB4E 8975 6B07  62BE EB0F E5D9 25C4 A968
                 </div>
             </div>
@@ -185,8 +185,8 @@ export default function About(props) {
               </a>
             </Link>
             <p>{fingerprint}:</p>
-            <div className="w-full overflow-x-auto ...">
-              <div className="whitespace-nowrap ...">
+            <div className="w-full overflow-x-auto">
+              <div className="whitespace-nowrap">
                 2048 SHA256:xwSL4DORWmroWdC6P0GU1m1yZl/cXqjo9rCCWqqO+Dc
               </div>
             </div>

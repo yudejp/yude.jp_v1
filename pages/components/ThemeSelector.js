@@ -23,7 +23,7 @@ const Layout = (props) => {
     }
   };
   return (
-      <button className="my-4 mx-3 text-2xl" onClick={switchTheme}>
+      <button className="my-4 text-2xl" onClick={switchTheme}>
         {theme === 'light' ? (
           <span>🌙</span>
         ) : (
