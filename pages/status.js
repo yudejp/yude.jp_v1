@@ -33,7 +33,7 @@ export default function About(props) {
         <div className="flex-1"><p className="font-bold">OS </p>Arch Linux</div>
         <div className="flex-1"><p className="font-bold">{location} </p>{hiroshima}</div>
         </div>
-        <iframe  className="w-full h-96" src="https://mackerel.io/embed/public/embed/heHnGhDanoIDlf7jjxUe9yPVrsG3deeH5ptD8suErrq5w46crWEIYdLfzLoukzfF?period=24h" height="400" className="w-2/3" frameBorder="0" scrolling="no"></iframe>
+        <iframe className="w-full h-96" src="https://mackerel.io/embed/public/embed/heHnGhDanoIDlf7jjxUe9yPVrsG3deeH5ptD8suErrq5w46crWEIYdLfzLoukzfF?period=24h" height="400" frameBorder="0" scrolling="no"></iframe>
         
         {
             // raspberry Mackerel
@@ -45,7 +45,7 @@ export default function About(props) {
         <div className="flex-1"><p className="font-bold">OS </p>Raspbian GNU/Linux 10 (buster)</div>
         <div className="flex-1"><p className="font-bold">{location} </p>{tottori}</div>
         </div>
-        <iframe className="w-full h-96" src="https://mackerel.io/embed/public/embed/5HVbQiwuxrMithyrGjmmQCCOVgJ6Ptf94SDA2qWSTsh2rtz7pjePihYzaW5QEml4?period=24h" height="400" className="w-2/3" frameBorder="0" scrolling="no"></iframe>
+        <iframe className="w-full h-96" src="https://mackerel.io/embed/public/embed/5HVbQiwuxrMithyrGjmmQCCOVgJ6Ptf94SDA2qWSTsh2rtz7pjePihYzaW5QEml4?period=24h" height="400" frameBorder="0" scrolling="no"></iframe>
         
         </div>
 
