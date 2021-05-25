@@ -20,7 +20,7 @@ const App = () => {
   if (playing){
   return <p>{yes_playing}</p>
   }else{
-  return <p>{no_playing}</p>
+  return <p>&#32;</p>
   }
 };
 
