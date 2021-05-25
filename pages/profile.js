@@ -34,12 +34,12 @@ export default function About(props) {
   return (
 
     <Layout title={about}>
-      <div className="my-9 text-center">
+      <div className="text-center">
 
         {
          // Heading
         }
-        <div className="mb-5 flex justify-center">
+        <div>
           <div>
           <div className="z-50 transform translate-x-40 translate-y-48">
           <DiscordStatus />
@@ -61,7 +61,7 @@ export default function About(props) {
         {
          // Description 
         }
-        <div className="max-w-3xl">
+        <div>
         <div className="text-left">
             <p className="text-2xl"><FontAwesomeIcon icon={faInfo} className="w-5 h-5 inline"/> {desc}</p>
         </div>
@@ -170,7 +170,7 @@ export default function About(props) {
               </a>
             </Link>
             <p>{fingerprint}:</p>
-            <div className="w-full overflow-x-auto">
+            <div className="overflow-x-auto">
               <div className="whitespace-nowrap">
                 3745 F270 DB4E 8975 6B07  62BE EB0F E5D9 25C4 A968
                 </div>
@@ -185,7 +185,7 @@ export default function About(props) {
               </a>
             </Link>
             <p>{fingerprint}:</p>
-            <div className="w-full overflow-x-auto">
+            <div className="overflow-x-auto">
               <div className="whitespace-nowrap">
                 2048 SHA256:xwSL4DORWmroWdC6P0GU1m1yZl/cXqjo9rCCWqqO+Dc
               </div>
@@ -199,9 +199,9 @@ export default function About(props) {
         </div>
       </div>
         <Link href="https://scrapbox.io/yude/%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88">
-            <button className="border border-transparent rounded-md shadow-sm text-sm font-medium mt-3 text-white bg-indigo-800 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3 w-60">{more}</button>
+            <button className="border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-800 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3 w-60">{more}</button>
         </Link>
-        <p className="mt-3 text-sm font-bold mb-2 text-gray-900 dark:text-gray-400">{icon_1}<Link href="https://twitter.com/xmnts"><a className="hover:underline">Minkasy {icon_2}</a></Link></p>
+        <p className="mt-3 text-sm font-bold text-gray-900 dark:text-gray-400">{icon_1}<Link href="https://twitter.com/xmnts"><a className="hover:underline">Minkasy {icon_2}</a></Link></p>
       </div>
     </Layout>
   )

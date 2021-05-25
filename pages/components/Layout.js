@@ -24,7 +24,7 @@ const Layout = (props) => {
       </Head>
       <main>
       <Navbar />
-        <div className="page-main">
+        <div className="md:mx-9 mx-1">
           {children}
         </div>
       <Footer />

@@ -14,7 +14,7 @@ const Navbar = () => {
             </span>
           </a>
         </Link>
-            <div className="origin-top-right absolute right-0">
+            <div className="absolute right-0">
                 <ThemeSelector />
                 <LangSelector />
             </div>
