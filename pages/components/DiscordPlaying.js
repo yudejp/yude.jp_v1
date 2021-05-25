@@ -16,7 +16,6 @@ const App = () => {
   }, []);
 
   const yes_playing = t('yes_playing', {playing: playing})
-  const no_playing = t('no_playing')
   if (playing){
   return <p>{yes_playing}</p>
   }else{
