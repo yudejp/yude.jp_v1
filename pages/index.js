@@ -34,7 +34,7 @@ export default function Index(props) {
             unoptimized = {true}
         />
         </div>
-        <div className="grid grid-cols-5 gap-10 max-w-xl mx-auto">
+        <div className="grid grid-cols-5 gap-10">
         <div className="has-tooltip"><span className="tooltip rounded shadow-lg p-1 bg-yellow-600 transform translate-y-10 -translate-x-10">{profile}</span><Link href="/profile"><a><FontAwesomeIcon icon={faUser} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></div>
         <div className="has-tooltip"><span className="tooltip rounded shadow-lg p-1 bg-yellow-600 transform translate-y-10 -translate-x-9">{blog}</span><Link href="https://blog.yude.jp"><a><FontAwesomeIcon icon={faBlog} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></div>
         <div className="has-tooltip"><span className="tooltip rounded shadow-lg p-1 bg-yellow-600 transform translate-y-10 -translate-x-12">{status}</span><Link href="/status"><a><FontAwesomeIcon icon={faServer} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></div>
