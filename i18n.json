@@ -7,6 +7,7 @@
       "/profile": ["profile", "common"],
       "/status": ["status", "common"],
       "/house": ["house", "common"],
-      "/tos": ["tos", "common"]
+      "/tos": ["tos", "common"],
+      "/hcunews": ["hcunews", "common"]
     }
   }
