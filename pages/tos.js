@@ -4,7 +4,8 @@ import { useRouter } from 'next/router'
 import React from "react"
 import ReactMarkdown from "react-markdown"
 import gfm from 'remark-gfm';
-import input from '../docs/tos.md'
+import ja from '../docs/tos/ja.md'
+import en from '../docs/tos/en.md'
 
 export default function Tos(props) {
     const router = useRouter()
@@ -14,7 +15,11 @@ export default function Tos(props) {
     return(
         <Layout title={tos}>
         <div>
-            <ReactMarkdown plugins={[gfm]} children={input} />
+        {lang === 'ja' ? (
+          <ReactMarkdown plugins={[gfm]} children={ja} />
+        ) : (
+          <ReactMarkdown plugins={[gfm]} children={en} />
+        )}
         </div>
         </Layout>
         )
