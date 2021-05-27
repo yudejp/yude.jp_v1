@@ -41,7 +41,7 @@ export default function About(props) {
         }
         <div className="flex justify-center">
           <div>
-          <div className="z-50 transform translate-x-40 translate-y-48">
+          <div className="z-50 transform translate-x-40 translate-y-48 w-5">
           <DiscordStatus />
           </div>
           <Image
