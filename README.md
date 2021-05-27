@@ -7,7 +7,7 @@ Built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss
 
 ## Development
 * To setup your repository, please run `yarn`.
-* To view this website in your computer, please run `yarn dev`.
+* To preview, please run `yarn dev`.
 
 ## License
 This repository is licensed under the MIT License.
