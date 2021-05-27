@@ -32,6 +32,7 @@
     "next-translate": "^1.0.7",
     "popper.js": "^1.16.1",
     "postcss": "^8.3.0",
+    "querystring": "^0.2.1",
     "raw-loader": "^4.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
