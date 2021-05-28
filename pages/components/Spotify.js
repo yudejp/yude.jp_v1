@@ -1,35 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
-const url = '/api/Spotify';
 
-function App ({data}) {
+function App () {
   const router = useRouter()
   const { locale, locales, defaultLocale, pathname } = router
   const { t, lang } = useTranslation("common")  
+  const [data, setData] = useState({ hits: [] });
+  useEffect(async () => {
+    const result = await axios(
+      '/api/Spotify',
+    );
+
+    setData(result.data);
+    }, []);
 
   if (data === undefined){
     console.log("[Spotify Web API] データの取得に失敗しました。 / Failed to retrieve data.")
     return <p></p>
   }else{
-  if (data.isPlaying === "true"){
-   const status = data.artist + ' - ' + data.title
+  if (data.isPlaying){
+   const status = data.artist + ' / ' + data.title
    const listening = t('listening', {listening: status})
    return <p>{listening}</p>
-   console.log("[Spotify Web API] Listening: " + status)
   }else{
    return <p></p>
-   console.log("[Spotify Web API] Nothing listening")
   }
 };
 }
-
-export async function getServerSideProps() {
-    // Fetch data from external API
-    const res = await fetch("/api/Spotify")
-    const data = await res.json()
-    // Pass data to the page via props
-    return { props: { data } }
-  }
 
 export default App;

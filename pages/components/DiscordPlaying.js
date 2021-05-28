@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
-const url = 'https://discord.com/api/guilds/723409709306216498/widget.json';
 
-function App ({data}){
+function App (){
   const router = useRouter()
   const { locale, locales, defaultLocale, pathname } = router
   const { t, lang } = useTranslation("common")
-  
+  const [data, setData] = useState({ hits: [] });
+  useEffect(async () => {
+    const result = await axios(
+      'https://discord.com/api/guilds/723409709306216498/widget.json',
+    );
+
+    setData(result.data);
+    }, []);
   if (data === undefined){
     console.log("[Discord API] データの取得に失敗しました。 / Failed to retrieve data.")
     return <p></p>
