@@ -9,7 +9,7 @@ function App ({data}) {
   const { t, lang } = useTranslation("common")  
 
   if (data === undefined){
-    console.log("Spotify Web API: データの取得に失敗しました。 / Failed to retrieve data.")
+    console.log("[Spotify Web API] データの取得に失敗しました。 / Failed to retrieve data.")
     return <p></p>
   }else{
   if (data.isPlaying === "true"){

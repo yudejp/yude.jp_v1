@@ -8,7 +8,10 @@ const App = () => {
       .then((r) => r.json())
       .then((j) => setStatus(j.members[0].status))
   }, []);
-    
+  if (status === undefined){
+  console.log("[Discord API] オンライン状態を取得できませんでした。 / Failed to retrieve online status.")
+  return <div></div>
+  }else{
   if (status === "online") {
     return <div className="font-bold text-gray-700 rounded-full bg-green-500 flex w-5 h-5 items-center justify-center"></div>
   }else{
@@ -23,5 +26,6 @@ const App = () => {
     }
   }
 };
+}
 
 export default App;
