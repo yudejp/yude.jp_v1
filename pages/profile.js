@@ -55,8 +55,10 @@ export default function About(props) {
         />
         
           <p className="text-4xl subpixel-antialiased">yude</p>
+          <div>
           <DiscordPlaying />
           <Spotify />
+          </div>
           </div>
         </div>
         

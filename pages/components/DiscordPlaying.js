@@ -7,27 +7,25 @@ function App (){
   const router = useRouter()
   const { locale, locales, defaultLocale, pathname } = router
   const { t, lang } = useTranslation("common")
-  const [data, setData] = useState({ hits: [] });
+  const [dataPlaying, setDataPlaying] = useState({ hits: [] });
   useEffect(async () => {
     const result = await axios(
       'https://discord.com/api/guilds/723409709306216498/widget.json',
     );
 
-    setData(result.data);
+    setDataPlaying(result.dataPlaying);
     }, []);
-  if (data === undefined){
+  if (dataPlaying === undefined){
     console.log("[Discord API] データの取得に失敗しました。 / Failed to retrieve data.")
     return <p></p>
   }else{
-  const str = JSON.stringify(data)
+  const str = JSON.stringify(dataPlaying)
   
   if (str.indexOf("game") !== -1){
-  const yes_playing = t('yes_playing', {playing: data.members[0].game.name})
+  const yes_playing = t('yes_playing', {playing: dataPlaying.members[0].game.name})
   return <p>{yes_playing}</p>
-  console.log("[Discord API] Playing: " + data.members[0].game.name)
   }else{
   return <p></p>
-  console.log("[Discord API] Nothing playing")
   }
 }
 };
