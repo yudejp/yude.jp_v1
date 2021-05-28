@@ -2,5 +2,6 @@
     "footer": "This page is licensed under the MIT License.",
     "source": "Source code",
     "tos": "yude.jp Terms of Service",
-    "yes_playing": "Playing {{playing}}"
+    "yes_playing": "Playing {{playing}}",
+    "listening": "Listening to {{listening}}"
 }

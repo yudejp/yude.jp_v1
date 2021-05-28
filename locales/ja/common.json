@@ -2,5 +2,6 @@
     "footer": "このページは MIT License の下でライセンスされています。",
     "source": "ソースコード",
     "tos": "yude.jp サービス利用規約",
-    "yes_playing": "{{playing}} をプレイ中"
+    "yes_playing": "{{playing}} をプレイ中",
+    "listening": "{{listening}} を再生中"
 }
