@@ -17,8 +17,10 @@ function App ({data}){
   if (str.indexOf("game") !== -1){
   const yes_playing = t('yes_playing', {playing: data.members[0].game.name})
   return <p>{yes_playing}</p>
+  console.log("[Discord API] Playing: " + data.members[0].game.name)
   }else{
   return <p></p>
+  console.log("[Discord API] Nothing playing")
   }
 }
 };

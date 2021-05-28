@@ -16,17 +16,18 @@ function App ({data}) {
    const status = data.artist + ' - ' + data.title
    const listening = t('listening', {listening: status})
    return <p>{listening}</p>
+   console.log("[Spotify Web API] Listening: " + status)
   }else{
    return <p></p>
+   console.log("[Spotify Web API] Nothing listening")
   }
 };
 }
 
 export async function getServerSideProps() {
     // Fetch data from external API
-    const res = await fetch(url)
+    const res = await fetch("/api/Spotify")
     const data = await res.json()
-  
     // Pass data to the page via props
     return { props: { data } }
   }
