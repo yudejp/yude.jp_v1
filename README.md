@@ -6,8 +6,11 @@ Front page of [yude.jp](https://yude.jp).\
 Built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/) and deployed on [Vercel](https://vercel.com).
 
 ## Development
-* To setup your repository, please run `yarn`.
-* To preview, please run `yarn dev`.
+### Setup
+1. Run `yarn`.
+1. Rename `.env.local.sample` as `.env.local` and set value. 
+### Preview
+* Run `yarn dev`.
 
 ## License
 This repository is licensed under the MIT License.
