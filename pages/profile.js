@@ -8,6 +8,7 @@ import Image from 'next/image'
 import DiscordStatus from './components/DiscordStatus'
 import { useRouter } from 'next/router'
 import DiscordPlaying from './components/DiscordPlaying'
+import Spotify from './components/Spotify'
 
 export default function About(props) {
   const router = useRouter()
@@ -55,6 +56,7 @@ export default function About(props) {
         
           <p className="text-4xl subpixel-antialiased">yude</p>
           <DiscordPlaying />
+          <Spotify />
           </div>
         </div>
         
