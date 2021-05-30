@@ -1,7 +1,7 @@
 import Layout from "./components/Layout"
 import useTranslation from 'next-translate/useTranslation'
 import { faDiscord, faTwitter, faGithub, faKeybase, faInstagram, faMastodon, faSteam } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faBirthdayCake, faMapPin, faSchool, faPhone, faInfo, faKey, faDownload, faEye } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faBirthdayCake, faMapPin, faSchool, faPhone, faInfo } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -10,6 +10,7 @@ import { useRouter } from 'next/router'
 import DiscordPlaying from './components/DiscordPlaying'
 import Spotify from './components/Spotify'
 import WakaTime from './components/WakaTime'
+import PublicKeys from './components/PublicKeys'
 
 export default function About(props) {
   const router = useRouter()
@@ -28,10 +29,6 @@ export default function About(props) {
   const grade = t('grade')
   const icon_1 = t('icon_1')
   const icon_2 = t('icon_2')
-  const keys = t('keys')
-  const download = t('download')
-  const fingerprint = t('fingerprint')
-  const view = t('view')
 
   return (
 
@@ -159,51 +156,13 @@ export default function About(props) {
             </Link>
           </div>
         </div>
-
-        {
-         // Keys
-        }
-        <div className="text-left my-6">
-            <p className="text-2xl"><FontAwesomeIcon icon={faKey} className="w-5 h-5 inline"/> {keys}</p>
-          <ul className="list-disc my-2">
-          <li>
-            <span className="font-bold">GPG&nbsp;</span>
-            <Link href="/static/yudejp.gpg">
-              <a className="hover:underline">
-                <FontAwesomeIcon icon={faDownload} className="w-5 h-5 inline"/>&nbsp;
-                {download}
-              </a>
-            </Link>
-            <p>{fingerprint}:</p>
-            <div className="overflow-x-auto">
-              <div className="whitespace-nowrap">
-                3745 F270 DB4E 8975 6B07  62BE EB0F E5D9 25C4 A968
-                </div>
-            </div>
-          </li>
-          <li>
-            <span className="font-bold">SSH&nbsp;</span>
-            <Link href="https://github.com/yude.keys">
-              <a className="hover:underline">
-                <FontAwesomeIcon icon={faEye} className="w-5 h-5 inline"/>&nbsp;
-                {view}
-              </a>
-            </Link>
-            <p>{fingerprint}:</p>
-            <div className="overflow-x-auto">
-              <div className="whitespace-nowrap">
-                2048 SHA256:xwSL4DORWmroWdC6P0GU1m1yZl/cXqjo9rCCWqqO+Dc
-              </div>
-            </div>
-          </li>
-            </ul>
-        </div>
         
         {
-         // WakaTime
+         // Buttons
         }
-        <div className="text-left my-6">
+        <div className="text-center my-6 space-x-5">
         <WakaTime />
+        <PublicKeys />
         </div>
         <div>
         </div>
