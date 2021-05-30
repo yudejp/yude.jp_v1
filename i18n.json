@@ -8,6 +8,7 @@
       "/status": ["status", "common"],
       "/house": ["house", "common"],
       "/tos": ["tos", "common"],
-      "/hcunews": ["hcunews", "common"]
+      "/hcunews": ["hcunews", "common"],
+      "/minecraft": ["minecraft", "common"]
     }
   }
