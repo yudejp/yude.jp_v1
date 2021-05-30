@@ -8,7 +8,6 @@ export default function Minecraft(props) {
   const { locale, locales, defaultLocale, pathname } = router
   const { t, lang } = useTranslation("minecraft")
 
-  const [dataMinecraft, setDataMinecraft] = useState({ hits: [] });
   const [data, setData] = useState({ hits: [] });
   const fail = t('minecraft:fail')
   useEffect(() => {

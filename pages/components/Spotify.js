@@ -7,21 +7,22 @@ function App () {
   const router = useRouter()
   const { locale, locales, defaultLocale, pathname } = router
   const { t, lang } = useTranslation("common")  
-  const [dataSpotify, setDataSpotify] = useState({ hits: [] });
-  useEffect(async () => {
-    const result = await axios(
-      '/api/Spotify',
-    );
-
-    setDataSpotify(result.dataSpotify);
-    }, []);
-
-  if (dataSpotify === undefined){
+  const [data, setData] = useState({ hits: [] });
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(
+        '/api/Spotify',
+      );
+      setData(result.data);
+    };  
+    fetchData();
+  }, []);
+  if (data === undefined){
     console.log("[Spotify Web API] データの取得に失敗しました。 / Failed to retrieve data.")
     return <p></p>
   }else{
-  if (dataSpotify.isPlaying){
-   const status = dataSpotify.artist + ' / ' + dataSpotify.title
+  if (data.isPlaying){
+   const status = data.artist + ' / ' + data.title
    const listening = t('listening', {listening: status})
    return <p>{listening}</p>
   }else{
