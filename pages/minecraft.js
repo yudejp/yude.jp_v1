@@ -10,7 +10,7 @@ export default function About(props) {
     const { locale, locales, defaultLocale, pathname } = router
     const { t, lang } = useTranslation("minecraft")
     const title = t('title')
-
+    const address = t('address')
     return (
         <Layout title={title}>
         <div>
@@ -25,6 +25,7 @@ export default function About(props) {
         />
         </div>
         <Minecraft />
+        <p className="text-center">{address}: <code>yude.jp</code></p>
         </div>
         </Layout>
         )

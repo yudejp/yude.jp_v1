@@ -14,7 +14,7 @@ export default function Minecraft(props) {
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
-        'https://mcapi.us/server/status?ip=yude.jp',
+        'https://eu.mc-api.net/v3/server/ping/yude.jp',
       );
       setData(result.data);
     };  
@@ -29,16 +29,21 @@ export default function Minecraft(props) {
         )
       }else{
         console.log(data)
+        const status = data.online
         const player = data.players && data.players.now
         const playing = t('minecraft:playing', {count: player})
         const no_one = t('minecraft:no_one')
+        const offline = t('minecraft:offline')
         return (
           <p className="text-center">
             {(() => {
-            if (player == 0) {
+            if (status) {
+            if (player == undefined) {
               return <span>{no_one}</span>
             } else {
               return <span>{playing}</span>
+            }}else{
+              return <span>{offline}</span>
             }
           })()}
           </p>
