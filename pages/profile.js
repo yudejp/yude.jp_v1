@@ -1,7 +1,7 @@
 import Layout from "./components/Layout"
 import useTranslation from 'next-translate/useTranslation'
 import { faDiscord, faTwitter, faGithub, faKeybase, faInstagram, faMastodon, faSteam } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faBirthdayCake, faMapPin, faSchool, faPhone, faInfo, faKey, faDownload, faEye, faUserClock } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faBirthdayCake, faMapPin, faSchool, faPhone, faInfo, faKey, faDownload, faEye } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -9,6 +9,7 @@ import DiscordStatus from './components/DiscordStatus'
 import { useRouter } from 'next/router'
 import DiscordPlaying from './components/DiscordPlaying'
 import Spotify from './components/Spotify'
+import WakaTime from './components/WakaTime'
 
 export default function About(props) {
   const router = useRouter()
@@ -202,9 +203,7 @@ export default function About(props) {
          // WakaTime
         }
         <div className="text-left my-6">
-        <p className="text-2xl"><FontAwesomeIcon icon={faUserClock} className="w-5 h-5 inline"/> WakaTime</p>
-        <figure className="max-w-2xl"><embed src="https://wakatime.com/share/@yude/6f15075a-b9d5-464a-8b4f-545d31933dfb.svg"></embed></figure>
-        <figure className="max-w-2xl"><embed src="https://wakatime.com/share/@yude/a8c52934-488b-4bdd-aed1-4f3fc73eb78e.svg"></embed></figure>
+        <WakaTime />
         </div>
         <div>
         </div>
