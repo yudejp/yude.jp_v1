@@ -25,7 +25,9 @@ const Layout = (props) => {
       <main>
       <Navbar />
         <div className="max-w-2xl mx-auto">
+        <div className="mx-2">
           {children}
+          </div>
         </div>
       <Footer />
       </main>
