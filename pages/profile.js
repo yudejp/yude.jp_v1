@@ -38,11 +38,7 @@ export default function About(props) {
         {
          // Heading
         }
-        <div className="flex justify-center">
-          <div>
-          <div className="z-50 transform translate-x-40 translate-y-48 w-5">
-          <DiscordStatus />
-          </div>
+        <div>
           <Image
             className   = "object-contain rounded-full hover:animate-rumble z-0"
             src         = "/static/images/avatar.png"
@@ -50,13 +46,12 @@ export default function About(props) {
             width       = {200}
             height      = {200}
             unoptimized = {true}
-        />
-        
-          <p className="text-4xl subpixel-antialiased">yude</p>
+          />
+          <DiscordStatus />
+          <p className="text-4xl transform -translate-y-4">yude</p>
           <div>
           <DiscordPlaying />
           <Spotify />
-          </div>
           </div>
         </div>
         

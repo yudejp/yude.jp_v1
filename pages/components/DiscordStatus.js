@@ -16,6 +16,7 @@ const App = () => {
   const status = data.members && data.members[0].status;
   return (
   <>
+  <div className="z-50 transform translate-x-96 -translate-y-10 w-5">
   {
     (() => {
       if (status == "online"){
@@ -29,6 +30,7 @@ const App = () => {
       }
     })()
   }
+  </div>
   </>
   )
 }
