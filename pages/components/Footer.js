@@ -13,7 +13,7 @@ export default function Footer(props) {
         return (
           <>
             <div className="container mx-auto px-6">
-            <div className="mt-16 flex flex-col items-center">
+            <div className="flex flex-col items-center">
                 <div className="sm:w-full text-center py-6">
                     <p className="text-sm font-bold mb-2">
                         {footer} / <Link href="https://github.com/yudejp/yude.jp"><a className="hover:underline">{source}</a></Link>
