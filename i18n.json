@@ -3,7 +3,7 @@
     "defaultLocale": "ja",
     "pages": {
       "*": ["common"],
-      "/": ["index", "common"],
+      "/": ["index", "minecraft", "common"],
       "/profile": ["profile", "common"],
       "/status": ["status", "common"],
       "/house": ["house", "common"],
