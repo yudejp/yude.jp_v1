@@ -3,5 +3,6 @@
     "playing": "{{count}} player(s) online.",
     "no_one": "No one is playing.",
     "offline": "Server is down.",
-    "address": "Server address"
+    "address": "Server address",
+    "fail": "Failed to retrieve server status."
 }

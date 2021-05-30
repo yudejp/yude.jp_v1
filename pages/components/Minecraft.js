@@ -10,7 +10,7 @@ export default function Minecraft(props) {
 
   const [dataMinecraft, setDataMinecraft] = useState({ hits: [] });
   const [data, setData] = useState({ hits: [] });
-
+  const fail = t('minecraft:fail')
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
@@ -23,12 +23,10 @@ export default function Minecraft(props) {
 
     if (data === undefined){
         console.log("[Minecraft Query] データの取得に失敗しました。 / Failed to retrieve data.")
-        console.log(data)
         return (
-        <p>Failed to retrieve data</p>
+        <p>{fail}</p>
         )
       }else{
-        console.log(data)
         const status = data.online
         const player = data.players && data.players.online
         const playing = t('minecraft:playing', {count: player})
