@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const url = "https://discord.com/api/guilds/723409709306216498/widget.json";
 const App = () => {
   const [data, setData] = useState({ hits: [] });
   useEffect(() => {
