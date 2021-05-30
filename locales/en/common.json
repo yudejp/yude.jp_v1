@@ -3,5 +3,6 @@
     "source": "Source code",
     "tos": "yude.jp Terms of Service",
     "yes_playing": "Playing {{playing}}",
-    "listening": "Listening to {{listening}}"
+    "listening": "Listening to {{listening}}",
+    "close": "Close"
 }
