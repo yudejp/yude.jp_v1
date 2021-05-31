@@ -4,7 +4,7 @@ import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
 import Minecraft from './components/Minecraft'
 import Image from 'next/image'
-import { faMap } from '@fortawesome/free-solid-svg-icons'
+import { faMap, faCopy } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 
@@ -15,6 +15,9 @@ export default function About(props) {
     const title = t('title')
     const address = t('address')
     const version = t('version')
+    const copyText = () => {
+      navigator.clipboard.writeText("yude.jp");
+    };
 
     return (
             <Layout title={title}>
@@ -31,7 +34,16 @@ export default function About(props) {
                 </div>
                 <div className="text-center">
                 <Minecraft />
-                <p>{address}: <code>yude.jp</code></p>
+                <p>
+                  <span>{address}: <code>yude.jp</code></span>
+                  <button
+                    className="bg-pink-600 text-white active:bg-pink-600 font-bold text-sm px-2 py-2 ml-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1       ease-linear transition-all duration-150"
+                    type="button"
+                    onClick={() => copyText()}
+                  >
+                    <FontAwesomeIcon icon={faCopy} className="w-5 h-5 inline"/>
+                  </button>
+                </p>
                 <p>{version}: 1.16.x</p>
                 <Link href="https://dynmap.yude.jp">
                 <a>
