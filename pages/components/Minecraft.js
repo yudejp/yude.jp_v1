@@ -13,7 +13,7 @@ export default function Minecraft(props) {
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
-        'https://mcstatus.snowdev.com.br/api/query/v3/yude.jp',
+        'https://api.mcsrvstat.us/2/yude.jp',
       );
       setData(result.data);
     };  
