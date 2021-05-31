@@ -48,7 +48,7 @@ export default function About(props) {
                 <Link href="https://dynmap.yude.jp">
                 <a>
                 <button
-                className="bg-pink-600 text-white active:bg-pink-600 font-bold text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1       ease-linear transition-all duration-150"
+                className="bg-pink-600 text-white active:bg-pink-600 mt-3 font-bold text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1       ease-linear transition-all duration-150"
                 type="button"
               >
                 <FontAwesomeIcon icon={faMap} className="w-5 h-5 inline"/> Dynmap
