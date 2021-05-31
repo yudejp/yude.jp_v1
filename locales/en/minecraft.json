@@ -4,5 +4,6 @@
     "no_one": "No one is playing.",
     "offline": "Server is down.",
     "address": "Server address",
-    "fail": "Failed to retrieve server status."
+    "fail": "Failed to retrieve server status.",
+    "loading": "Retrieving server status..."
 }
