@@ -14,6 +14,8 @@ export default function About(props) {
     const { t, lang } = useTranslation("minecraft")
     const title = t('title')
     const address = t('address')
+    const version = t('version')
+
     return (
             <Layout title={title}>
             <div>
@@ -30,6 +32,7 @@ export default function About(props) {
                 <div className="text-center">
                 <Minecraft />
                 <p>{address}: <code>yude.jp</code></p>
+                <p>{version}: 1.16.x</p>
                 <Link href="https://dynmap.yude.jp">
                 <a>
                 <button
