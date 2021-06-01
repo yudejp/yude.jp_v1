@@ -35,7 +35,7 @@ export default function Minecraft(props) {
         const offline = t('minecraft:offline')
         const loading = t('minecraft:loading')
         return (
-          <p className="text-center">
+          <div className="text-center">
             {(() => {
             if (status == true) {
             if (player == undefined || player == 0) {
@@ -48,6 +48,7 @@ export default function Minecraft(props) {
               return <span>{loading}</span>
             }
           })()}
+
           {(() => {
             if (data.players && data.players.list){
               var list = [];
@@ -56,12 +57,12 @@ export default function Minecraft(props) {
                 url.push('https://mc-heads.net/avatar/' + data.players.list[i])
               }
               for (var i in url){
-                list.push(<Image src={url[i]} className="inline" height="50" width="50" />)
+                list.push(<Image src={url[i]} key={i} className="inline" height="50" width="50" />)
               }
               return <div>{list}</div>
             }
           })()}
-          </p>
+          </div>
         )
       }
 }
