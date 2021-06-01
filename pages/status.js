@@ -12,6 +12,9 @@ export default function About(props) {
   const tottori = t('tottori')
   const hiroshima = t('hiroshima')
   const model = t('model')
+  const service = t('service')
+  const region = t('region')
+  const shape = t('shape')
 
   return (
 
@@ -47,6 +50,18 @@ export default function About(props) {
         </div>
         <iframe className="w-full h-96" src="https://mackerel.io/embed/public/embed/5HVbQiwuxrMithyrGjmmQCCOVgJ6Ptf94SDA2qWSTsh2rtz7pjePihYzaW5QEml4?period=24h" height="400" frameBorder="0" scrolling="no"></iframe>
         
+        {
+            // iroha Mackerel
+        }
+        <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">iroha</h2>
+        <div className="flex xl:w-2/3 text-center">
+        <div className="flex-1"><p className="font-bold">{service} </p>Oracle Cloud</div>
+        <div className="flex-1"><p className="font-bold">{shape} </p>VM.Standard.E2.1.Micro</div>
+        <div className="flex-1"><p className="font-bold">RAM </p>1GB</div>
+        <div className="flex-1"><p className="font-bold">OS </p>Ubuntu 20.04 LTS</div>
+        <div className="flex-1"><p className="font-bold">{region} </p>Japan Central (Osaka)</div>
+        </div>
+        <iframe className="w-full h-96" src="https://mackerel.io/embed/public/embed/wgmTz7aTgvwfyU6qVHrJJmQlpOHCUJK6qw0W9sJTX68WOI8TFtc27YvJ7dwkQEGv?period=24h" height="400" frameBorder="0" scrolling="no"></iframe>
         </div>
 
     </Layout>

@@ -3,5 +3,8 @@
     "location": "Location",
     "tottori": "Tottori, Japan",
     "hiroshima": "Hiroshima, Japan",
-    "model": "Model"
+    "model": "Model",
+    "region": "Region",
+    "service": "Service",
+    "shape": "Shape"
 }
