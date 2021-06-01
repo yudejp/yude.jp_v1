@@ -6,7 +6,7 @@ module.exports = nextTranslate({
       defaultLocale: 'ja',
     },
     images: {
-      domains: ['mackerel.io'],
+      domains: ['mackerel.io', 'mc-heads.net'],
     },
     webpack: function (config) {
       config.module.rules.push({
