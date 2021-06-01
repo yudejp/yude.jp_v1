@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
 import axios from 'axios';
+import Image from 'next/image'
+import { list } from 'postcss';
 
 export default function Minecraft(props) {
   const router = useRouter()
@@ -44,6 +46,19 @@ export default function Minecraft(props) {
               return <span>{offline}</span>
             }else {
               return <span>{loading}</span>
+            }
+          })()}
+          {(() => {
+            if (data.players && data.players.list){
+              var list = [];
+              var url = [];
+              for (var i in data.players.list){
+                url.push('https://mc-heads.net/avatar/' + data.players.list[i])
+              }
+              for (var i in url){
+                list.push(<Image src={url[i]} className="inline" height="50" width="50" />)
+              }
+              return <div>{list}</div>
             }
           })()}
           </p>
