@@ -20,5 +20,7 @@
     "keys": "Public keys",
     "download": "Download",
     "fingerprint": "Digital fingerprint",
-    "view": "View"
+    "view": "View",
+    "device": "Devices",
+    "account": "Accounts"
 }

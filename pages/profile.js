@@ -1,7 +1,7 @@
 import Layout from "./components/Layout"
 import useTranslation from 'next-translate/useTranslation'
 import { faDiscord, faTwitter, faGithub, faKeybase, faInstagram, faMastodon, faSteam } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faBirthdayCake, faMapPin, faSchool, faPhone, faInfo } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faBirthdayCake, faMapPin, faSchool, faPhone, faInfo, faLink, faMobile } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -29,6 +29,8 @@ export default function About(props) {
   const grade = t('grade')
   const icon_1 = t('icon_1')
   const icon_2 = t('icon_2')
+  const account = t('account')
+  const device = t('device')
 
   return (
 
@@ -158,13 +160,33 @@ export default function About(props) {
         <div className="text-center my-6 space-x-5">
         <WakaTime />
         <PublicKeys />
+        
+        <Link href="https://scrapbox.io/yude/%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88">
+                <a>
+                <button
+                className="bg-pink-600 text-white active:bg-pink-600 mt-3 font-bold text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1       ease-linear transition-all duration-150"
+                type="button"
+              >
+                <FontAwesomeIcon icon={faLink} className="w-5 h-5 inline"/> {account}
+              </button>
+              </a>
+        </Link>
+        
+        <Link href="https://scrapbox.io/yude/%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9">
+                <a>
+                <button
+                className="bg-pink-600 text-white active:bg-pink-600 mt-3 font-bold text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1       ease-linear transition-all duration-150"
+                type="button"
+              >
+                <FontAwesomeIcon icon={faMobile} className="w-5 h-5 inline"/> {device}
+              </button>
+              </a>
+        </Link>
+        
         </div>
         <div>
         </div>
       </div>
-        <Link href="https://scrapbox.io/yude/%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88">
-            <button className="border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-800 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 p-3 w-60">{more}</button>
-        </Link>
         <p className="mt-3 text-sm font-bold text-gray-900 dark:text-gray-400">{icon_1}<Link href="https://twitter.com/xmnts"><a className="hover:underline">Minkasy {icon_2}</a></Link></p>
       </div>
     </Layout>
