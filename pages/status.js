@@ -29,7 +29,7 @@ export default function About(props) {
         {
             // cherry Mackerel
         }
-        <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">cherry</h2>
+        <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">yui</h2>
         <div className="flex xl:w-2/3 text-center">
         <div className="flex-1"><p className="font-bold">CPU </p>i7-2600</div>
         <div className="flex-1"><p className="font-bold">RAM </p>DDR3 24GB</div>
@@ -41,7 +41,7 @@ export default function About(props) {
         {
             // raspberry Mackerel
         }
-        <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">raspberry</h2>
+        <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">yukino</h2>
         <div className="flex xl:w-2/3 text-center">
         <div className="flex-1"><p className="font-bold">{model} </p>Raspberry Pi 4 Model B Rev 1.2</div>
         <div className="flex-1"><p className="font-bold">RAM </p>4GB</div>
@@ -62,8 +62,22 @@ export default function About(props) {
         <div className="flex-1"><p className="font-bold">{region} </p>Japan Central (Osaka)</div>
         </div>
         <iframe className="w-full h-96" src="https://mackerel.io/embed/public/embed/wgmTz7aTgvwfyU6qVHrJJmQlpOHCUJK6qw0W9sJTX68WOI8TFtc27YvJ7dwkQEGv?period=24h" height="400" frameBorder="0" scrolling="no"></iframe>
+        
+        
+        {
+            // iroha Mackerel
+        }
+        <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">komachi</h2>
+        <div className="flex xl:w-2/3 text-center">
+        <div className="flex-1"><p className="font-bold">{service} </p>Oracle Cloud</div>
+        <div className="flex-1"><p className="font-bold">{shape} </p>VM.Standard.E2.1.Micro</div>
+        <div className="flex-1"><p className="font-bold">RAM </p>1GB</div>
+        <div className="flex-1"><p className="font-bold">OS </p>Ubuntu 20.04 LTS</div>
+        <div className="flex-1"><p className="font-bold">{region} </p>Japan Central (Osaka)</div>
         </div>
+        <iframe className="w-full h-96" src="https://mackerel.io/embed/public/embed/vcn6LE4P2hh6GzvtMbIAWxsXpDh6eSoNyAXdhfYaj9yDN6FJwOHIiz9ktqToj1HG?period=24h" height="400" frameBorder="0" scrolling="no"></iframe>
 
+      </div>
     </Layout>
   )
 }
