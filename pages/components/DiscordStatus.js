@@ -15,17 +15,17 @@ const App = () => {
   const status = data.members && data.members[0].status;
   return (
   <>
-  <div className="z-50 transform translate-x-96 -translate-y-10 w-5">
+  <div className="z-50 w-6 transform translate-y-3/4 -translate-x-full">
   {
     (() => {
       if (status == "online"){
-        return <div className="z-1000 text-green-700 rounded-full bg-green-500 flex w-5 h-5"></div>
+        return <div className="text-green-700 rounded-full bg-green-500 flex w-6 h-6"></div>
       } else if (status == "idle"){
-        return <div className="z-1000 text-yellow-700 rounded-full bg-green-500 flex w-5 h-5"></div>
+        return <div className="text-yellow-700 rounded-full bg-green-500 flex w-6 h-6"></div>
       } else if (status == "dnd"){
-        return <div className="z-1000 text-yellow-700 rounded-full bg-red-500 flex w-5 h-5"></div>
+        return <div className="text-yellow-700 rounded-full bg-red-500 flex w-6 h-6"></div>
       } else {
-        return <div className="z-1000 text-gray-700 rounded-full bg-red-500 flex w-5 h-5"></div>
+        return <div className="text-gray-700 rounded-full bg-red-500 flex w-6 h-6"></div>
       }
     })()
   }

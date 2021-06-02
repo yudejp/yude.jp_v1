@@ -41,8 +41,9 @@ export default function About(props) {
          // Heading
         }
         <div>
+          <div className="flex mb-10 justify-center">
           <Image
-            className   = "object-contain rounded-full hover:animate-rumble z-0"
+            className   = "rounded-full hover:animate-rumble z-0"
             src         = "/static/images/avatar.png"
             alt         = "yude's avatar"
             width       = {200}
@@ -50,6 +51,7 @@ export default function About(props) {
             unoptimized = {true}
           />
           <DiscordStatus />
+          </div>
           <p className="text-4xl transform -translate-y-4">yude</p>
           <div>
           <DiscordPlaying />
