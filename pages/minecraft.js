@@ -44,7 +44,7 @@ export default function About(props) {
                     <FontAwesomeIcon icon={faCopy} className="w-5 h-5 inline"/>
                   </button>
                 </p>
-                <p>{version}: 1.16.x</p>
+                <p>{version}: 1.17</p>
                 <Link href="https://dynmap.yude.jp">
                 <a>
                 <button
