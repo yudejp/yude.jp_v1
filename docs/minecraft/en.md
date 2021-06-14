@@ -2,6 +2,7 @@
 The following applies in addition to [yude.jp Terms of Service](https://yude.jp/tos):
 * You can build your house / facility / etc. anywhere in the world.
 * Don't troll.
+* Don't cheat.
 
 # List of available commands
 * `/ll`: Switch the visibility of spawn checker.
