@@ -19,7 +19,7 @@ export default function About(props) {
     return (
             <Layout title={t('title')}>
             <div>
-                <p className="my-2 text-3xl text-center">{title}</p>
+                <p className="my-2 text-3xl text-center">{t('title')}</p>
                 <div className="w-full">
                 <Image
                     src         = "/static/images/dynmap.png"
