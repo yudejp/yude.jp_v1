@@ -11,9 +11,8 @@ export default function Tos(props) {
     const router = useRouter()
     const { locale, locales, defaultLocale, pathname } = router
     const { t, lang } = useTranslation("tos")
-    const tos = t('tos')
     return(
-        <Layout title={tos}>
+        <Layout title={t('tos')}>
         <div>
         {lang === 'ja' ? (
           <ReactMarkdown plugins={[gfm]} children={ja} />

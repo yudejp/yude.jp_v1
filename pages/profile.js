@@ -16,25 +16,10 @@ export default function About(props) {
   const router = useRouter()
   const { locale, locales, defaultLocale, pathname } = router
   const { t, lang } = useTranslation("profile")
-  const about = t('about')
-  const desc = t('desc')
-  const school = t('school')
-  const contact = t('contact')
-  const location = t('location')
-  const belongs = t('belongs')
-  const hiroshima = t('hiroshima')
-  const birth = t('birth')
-  const date = t('date')
-  const more = t('more')
-  const grade = t('grade')
-  const icon_1 = t('icon_1')
-  const icon_2 = t('icon_2')
-  const account = t('account')
-  const device = t('device')
 
   return (
 
-    <Layout title={about}>
+    <Layout title={t('about')}>
       <div className="text-center">
 
         {
@@ -64,24 +49,24 @@ export default function About(props) {
         }
         <div>
         <div className="text-left">
-            <p className="text-2xl"><FontAwesomeIcon icon={faInfo} className="w-5 h-5 inline"/> {desc}</p>
+            <p className="text-2xl"><FontAwesomeIcon icon={faInfo} className="w-5 h-5 inline"/> {t('desc')}</p>
         </div>
         <div className="my-2 text-left grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 break-words">
           <div>
             <FontAwesomeIcon icon={faSchool} className="w-5 h-5 inline"/>
-            <p className="inline ml-4">{belongs}</p>
-            <p className="ml-9">{school}</p>
-            <p className="ml-9">{grade}</p>
+            <p className="inline ml-4">{t('belongs')}</p>
+            <p className="ml-9">{t('school')}</p>
+            <p className="ml-9">{t('grade')}</p>
           </div>
           <div>
             <FontAwesomeIcon icon={faBirthdayCake} className="w-5 h-5 inline"/>
-            <p className="inline ml-4">{birth}</p>
-            <p className="ml-9">{date}</p>
+            <p className="inline ml-4">{t('birth')}</p>
+            <p className="ml-9">{t('date')}</p>
           </div>
           <div>
             <FontAwesomeIcon icon={faMapPin} className="w-5 h-5 inline"/>
-            <p className="inline ml-4">{location}</p>
-            <p className="ml-9">{hiroshima}</p>
+            <p className="inline ml-4">{t('location')}</p>
+            <p className="ml-9">{t('hiroshima')}</p>
           </div>
         </div>
 
@@ -89,7 +74,7 @@ export default function About(props) {
          // Contact 
         }
         <div className="text-left my-6">
-            <p className="text-2xl"><FontAwesomeIcon icon={faPhone} className="w-5 h-5 inline"/> {contact}</p>
+            <p className="text-2xl"><FontAwesomeIcon icon={faPhone} className="w-5 h-5 inline"/> {t('contact')}</p>
         </div>
         <div className="my-2 grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 justify-items-center gap-y-6">
           <div className="hover:underline">
@@ -169,7 +154,7 @@ export default function About(props) {
                 className="bg-pink-600 text-white active:bg-pink-600 mt-3 font-bold text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1       ease-linear transition-all duration-150"
                 type="button"
               >
-                <FontAwesomeIcon icon={faLink} className="w-5 h-5 inline"/> {account}
+                <FontAwesomeIcon icon={faLink} className="w-5 h-5 inline"/> {t('account')}
               </button>
               </a>
         </Link>
@@ -180,7 +165,7 @@ export default function About(props) {
                 className="bg-pink-600 text-white active:bg-pink-600 mt-3 font-bold text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1       ease-linear transition-all duration-150"
                 type="button"
               >
-                <FontAwesomeIcon icon={faMobile} className="w-5 h-5 inline"/> {device}
+                <FontAwesomeIcon icon={faMobile} className="w-5 h-5 inline"/> {t('device')}
               </button>
               </a>
         </Link>
@@ -189,7 +174,7 @@ export default function About(props) {
         <div>
         </div>
       </div>
-        <p className="mt-3 text-sm font-bold text-gray-900 dark:text-gray-400">{icon_1}<Link href="https://twitter.com/xmnts"><a className="hover:underline">Minkasy {icon_2}</a></Link></p>
+        <p className="mt-3 text-sm font-bold text-gray-900 dark:text-gray-400">{t('icon_1')}<Link href="https://twitter.com/xmnts"><a className="hover:underline">Minkasy {t('icon_2')}</a></Link></p>
       </div>
     </Layout>
   )

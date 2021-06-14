@@ -23,8 +23,7 @@ function App () {
   }else{
   if (data.isPlaying){
    const status = data.artist + ' / ' + data.title
-   const listening = t('listening', {listening: status})
-   return <p>{listening}</p>
+   return <p>{t('listening', {listening: status})}</p>
   }else{
    return <p></p>
   }

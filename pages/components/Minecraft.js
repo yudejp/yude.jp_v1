@@ -11,7 +11,7 @@ export default function Minecraft(props) {
   const { t, lang } = useTranslation("minecraft")
 
   const [data, setData] = useState({ hits: [] });
-  const fail = t('minecraft:fail')
+
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
@@ -25,27 +25,24 @@ export default function Minecraft(props) {
     if (data === undefined){
         console.log("[Minecraft Query] データの取得に失敗しました。 / Failed to retrieve data.")
         return (
-        <p>{fail}</p>
+        <p>{t('minecraft:fail')}</p>
         )
       }else{
         const status = data.online
         const player = data.players && data.players.online
-        const playing = t('minecraft:playing', {count: player})
-        const no_one = t('minecraft:no_one')
-        const offline = t('minecraft:offline')
-        const loading = t('minecraft:loading')
+
         return (
           <div className="text-center">
             {(() => {
             if (status == true) {
             if (player == undefined || player == 0) {
-              return <span>{no_one}</span>
+              return <span>{t('minecraft:no_one')}</span>
             } else {
-              return <span>{playing}</span>
+              return <span>{t('minecraft:playing', {count: player})}</span>
             }}else if (status == false) {
-              return <span>{offline}</span>
+              return <span>{t('minecraft:offline')}</span>
             }else {
-              return <span>{loading}</span>
+              return <span>{t('minecraft:loading')}</span>
             }
           })()}
 

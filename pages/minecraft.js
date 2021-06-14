@@ -12,15 +12,12 @@ export default function About(props) {
     const router = useRouter()
     const { locale, locales, defaultLocale, pathname } = router
     const { t, lang } = useTranslation("minecraft")
-    const title = t('title')
-    const address = t('address')
-    const version = t('version')
     const copyText = () => {
       navigator.clipboard.writeText("yude.jp");
     };
 
     return (
-            <Layout title={title}>
+            <Layout title={t('title')}>
             <div>
                 <p className="my-2 text-3xl text-center">{title}</p>
                 <div className="w-full">
@@ -35,7 +32,7 @@ export default function About(props) {
                 <div className="text-center">
                 <Minecraft />
                 <p>
-                  <span>{address}: <code>yude.jp</code></span>
+                  <span>{t('address')}: <code>yude.jp</code></span>
                   <button
                     className="bg-pink-600 text-white active:bg-pink-600 font-bold text-sm px-2 py-2 ml-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1       ease-linear transition-all duration-150"
                     type="button"
@@ -44,7 +41,7 @@ export default function About(props) {
                     <FontAwesomeIcon icon={faCopy} className="w-5 h-5 inline"/>
                   </button>
                 </p>
-                <p>{version}: 1.17</p>
+                <p>{t('version')}: 1.17</p>
                 <Link href="https://dynmap.yude.jp">
                 <a>
                 <button
