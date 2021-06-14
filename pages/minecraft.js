@@ -7,6 +7,10 @@ import Image from 'next/image'
 import { faMap, faCopy } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
+import ReactMarkdown from "react-markdown"
+import gfm from 'remark-gfm';
+import ja from '../docs/minecraft/ja.md'
+import en from '../docs/minecraft/en.md'
 
 export default function About(props) {
     const router = useRouter()
@@ -53,6 +57,13 @@ export default function About(props) {
               </a>
               </Link>
               </div>
+              
+              {lang === 'ja' ? (
+                <ReactMarkdown plugins={[gfm]} children={ja} />
+              ) : (
+                <ReactMarkdown plugins={[gfm]} children={en} />
+              )}
+
             </div>
             </Layout>
         )
