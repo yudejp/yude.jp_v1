@@ -14,6 +14,8 @@
 看板を画像のように貼り付けることで、チェストやドア、かまどなどを保護できます。\
 複数行に渡ってプレイヤー ID を書くことで、共有ブロックを作ることもできます。\
 ![Chest Protection](/static/images/minecraft/lockette/chest.png)
+## スキル
+mcMMO を導入しているので、プラグインによるスキルを利用できます。  
 
 # 施設紹介
 ## 神社 (by shirachan_1204)
