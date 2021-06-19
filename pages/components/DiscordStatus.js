@@ -12,21 +12,27 @@ const App = () => {
     };  
     fetchData();
   }, []);
-  const status = data.members && data.members[0].status;
+  const str = JSON.stringify(data)
+  const status = 0
+  if (str.indexOf("status") !== -1){
+    status = data.members && data.members[0].status;
+  }
   return (
   <>
   <div className="z-50 w-6 transform translate-y-3/4 -translate-x-full">
   {
     (() => {
+      if (status == 0) {
+        return <div className="text-gray-700 rounded-full bg-gray-500 flex w-6 h-6"></div>
+      }else{
       if (status == "online"){
         return <div className="text-green-700 rounded-full bg-green-500 flex w-6 h-6"></div>
       } else if (status == "idle"){
         return <div className="text-yellow-700 rounded-full bg-green-500 flex w-6 h-6"></div>
-      } else if (status == "dnd"){
-        return <div className="text-yellow-700 rounded-full bg-red-500 flex w-6 h-6"></div>
       } else {
-        return <div className="text-gray-700 rounded-full bg-red-500 flex w-6 h-6"></div>
-      }
+        return <div className="text-yellow-700 rounded-full bg-red-500 flex w-6 h-6"></div>
+      } 
+    }
     })()
   }
   </div>
