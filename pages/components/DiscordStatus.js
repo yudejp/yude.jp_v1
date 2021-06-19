@@ -13,7 +13,7 @@ const App = () => {
     fetchData();
   }, []);
   const str = JSON.stringify(data)
-  const status = 0
+  let status = 0
   if (str.indexOf("status") !== -1){
     status = data.members && data.members[0].status;
   }
