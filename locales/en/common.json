@@ -5,5 +5,6 @@
     "yes_playing": "Playing {{playing}}",
     "listening": "Listening to {{listening}}",
     "close": "Close",
-    "mutual": "Mutual links"
+    "mutual": "Mutual links",
+    "status": "Service status"
 }

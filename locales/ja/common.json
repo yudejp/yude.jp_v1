@@ -5,5 +5,6 @@
     "yes_playing": "{{playing}} をプレイ中",
     "listening": "{{listening}} を再生中",
     "close": "閉じる",
-    "mutual": "相互リンク"
+    "mutual": "相互リンク",
+    "status": "サービスの状態"
 }
