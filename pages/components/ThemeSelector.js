@@ -1,14 +1,13 @@
-import Head from "next/head"
-import Link from "next/link"
 import "tailwindcss/tailwind.css";
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import { useTheme } from "next-themes";
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Layout = (props) => {
+const ThemeSelector = (props) => {
   const { title, children } = props
-  const siteTitle = "yude.jp"
   const router = useRouter()
   const { locale, locales, defaultLocale, pathname } = router
   
@@ -25,11 +24,11 @@ const Layout = (props) => {
   return (
       <button className="my-4 text-2xl" onClick={switchTheme}>
         {theme === 'light' ? (
-          <span>🌙</span>
+          <FontAwesomeIcon icon={faMoon} className="w-10 h-8" />
         ) : (
-          <span>🌄</span>
+          <FontAwesomeIcon icon={faSun} className="w-10 h-8" />
         )}
       </button>
   )
 }
-export default Layout
+export default ThemeSelector
