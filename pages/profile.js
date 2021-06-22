@@ -28,7 +28,7 @@ export default function About(props) {
         <div>
           <div className="flex mb-10 justify-center">
           <Image
-            className   = "rounded-full hover:animate-rumble z-0"
+            className   = "rounded-full hover:animate-rumble z-0 p-15"
             src         = "/static/images/avatar.png"
             alt         = "yude's avatar"
             width       = {200}
