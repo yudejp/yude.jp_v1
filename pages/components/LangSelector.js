@@ -31,7 +31,7 @@ const Dropdown = ({ color }) => {
     <>
 
 <div className="text-left mr-2 ml-2 my-3 float-right">
-    <button type="button" className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="options-menu" aria-haspopup="true" aria-expanded="true"
+    <button type="button" className="inline-flex justify-center w-full rounded-md border border-gray-300 dark:border-gray-800 shadow-sm px-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white" id="options-menu" aria-haspopup="true" aria-expanded="true"
     style={{ transition: "all .15s ease" }}
     ref={btnDropdownRef}
     onClick={() => {
