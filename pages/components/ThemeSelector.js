@@ -22,7 +22,7 @@ const ThemeSelector = (props) => {
     }
   };
   return (
-      <button className="my-4 text-2xl" onClick={switchTheme}>
+      <button className="my-4 text-2xl focus:outline-none" onClick={switchTheme}>
         {theme === 'light' ? (
           <FontAwesomeIcon icon={faMoon} className="w-10 h-8" />
         ) : (
