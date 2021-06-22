@@ -13,9 +13,6 @@
       @apply list-disc mx-10
     }
    }
-   a {
-      @apply hover:underline
-   }
    .tooltip {
     @apply invisible absolute;
   }
