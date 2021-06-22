@@ -46,13 +46,13 @@ const Dropdown = ({ color }) => {
       </svg>
     </button>  
   <div ref={popoverDropdownRef} className={
-              (dropdownPopoverShow ? "block " : "hidden ") + "z-10 origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"}>
+              (dropdownPopoverShow ? "block " : "hidden ") + "z-10 origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 dark:bg-gray-700"}>
     <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
     <Link href="#" locale="ja">
-      <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">日本語</a>
+      <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-700 dark:text-white dark:hover:bg-gray-800" role="menuitem">日本語</a>
     </Link>
     <Link href="#" locale="en">
-      <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">English</a>
+      <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-700 dark:text-white dark:hover:bg-gray-800" role="menuitem">English</a>
     </Link>
     </div>
   </div>
