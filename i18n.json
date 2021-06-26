@@ -5,7 +5,7 @@
       "*": ["common"],
       "/": ["index", "minecraft", "common"],
       "/profile": ["profile", "common"],
-      "/status": ["status", "common"],
+      "/server": ["server", "common"],
       "/house": ["house", "common"],
       "/tos": ["tos", "common"],
       "/hcunews": ["hcunews", "common"],
