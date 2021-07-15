@@ -22,11 +22,11 @@ const ThemeSelector = (props) => {
   };
   return (
       <button className="inline-flex rounded-md border border-gray-300 dark:border-gray-800 shadow-sm px-2 bg-white font-medium text-gray-700 hover:bg-gray-50 dark:bg-gray-700 dark:text-white my-3 py-1 text-2xl focus:outline-none" onClick={switchTheme}>
-        {theme === 'light' ? (
+        {theme !== undefined && (theme === "light" ? (
           <FontAwesomeIcon icon={faMoon} className="w-10 h-7" />
         ) : (
           <FontAwesomeIcon icon={faSun} className="w-10 h-7" />
-        )}
+        ))}
       </button>
   )
 }
