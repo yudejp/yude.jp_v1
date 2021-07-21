@@ -142,7 +142,7 @@ export default function About(props) {
           <div className="hover:underline">
             <Link href="#">
             <a>
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 inline lg:w-12 lg:h-12 md:w-12 md:h-12 fill-current text-white" viewBox="0 0 700 700">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 inline lg:w-12 lg:h-12 md:w-12 md:h-12 fill-current text-black dark:text-white" viewBox="0 0 700 700">
             <g transform="translate(-100.000000,900.000000) scale(0.100000,-0.100000)" fill="#FFFFF">
             <path d="M2965 8314 c-481 -86 -868 -442 -990 -910 -44 -169 -47 -268 -42
             -1579 3 -1204 4 -1232 24 -1325 111 -501 467 -858 973 -976 66 -15 150 -18
