@@ -50,6 +50,26 @@ export default function Index(props) {
         </a></Link></div>
         <div><Link href="/mutual"><a><FontAwesomeIcon icon={faHeart} className="w-10 h-10 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" /></a></Link></div>
         </div>
+        <div className="mx-auto mt-10">
+          <Link href="https://www.eff.org/pages/blue-ribbon-campaign">
+            <a>
+              <Image
+                src="/static/images/brstrip.gif"
+                width={150}
+                height={41}
+              />
+            </a>
+          </Link>
+          <Link href="https://sites.google.com/site/happybusy/">
+            <a>
+              <Image
+                src="/static/images/busy_banner.png"
+                width={200}
+                height={42}
+              />
+            </a>
+          </Link>
+        </div>
       </div>
     </Layout>
   )
