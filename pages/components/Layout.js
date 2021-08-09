@@ -3,7 +3,7 @@ import "tailwindcss/tailwind.css";
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
-import Footer from "./Footer"
+import Footer from "./Footer/Footer"
 import Navbar from "./Navbar"
 
 const Layout = (props) => {
