@@ -34,16 +34,16 @@ export default function Index(props) {
         
         {/* Index menu */}
         <div className="grid grid-cols-4 gap-10">
-          <FontAwesomeMenu href="/profile" icon={['fas', 'user']} />
-          <FontAwesomeMenu href="/server" icon={['fas', 'server']} />
-          <FontAwesomeMenu href="/house" icon={['fas', 'house-user']} />
-          <FontAwesomeMenu href="https://scrapbox.io/yude" icon={['fas', 'book']} />
-          <FontAwesomeMenu href="https://discord.gg/X6srY7X" icon={['fab', 'discord']} />          
-          <FontAwesomeMenu href="https://github.com/yudejp" icon={['fab', 'github']} />
-          <FontAwesomeMenu href="https://git.yude.jp" icon={['fab', 'git']} />
-          <FontAwesomeMenu href="https://mstdn.yude.jp" icon={['fab', 'mastodon']} />
+          <FontAwesomeMenu dest="/profile" icon={['fas', 'user']} />
+          <FontAwesomeMenu dest="/server" icon={['fas', 'server']} />
+          <FontAwesomeMenu dest="/house" icon={['fas', 'house-user']} />
+          <FontAwesomeMenu dest="https://scrapbox.io/yude" icon={['fas', 'book']} />
+          <FontAwesomeMenu dest="https://discord.gg/X6srY7X" icon={['fab', 'discord']} />          
+          <FontAwesomeMenu dest="https://github.com/yudejp" icon={['fab', 'github']} />
+          <FontAwesomeMenu dest="https://git.yude.jp" icon={['fab', 'git']} />
+          <FontAwesomeMenu dest="https://mstdn.yude.jp" icon={['fab', 'mastodon']} />
           <MinecraftMenu />
-          <FontAwesomeMenu href="/mutual" icon="faHeart" />
+          <FontAwesomeMenu dest="/mutual" icon="faHeart" />
         </div>
         
         {/* Banner */}
