@@ -1,7 +1,7 @@
 // Load base layout
 import Layout from "./components/Layout"
 // Menu
-import FontAwesomeMenu from "./components/Menu/FontAwesomeMenu"
+import FAMenu from "./components/Menu/FAMenu"
 // Banner
 import BlueRibbon from "./components/Footer/BlueRibbon"
 import HappyBusy from "./components/Footer/HappyBusy"
@@ -38,16 +38,16 @@ export default function Index(props) {
         
         {/* Index menu */}
         <div className="grid grid-cols-4 gap-10">
-          <FontAwesomeMenu dest="/profile" icon={faUser} />
-          <FontAwesomeMenu dest="/server" icon={faServer} />
-          <FontAwesomeMenu dest="/house" icon={faHouseUser} />
-          <FontAwesomeMenu dest="https://scrapbox.io/yude" icon={faBook} />
-          <FontAwesomeMenu dest="https://discord.gg/X6srY7X" icon={faDiscord} />          
-          <FontAwesomeMenu dest="https://github.com/yudejp" icon={faGithub} />
-          <FontAwesomeMenu dest="https://git.yude.jp" icon={faGit} />
-          <FontAwesomeMenu dest="https://mstdn.yude.jp" icon={faMastodon} />
+          <FAMenu dest="/profile" icon={faUser} />
+          <FAMenu dest="/server" icon={faServer} />
+          <FAMenu dest="/house" icon={faHouseUser} />
+          <FAMenu dest="https://scrapbox.io/yude" icon={faBook} />
+          <FAMenu dest="https://discord.gg/X6srY7X" icon={faDiscord} />          
+          <FAMenu dest="https://github.com/yudejp" icon={faGithub} />
+          <FAMenu dest="https://git.yude.jp" icon={faGit} />
+          <FAMenu dest="https://mstdn.yude.jp" icon={faMastodon} />
           <MinecraftMenu />
-          <FontAwesomeMenu dest="/mutual" icon={faHeart} />
+          <FAMenu dest="/mutual" icon={faHeart} />
         </div>
         
         {/* Banner */}
