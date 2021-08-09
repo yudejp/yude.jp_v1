@@ -1,7 +1,7 @@
 // Load base layout
 import Layout from "./components/Layout"
 // Menu
-import FAMenu from "./components/Menu/FAMenu"
+import FAMenu from "./components/Menu/FontAwesomeMenu"
 // Banner
 import BlueRibbon from "./components/Footer/BlueRibbon"
 import HappyBusy from "./components/Footer/HappyBusy"
