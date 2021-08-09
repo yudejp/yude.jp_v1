@@ -1,6 +1,3 @@
-// i18n
-import useTranslation from 'next-translate/useTranslation'
-
 // Router
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
@@ -17,14 +14,8 @@ library.add(fab, fas)
 
 const FontAwesomeMenu = (props) => {
   const { icon, href } = props
-  const siteTitle = "yude.jp"
   const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router
 
-  const { t, lang } = useTranslation("common")
-  const footer = t('footer')
-  const source = t('source')
-  const tos = t('tos')
   return (
     <div>
         <Link href={href}>
