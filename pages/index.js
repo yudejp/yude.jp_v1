@@ -38,16 +38,16 @@ export default function Index(props) {
         
         {/* Index menu */}
         <div className="grid grid-cols-4 gap-10">
-          <FontAwesomeMenu icon={faUser} />
-          <FontAwesomeMenu icon={faServer} />
-          <FontAwesomeMenu icon={faHouseUser} />
-          <FontAwesomeMenu icon={faBook} />
-          <FontAwesomeMenu icon={faDiscord} />          
-          <FontAwesomeMenu icon={faGithub} />
-          <FontAwesomeMenu icon={faGit} />
-          <FontAwesomeMenu icon={faMastodon} />
+          <FontAwesomeMenu dest="/profile" icon={faUser} />
+          <FontAwesomeMenu dest="/server" icon={faServer} />
+          <FontAwesomeMenu dest="/house" icon={faHouseUser} />
+          <FontAwesomeMenu dest="https://scrapbox.io/yude" icon={faBook} />
+          <FontAwesomeMenu dest="https://discord.gg/X6srY7X" icon={faDiscord} />          
+          <FontAwesomeMenu dest="https://github.com/yudejp" icon={faGithub} />
+          <FontAwesomeMenu dest="https://git.yude.jp" icon={faGit} />
+          <FontAwesomeMenu dest="https://mstdn.yude.jp" icon={faMastodon} />
           <MinecraftMenu />
-          <FontAwesomeMenu icon={faHeart} />
+          <FontAwesomeMenu dest="/mutual" icon={faHeart} />
         </div>
         
         {/* Banner */}
