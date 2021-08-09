@@ -20,7 +20,7 @@ const Layout = (props) => {
     <div className="page">
       <Head>
         <title>{title ? `${title} - ${siteTitle}` : siteTitle}</title>
-        <link rel="icon" href="/static/images/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <main>
       <Navbar />

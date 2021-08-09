@@ -13,16 +13,16 @@
 ## ブロックの保護
 看板を画像のように貼り付けることで、チェストやドア、かまどなどを保護できます。\
 複数行に渡ってプレイヤー ID を書くことで、共有ブロックを作ることもできます。\
-![Chest Protection](/static/images/minecraft/lockette/chest.png)
+![Chest Protection](/images/minecraft/lockette/chest.png)
 ## スキル
 mcMMO を導入しているので、プラグインによるスキルを利用できます。  
 
 # 施設紹介
 ## 神社 (by shirachan_1204)
-![神社](/static/images/minecraft/shrine.png)
+![神社](/images/minecraft/shrine.png)
 ## アイアンゴーレムトラップ (by yude & kuwazi_)
-![アイアンゴーレムトラップ](/static/images/minecraft/golem_trap.png)
+![アイアンゴーレムトラップ](/images/minecraft/golem_trap.png)
 ## 巨大畑 (by yude & kuwazi_)
-![巨大畑](/static/images/minecraft/large_field.png)
+![巨大畑](/images/minecraft/large_field.png)
 ## 巨大サトウキビ畑 (by yude)
-![巨大サトウキビ畑](/static/images/minecraft/sugarcane.png)
+![巨大サトウキビ畑](/images/minecraft/sugarcane.png)

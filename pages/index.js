@@ -17,7 +17,7 @@ export default function Index(props) {
       <div className="my-9 text-center">
         <div className="m-10">
         <Image
-            src         = "/static/images/avatar.png"
+            src         = "/images/avatar.png"
             alt         = "yude's avatar"
             width       = {200}
             height      = {200}
@@ -53,7 +53,7 @@ export default function Index(props) {
           <Link href="https://www.eff.org/pages/blue-ribbon-campaign">
             <a>
               <Image
-                src="/static/images/brstrip.gif"
+                src="/images/brstrip.gif"
                 width={150}
                 height={41}
               />
@@ -62,7 +62,7 @@ export default function Index(props) {
           <Link href="https://sites.google.com/site/happybusy/">
             <a>
               <Image
-                src="/static/images/busy_banner.png"
+                src="/images/busy_banner.png"
                 width={200}
                 height={42}
               />

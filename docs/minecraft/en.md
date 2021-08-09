@@ -14,16 +14,16 @@ You can destroy wood logs and ore blocks at once by destroying with sneaking.\
 ## Block protection
 You can protect your chests, doors, furnaces, etc. by pasting sign like the image below.\
 You can also create a shared block by writing the player ID across multiple lines. \
-![Chest Protection](/static/images/minecraft/lockette/chest.png)
+![Chest Protection](/images/minecraft/lockette/chest.png)
 ## Skills
 You can use skills powered by mcMMO.
 
 # Facility introduction
 ## Shrine (by shirachan_1204)
-![Shrine](/static/images/minecraft/shrine.png)
+![Shrine](/images/minecraft/shrine.png)
 ## Iron Golem Trap (by yude & kuwazi_)
-![Iron Golem Trap](/static/images/minecraft/golem_trap.png)
+![Iron Golem Trap](/images/minecraft/golem_trap.png)
 ## Huge field (by yude & kuwazi_)
-![Huge field](/static/images/minecraft/large_field.png)
+![Huge field](/images/minecraft/large_field.png)
 ## Giant sugar cane field  (by yude)
-![Giant sugar cane field ](/static/images/minecraft/sugarcane.png)
+![Giant sugar cane field ](/images/minecraft/sugarcane.png)

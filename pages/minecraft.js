@@ -26,7 +26,7 @@ export default function About(props) {
                 <p className="my-2 text-3xl text-center">{t('title')}</p>
                 <div className="w-full">
                 <Image
-                    src         = "/static/images/dynmap.png"
+                    src         = "/images/dynmap.png"
                     alt         = "Dynmap Header"
                     unoptimized = {true}
                     width       = {1354}

@@ -40,7 +40,7 @@ export default function Modal() {
           <ul className="list-disc my-2">
           <li>
             <span className="font-bold">PGP&nbsp;</span>
-            <Link href="/static/yudejp.gpg">
+            <Link href="/yudejp.gpg">
               <a className="hover:underline">
                 <FontAwesomeIcon icon={faDownload} className="w-5 h-5 inline"/>&nbsp;
                 {download}
