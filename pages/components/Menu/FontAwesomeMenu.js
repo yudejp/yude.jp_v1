@@ -14,7 +14,6 @@ library.add(fab, fas)
 
 const FontAwesomeMenu = (props) => {
   const { icon, href } = props
-  const router = useRouter()
 
   return (
     <div>
