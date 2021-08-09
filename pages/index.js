@@ -13,6 +13,10 @@ import useTranslation from 'next-translate/useTranslation'
 // React Router
 import { useRouter } from 'next/router'
 import MinecraftMenu from "./components/Menu/MinecraftMenu"
+// Font Awesome
+import { faDiscord, faGit, faMastodon, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faBlog, faBook, faUser, faServer, faHouseUser, faHeart, faHome } from '@fortawesome/free-solid-svg-icons'
+
 
 export default function Index(props) {
   const router = useRouter()
@@ -34,16 +38,16 @@ export default function Index(props) {
         
         {/* Index menu */}
         <div className="grid grid-cols-4 gap-10">
-          <FontAwesomeMenu dest="/profile" icon={['fas', 'user']} />
-          <FontAwesomeMenu dest="/server" icon={['fas', 'server']} />
-          <FontAwesomeMenu dest="/house" icon={['fas', 'house-user']} />
-          <FontAwesomeMenu dest="https://scrapbox.io/yude" icon={['fas', 'book']} />
-          <FontAwesomeMenu dest="https://discord.gg/X6srY7X" icon={['fab', 'discord']} />          
-          <FontAwesomeMenu dest="https://github.com/yudejp" icon={['fab', 'github']} />
-          <FontAwesomeMenu dest="https://git.yude.jp" icon={['fab', 'git']} />
-          <FontAwesomeMenu dest="https://mstdn.yude.jp" icon={['fab', 'mastodon']} />
+          <FontAwesomeMenu dest="/profile" icon={faUser} />
+          <FontAwesomeMenu dest="/server" icon={faServer} />
+          <FontAwesomeMenu dest="/house" icon={faHouseUser} />
+          <FontAwesomeMenu dest="https://scrapbox.io/yude" icon={faBook} />
+          <FontAwesomeMenu dest="https://discord.gg/X6srY7X" icon={faDiscord} />          
+          <FontAwesomeMenu dest="https://github.com/yudejp" icon={faGithub} />
+          <FontAwesomeMenu dest="https://git.yude.jp" icon={faGit} />
+          <FontAwesomeMenu dest="https://mstdn.yude.jp" icon={faMastodon} />
           <MinecraftMenu />
-          <FontAwesomeMenu dest="/mutual" icon={['fas', 'heart']} />
+          <FontAwesomeMenu dest="/mutual" icon={faHeart} />
         </div>
         
         {/* Banner */}

@@ -1,16 +1,12 @@
-// Router
+// React Router
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 
 // Next.js
 import Link from 'next/link'
 
-// Load FontAwesome
+// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { fas } from '@fortawesome/free-solid-svg-icons'
-library.add(fab, fas)
 
 const FontAwesomeMenu = (props) => {
   const { icon, dest } = props
