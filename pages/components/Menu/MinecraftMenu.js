@@ -1,7 +1,7 @@
 // Next.js
 import Link from 'next/link'
 
-const MinecraftMenu = (props) => {
+const MinecraftMenu = () => {
   return (
     <div>
         <Link href="/minecraft">
