@@ -1,22 +1,27 @@
 // Load base layout
 import Layout from "./components/Layout"
+
 // Menu
 import FAMenu from "./components/Menu/FontAwesomeMenu"
+
 // Banner
 import BlueRibbon from "./components/Footer/BlueRibbon"
 import HappyBusy from "./components/Footer/HappyBusy"
+
 // Next.js
 import Link from 'next/link'
 import Image from 'next/image'
+
 // i18n
 import useTranslation from 'next-translate/useTranslation'
+
 // React Router
 import { useRouter } from 'next/router'
 import MinecraftMenu from "./components/Menu/MinecraftMenu"
+
 // Font Awesome
 import { faDiscord, faGit, faMastodon, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faBlog, faBook, faUser, faServer, faHouseUser, faHeart, faHome } from '@fortawesome/free-solid-svg-icons'
-
 
 export default function Index(props) {
   const router = useRouter()
