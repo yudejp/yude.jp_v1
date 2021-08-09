@@ -2,6 +2,9 @@
 import Layout from "./components/Layout"
 // Menu
 import FontAwesomeMenu from "./components/Menu/FontAwesomeMenu"
+// Banner
+import BlueRibbon from "./components/Footer/BlueRibbon"
+import HappyBusy from "./components/Footer/HappyBusy"
 // Next.js
 import Link from 'next/link'
 import Image from 'next/image'
@@ -43,26 +46,12 @@ export default function Index(props) {
           <FontAwesomeMenu href="/mutual" icon="faHeart" />
         </div>
         
+        {/* Banner */}
         <div className="mx-auto mt-10">
-          <Link href="https://www.eff.org/pages/blue-ribbon-campaign">
-            <a>
-              <Image
-                src="/images/brstrip.gif"
-                width={150}
-                height={41}
-              />
-            </a>
-          </Link>
-          <Link href="https://sites.google.com/site/happybusy/">
-            <a>
-              <Image
-                src="/images/busy_banner.png"
-                width={200}
-                height={42}
-              />
-            </a>
-          </Link>
+          <BlueRibbon />
+          <HappyBusy />
         </div>
+        
       </div>
     </Layout>
   )
