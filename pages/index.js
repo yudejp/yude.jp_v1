@@ -43,7 +43,7 @@ export default function Index(props) {
           <FontAwesomeMenu dest="https://git.yude.jp" icon={['fab', 'git']} />
           <FontAwesomeMenu dest="https://mstdn.yude.jp" icon={['fab', 'mastodon']} />
           <MinecraftMenu />
-          <FontAwesomeMenu dest="/mutual" icon="faHeart" />
+          <FontAwesomeMenu dest="/mutual" icon={['fas', 'heart']} />
         </div>
         
         {/* Banner */}
