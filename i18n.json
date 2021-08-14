@@ -9,6 +9,7 @@
       "/house": ["house", "common"],
       "/tos": ["tos", "common"],
       "/hcunews": ["hcunews", "common"],
-      "/minecraft": ["minecraft", "common"]
+      "/minecraft": ["minecraft", "common"],
+      "/404": ["404", "common"]
     }
   }
