@@ -25,6 +25,9 @@ import gfm from 'remark-gfm';
 import ja from '../docs/minecraft/ja.md'
 import en from '../docs/minecraft/en.md'
 
+// next-seo
+import { NextSeo } from 'next-seo';
+
 export default function About(props) {
     const router = useRouter()
     
@@ -38,6 +41,11 @@ export default function About(props) {
     };
 
     return (
+          <>
+            <NextSeo
+              title="yude.jp Minecraft マルチプレイ"
+              description="yude.jp 上に設置されている Minecraft: Java Edition のマルチプレイサーバーについて"
+            />
             <Layout title={t('title')}>
             
             <div>
@@ -87,5 +95,6 @@ export default function About(props) {
 
             </div>
             </Layout>
+          </>
         )
 }
