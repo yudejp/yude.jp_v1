@@ -29,7 +29,6 @@ export default function Index(props) {
 
   return (
     <>
-      <DefaultSeo {...SEO} />
       <Layout title={t('home')}>
         <div className="my-9 text-center">
           <div className="m-10">
