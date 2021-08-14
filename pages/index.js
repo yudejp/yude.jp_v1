@@ -28,39 +28,42 @@ export default function Index(props) {
   const { t, lang } = useTranslation("index")
 
   return (
-    <Layout title={t('home')}>
-      <div className="my-9 text-center">
-        <div className="m-10">
-        <Image
-            src         = "/images/avatar.png"
-            alt         = "yude's avatar"
-            width       = {200}
-            height      = {200}
-            unoptimized = {true}
-        />
+    <>
+      <DefaultSeo {...SEO} />
+      <Layout title={t('home')}>
+        <div className="my-9 text-center">
+          <div className="m-10">
+          <Image
+              src         = "/images/avatar.png"
+              alt         = "yude's avatar"
+              width       = {200}
+              height      = {200}
+              unoptimized = {true}
+          />
+          </div>
+          
+          {/* Index menu */}
+          <div className="grid grid-cols-4 gap-10">
+            <FAMenu dest="/profile" icon={faUser} />
+            <FAMenu dest="/server" icon={faServer} />
+            <FAMenu dest="/house" icon={faHouseUser} />
+            <FAMenu dest="https://scrapbox.io/yude" icon={faBook} />
+            <FAMenu dest="https://discord.gg/X6srY7X" icon={faDiscord} />          
+            <FAMenu dest="https://github.com/yudejp" icon={faGithub} />
+            <FAMenu dest="https://git.yude.jp" icon={faGit} />
+            <FAMenu dest="https://mstdn.yude.jp" icon={faMastodon} />
+            <MinecraftMenu />
+            <FAMenu dest="/mutual" icon={faHeart} />
+          </div>
+          
+          {/* Banner */}
+          <div className="mx-auto mt-10">
+            <BlueRibbon />
+            <HappyBusy />
+          </div>
+          
         </div>
-        
-        {/* Index menu */}
-        <div className="grid grid-cols-4 gap-10">
-          <FAMenu dest="/profile" icon={faUser} />
-          <FAMenu dest="/server" icon={faServer} />
-          <FAMenu dest="/house" icon={faHouseUser} />
-          <FAMenu dest="https://scrapbox.io/yude" icon={faBook} />
-          <FAMenu dest="https://discord.gg/X6srY7X" icon={faDiscord} />          
-          <FAMenu dest="https://github.com/yudejp" icon={faGithub} />
-          <FAMenu dest="https://git.yude.jp" icon={faGit} />
-          <FAMenu dest="https://mstdn.yude.jp" icon={faMastodon} />
-          <MinecraftMenu />
-          <FAMenu dest="/mutual" icon={faHeart} />
-        </div>
-        
-        {/* Banner */}
-        <div className="mx-auto mt-10">
-          <BlueRibbon />
-          <HappyBusy />
-        </div>
-        
-      </div>
-    </Layout>
+      </Layout>
+    </>
   )
 }
