@@ -20,7 +20,7 @@ import MinecraftMenu from "./components/Menu/MinecraftMenu"
 
 // Font Awesome
 import { faDiscord, faGit, faMastodon, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faBlog, faBook, faUser, faServer, faHouseUser, faHeart, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faBook, faUser, faServer, faHouseUser, faHeart } from '@fortawesome/free-solid-svg-icons'
 
 export default function Index(props) {
   const router = useRouter()
