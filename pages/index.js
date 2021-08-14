@@ -9,7 +9,6 @@ import BlueRibbon from "./components/Footer/BlueRibbon"
 import HappyBusy from "./components/Footer/HappyBusy"
 
 // Next.js
-import Link from 'next/link'
 import Image from 'next/image'
 
 // i18n
