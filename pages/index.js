@@ -10,6 +10,7 @@ import HappyBusy from "./components/Footer/HappyBusy"
 
 // Next.js
 import Image from 'next/image'
+import Link from 'next/link'
 
 // i18n
 import useTranslation from 'next-translate/useTranslation'
@@ -33,7 +34,7 @@ export default function Index(props) {
         <div className="my-9 text-center">
           <div className="m-10">
           <Image
-              src         = "/images/avatar.png"
+              src         = "/images/avatar_riru.png"
               alt         = "yude's avatar"
               width       = {200}
               height      = {200}
@@ -61,6 +62,8 @@ export default function Index(props) {
             <HappyBusy />
           </div>
           
+          {/* Avatar by */}
+          <p className="mt-3 text-sm font-bold text-gray-900 dark:text-gray-400">{t('common:icon_1')}<Link href="https://twitter.com/R_I_R_U_"><a className="hover:underline">梨留りる {t('common:icon_2')}</a></Link></p>
         </div>
       </Layout>
     </>
