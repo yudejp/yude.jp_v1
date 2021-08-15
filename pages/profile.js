@@ -49,7 +49,7 @@ export default function Profile(props) {
             <div className="flex mb-10 justify-center">
             <Image
               className   = "rounded-full hover:animate-rumble z-0 p-15"
-              src         = "/images/avatar.png"
+              src         = "/images/avatar_mel.png"
               alt         = "yude's avatar"
               width       = {200}
               height      = {200}
@@ -119,7 +119,7 @@ export default function Profile(props) {
           </div>
           
         </div>
-          <p className="mt-3 text-sm font-bold text-gray-900 dark:text-gray-400">{t('icon_1')}<Link href="https://twitter.com/xmnts"><a className="hover:underline">Minkasy {t('icon_2')}</a></Link></p>
+          <p className="mt-3 text-sm font-bold text-gray-900 dark:text-gray-400">{t('common:icon_1')}<Link href="https://twitter.com/xmnts"><a className="hover:underline">Minkasy {t('common:icon_2')}</a></Link></p>
         </div>
         
       </Layout>
