@@ -16,12 +16,6 @@ export default function Footer(props) {
                 <p className="text-sm font-bold mb-2">
                     {t('footer')} / <Link href="https://github.com/yudejp/yude.jp"><a className="hover:underline">{t('source')}</a></Link>
                 </p>
-                <p className="text-sm font-bold mb-2">
-                    <Link href="/tos"><a className="hover:underline">{t('tos')}</a></Link>
-                </p>
-                <p className="text-sm font-bold mb-2">
-                    <Link href="https://status.yude.jp"><a className="hover:underline">{t('status')}</a></Link>
-                </p>
             </div>
           </div>
         </div>
