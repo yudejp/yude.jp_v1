@@ -6,5 +6,7 @@
     "listening": "Listening to {{listening}}",
     "close": "Close",
     "mutual": "Mutual links",
-    "status": "Service Status"
+    "status": "Service Status",
+    "icon_1": "Icon: ",
+    "icon_2": ""
 }
