@@ -43,7 +43,7 @@ export default function Index(props) {
           </div>
           
           {/* Index menu */}
-          <div className="grid grid-cols-4 gap-10">
+          <div className="grid grid-cols-3 gap-10">
             <FAMenu dest="/profile" icon={faUser} />
             <FAMenu dest="/server" icon={faServer} />
             <FAMenu dest="/house" icon={faHouseUser} />
@@ -51,7 +51,6 @@ export default function Index(props) {
             <FAMenu dest="https://discord.gg/X6srY7X" icon={faDiscord} />          
             <FAMenu dest="https://github.com/yudejp" icon={faGithub} />
             <FAMenu dest="https://git.yude.jp" icon={faGit} />
-            <FAMenu dest="https://mstdn.yude.jp" icon={faMastodon} />
             <MinecraftMenu />
             <FAMenu dest="/mutual" icon={faHeart} />
           </div>
