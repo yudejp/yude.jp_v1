@@ -11,7 +11,7 @@ export default function About(props) {
     <Layout title={t('house')}>
       <div>
       <p className="my-2 text-3xl text-center">{t('house')}</p>
-      <iframe className="w-full h-96" src="https://mackerel.io/embed/public/embed/4mVIU29WCRVZgHUxQPzWsfXo953uxiAegbjDb83hTQ7szesCunwdpVkBIzhnLc9i?period=1d" frameborder="0" scrolling="no"></iframe>
+      <iframe className="w-full h-96" src="https://mackerel.io/embed/public/embed/4mVIU29WCRVZgHUxQPzWsfXo953uxiAegbjDb83hTQ7szesCunwdpVkBIzhnLc9i?period=1d" frameBorder="0" scrolling="no"></iframe>
       </div>
     </Layout>
   )
