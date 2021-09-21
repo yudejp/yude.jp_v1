@@ -1,0 +1,6 @@
+{
+    "redirects": [
+        { "source": "/wishlist", "destination": "https://www.amazon.jp/hz/wishlist/ls/8WTKCPWKOJ2N?ref_=wl_share" },
+        { "source": "/scrapbox", "destination": "https://scrapbox.io/yude" }
+    ]
+}
