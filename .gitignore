@@ -11,3 +11,5 @@ yarn-error.log
 .vimrc~
 ..vimrc.un~
 .env.local
+
+.vercel
