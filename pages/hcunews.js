@@ -1,15 +1,17 @@
+// Base layout
 import Layout from "./components/Layout"
+
+// React, i18n
 import useTranslation from 'next-translate/useTranslation'
-import { useRouter } from 'next/router'
 import React from "react"
 import ReactMarkdown from "react-markdown"
+
+// Markdown
 import gfm from 'remark-gfm';
 import ja from '../docs/hcunews/ja.md'
 import en from '../docs/hcunews/en.md'
 
-export default function Tos(props) {
-    const router = useRouter()
-    const { locale, locales, defaultLocale, pathname } = router
+export default function HcuNews() {
     const { t, lang } = useTranslation("hcunews")
 
     return(
