@@ -10,6 +10,7 @@ const happybusy = (props) => {
           src="/images/brstrip.gif"
           width={150}
           height={41}
+          alt="EFF Blue Ribbon Campaign"
         />
       </a>
     </Link>

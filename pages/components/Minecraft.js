@@ -54,7 +54,7 @@ export default function Minecraft(props) {
                 url.push('https://mc-heads.net/avatar/' + data.players.list[i])
               }
               for (var i in url){
-                list.push(<Image src={url[i]} key={i} className="inline" height="50" width="50" />)
+                list.push(<Image src={url[i]} key={i} className="inline" height="50" width="50" alt={i}/>)
               }
               return <div>{list}</div>
             }

@@ -10,6 +10,7 @@ const HappyBusy = (props) => {
             src="/images/busy_banner.png"
             width={200}
             height={42}
+            alt="時間のないサイト運営者リング"
           />
         </a>
     </Link>
