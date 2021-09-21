@@ -19,9 +19,13 @@ export default function HcuNews() {
         <div>
             <h1>{t('hcunews')}</h1>
             {lang === 'ja' ? (
-            <ReactMarkdown plugins={[gfm]} children={ja} />
+                <ReactMarkdown plugins={[gfm]}>
+                    {ja}
+                </ReactMarkdown>
             ) : (
-            <ReactMarkdown plugins={[gfm]} children={en} />
+                <ReactMarkdown plugins={[gfm]}>
+                    {en}
+                </ReactMarkdown>
             )}
         </div>
         </Layout>

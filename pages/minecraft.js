@@ -86,12 +86,15 @@ export default function About(props) {
               </div>
               
               {/* Load markdown contents */}
-              {lang === 'ja' ? (
-                <ReactMarkdown plugins={[gfm]} children={ja} />
-              ) : (
-                <ReactMarkdown plugins={[gfm]} children={en} />
-              )}
-
+                {lang === 'ja' ? (
+                  <ReactMarkdown plugins={[gfm]}>
+                      {ja}
+                  </ReactMarkdown>
+                ) : (
+                  <ReactMarkdown plugins={[gfm]}>
+                      {en}
+                  </ReactMarkdown>
+                )}
             </div>
             </Layout>
           </>

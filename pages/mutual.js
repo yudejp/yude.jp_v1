@@ -30,9 +30,13 @@ export default function Tos(props) {
             <Layout title={t('common:mutual')}>
               <div>
                 {lang === 'ja' ? (
-                  <ReactMarkdown plugins={[gfm]} children={ja} />
+                  <ReactMarkdown plugins={[gfm]}>
+                      {ja}
+                  </ReactMarkdown>
                 ) : (
-                  <ReactMarkdown plugins={[gfm]} children={en} />
+                  <ReactMarkdown plugins={[gfm]}>
+                      {en}
+                  </ReactMarkdown>
                 )}
               </div>
             </Layout>
