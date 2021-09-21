@@ -5,7 +5,7 @@ import Layout from "./components/Layout"
 import useTranslation from 'next-translate/useTranslation'
 
 // Font Awesome
-import { faDiscord, faTwitter, faGithub, faKeybase, faInstagram, faMastodon, faSteam } from '@fortawesome/free-brands-svg-icons'
+import { faDiscord, faTwitter, faGithub, faKeybase, faInstagram, faMastodon, faSteam, faAmazon } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faBirthdayCake, faMapPin, faSchool, faPhone, faInfo, faLink, faMobile } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -115,7 +115,8 @@ export default function Profile(props) {
           <WakaTime />
           <PublicKeys />
           <Button dest="https://scrapbox.io/yude/%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88" icon={faLink} caption={t('account')}/>
-          <Button dest="https://scrapbox.io/yude/%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9" icon={faMobile} caption={t('device')}/>        
+          <Button dest="https://scrapbox.io/yude/%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9" icon={faMobile} caption={t('device')}/>
+          <Button dest="https://www.amazon.jp/hz/wishlist/ls/8WTKCPWKOJ2N?ref_=wl_share" icon={faAmazon} caption={t('wishlist')}/>
           </div>
           
         </div>
