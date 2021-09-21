@@ -15,4 +15,18 @@ module.exports = nextTranslate({
       })
       return config
     },
+    async redirects() {
+      return [
+        {
+          source: '/wishlist',
+          destination: 'https://www.amazon.jp/hz/wishlist/ls/8WTKCPWKOJ2N?ref_=wl_share',
+          permanent: true,
+        },
+        {
+          source: '/scrapbox',
+          destination: 'https://scrapbox.io/yude',
+          permanent: true,
+        }
+      ]
+    },
   })
