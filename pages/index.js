@@ -1,4 +1,4 @@
-// Load base layout
+// Base layout
 import Layout from "./components/Layout"
 
 // Menu
