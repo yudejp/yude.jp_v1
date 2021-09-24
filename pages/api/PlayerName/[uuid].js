@@ -7,7 +7,7 @@ export const getName = async (props) => {
   return fetch('https://api.ashcon.app/mojang/v2/user/' + uuid);
 };
 
-const Spotify = async (req, res) => {
+const RawPlayerName = async (req, res) => {
     const { uuid } = req.query
     const response = await getName(uuid);
     const data = await response.json();
@@ -20,4 +20,4 @@ const Spotify = async (req, res) => {
     });
 };
 
-export default Spotify
+export default RawPlayerName
