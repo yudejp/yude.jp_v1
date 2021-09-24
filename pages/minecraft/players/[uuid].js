@@ -8,9 +8,9 @@ import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
 
 // Data fetching
-import UUIDCheck from '../../components/Minecraft/UUIDCheck'
+import Players from '../../components/Minecraft/Players'
 
-export default function Players() {
+export default function UUID() {
   const router = useRouter()
   const { locale, locales, defaultLocale, pathname } = router
   const { t, lang } = useTranslation("index")
@@ -19,7 +19,7 @@ export default function Players() {
   return (
     <>
       <Layout title={t('home')}>
-      <UUIDCheck uuid={uuid} />
+      <Players uuid={uuid} />
       </Layout>
     </>
   )
