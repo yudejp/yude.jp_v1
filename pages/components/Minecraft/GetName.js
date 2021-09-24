@@ -4,7 +4,6 @@ import axios from 'axios';
 function App (props) {
   const uuid = props;
   const [data, setData] = useState({ hits: [] });
-//   const uuid_nohyphen = uuid.uuid.toString().replace(/-/g, "");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,8 +20,6 @@ function App (props) {
   }else {
         return <span>{data.username}</span>
     };
-    
-    // return <p>{uuid_nohyphen}</p>
 }
 
 export default App;
