@@ -19,7 +19,7 @@ module.exports = nextTranslate({
       defaultLocale: 'ja',
     },
     images: {
-      domains: ['mackerel.io', 'mc-heads.net'],
+      domains: ['mackerel.io', 'mc-heads.net', 'crafatar.com'],
     },
     webpack: function (config) {
       config.module.rules.push({
