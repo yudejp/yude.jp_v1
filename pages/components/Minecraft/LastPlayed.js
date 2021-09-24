@@ -52,6 +52,9 @@ function App (props) {
         if (data.toString() == "[object Object]") {
             return <p>取得中です...</p>
         } else {
+            if (data.toString() == "not_found") {
+                return <></>
+            } else {
             let dateTime = new Date(parseInt(data.toString()) * 1000);
             return (
                 <div className='has-tooltip'>
@@ -59,6 +62,7 @@ function App (props) {
                     最終ログイン: {timeAgo(dateTime)}
                 </div>
             )
+        }
         }
     };
 }
