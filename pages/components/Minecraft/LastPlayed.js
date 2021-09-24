@@ -54,8 +54,8 @@ function App (props) {
         } else {
             let dateTime = new Date(parseInt(data.toString()) * 1000);
             return (
-                <div class='has-tooltip'>
-                    <span class='tooltip rounded shadow-lg p-1 bg-gray-100 text-red-500 -mt-8'>{dateTime.toLocaleDateString() + " " + dateTime.toLocaleTimeString()}</span>
+                <div className='has-tooltip'>
+                    <span className='tooltip rounded shadow-lg p-1 bg-gray-100 text-red-500 -mt-8'>{dateTime.toLocaleDateString() + " " + dateTime.toLocaleTimeString()}</span>
                     最終ログイン: {timeAgo(dateTime)}
                 </div>
             )
