@@ -1,6 +1,6 @@
 import Online from './Online'
 import Head from './Head'
-import GetName from './GetName'
+import PlayerNameHolder from './PlayerNameHolder'
 
 function App (props) {
   const uuid = props;
@@ -12,7 +12,7 @@ function App (props) {
         </div>
         <div className="w-5"></div>
         <div>
-          <p className="text-2xl text-mono"><GetName uuid={uuid.uuid} /></p>
+          <p className="text-2xl text-mono"><PlayerNameHolder uuid={uuid.uuid} /></p>
           <p><Online uuid={uuid.uuid} /></p>
         </div>
     </div>
