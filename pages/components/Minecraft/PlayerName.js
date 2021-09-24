@@ -26,7 +26,7 @@ function App (props) {
           return <>404</>
         } else {
         return (
-          <>{data.username.toString()}</>
+          <>{data.username}</>
         )
         }
     };
