@@ -27,7 +27,7 @@ function App (){
   const yes_playing = t('yes_playing', {playing: data.members[0].game.name})
   return <p>{yes_playing}</p>
   }else{
-  return <p></p>
+  return <></>
   }
 }
 };

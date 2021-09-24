@@ -25,7 +25,7 @@ function App () {
    const status = data.artist + ' / ' + data.title
    return <p>{t('listening', {listening: status})}</p>
   }else{
-   return <p></p>
+   return <></>
   }
 };
 }

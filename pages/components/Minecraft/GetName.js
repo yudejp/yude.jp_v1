@@ -16,9 +16,9 @@ function App (props) {
   }, []);
   if (data === undefined){
         console.log("[Minecraft: UUID to player's name] データの取得に失敗しました。 / Failed to retrieve data.")
-        return <span></span>
+        return <></>
   }else {
-        return <span>{data.username}</span>
+        return <>{data.username}</>
     };
 }
 
