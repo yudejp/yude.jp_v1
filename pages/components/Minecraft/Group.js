@@ -24,7 +24,7 @@ function App (props) {
     return <p></p>
   }else {
         if (data.toString() == "staff") {
-            return <span class="inline-flex items-center justify-center px-3 py-2 text-base font-bold leading-none text-indigo-100 bg-indigo-700 rounded ml-3">Staff</span>
+            return <span className="inline-flex items-center justify-center px-3 py-2 text-base font-bold leading-none text-indigo-100 bg-indigo-700 rounded ml-3">Staff</span>
         } else {
             return <></>
         }
