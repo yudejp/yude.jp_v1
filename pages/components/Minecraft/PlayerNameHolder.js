@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Group from './Group';
 
 function App (props) {
   const uuid = props;
@@ -28,7 +29,8 @@ function App (props) {
         return (
           <div className='has-tooltip'>
             <span className='tooltip rounded shadow-lg p-1 bg-gray-100 text-red-500 -mt-8 font-mono text-sm'>UUID: {uuid.uuid}</span>
-            <p className="text-2xl">{data.username}</p>
+            <p className="text-2xl inline">{data.username}</p>
+            <Group uuid={uuid.uuid} />
           </div>
         )
         }
