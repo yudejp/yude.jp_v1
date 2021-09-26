@@ -1,4 +1,4 @@
-// Base layout
+ // Base layout
 import Layout from "../../components/Layout"
 
 // React
@@ -15,10 +15,9 @@ export default function UUID() {
   const router = useRouter()
   const { uuid } = router.query
   const { data, error } = useSwr(
-    router.query.id ? `/api/user/${router.query.id}` : null,
+    uuid ? `/api/PlayerName/${uuid}` : null,
     fetcher
   )
-  
   if (error) {
     return (
       <>
@@ -27,23 +26,23 @@ export default function UUID() {
         </Layout>
       </>
     )
+  } else {
+    if (!data) {
+      return (
+        <>
+          <Layout title="読み込み中... - プレイヤー情報">
+          <Players uuid={uuid} />
+          </Layout>
+        </>
+      )
+    } else {
+        return (
+          <>
+            <Layout title={data.username + " - " + "プレイヤー情報"}>
+            <Players uuid={uuid} />
+            </Layout>
+          </>
+        )
+    }
   }
-  
-  if (!data) {
-    return (
-      <>
-        <Layout title="読み込み中... - プレイヤー情報">
-        <Players uuid={uuid} />
-        </Layout>
-      </>
-    )
-  }
-  
-  return (
-    <>
-      <Layout title={<PlayerName uuid={uuid.uuid} /> + " - " + "プレイヤー情報"}>
-      <Players uuid={uuid} />
-      </Layout>
-    </>
-  )
 }
