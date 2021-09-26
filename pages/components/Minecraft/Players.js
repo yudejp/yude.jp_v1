@@ -1,3 +1,4 @@
+// Components
 import Online from './Online'
 import Head from './Head'
 import PlayerNameHolder from './PlayerNameHolder'

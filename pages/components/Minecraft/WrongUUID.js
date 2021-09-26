@@ -1,7 +1,7 @@
 function App (props) {
     return (
-        <div>
-            <h1>入力された UUID は正しくありません。</h1>
+        <div className="text-center">
+            <h2>入力された UUID に該当するプレイヤーが見つかりませんでした。</h2>
         </div>
     )
   }

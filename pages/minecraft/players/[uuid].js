@@ -6,10 +6,11 @@ import { useRouter } from 'next/router'
 
 // Data fetching
 import Players from '../../components/Minecraft/Players'
-import PlayerName from '../../components/Minecraft/PlayerName'
 import useSwr from 'swr'
-
 const fetcher = (url) => fetch(url).then((res) => res.json())
+
+// Components
+import WrongUUID from '../../components/Minecraft/WrongUUID'
 
 export default function UUID() {
   const router = useRouter()
@@ -36,13 +37,23 @@ export default function UUID() {
         </>
       )
     } else {
+      if (!data.username) {
         return (
           <>
-            <Layout title={data.username + " - " + "プレイヤー情報"}>
-            <Players uuid={uuid} />
+            <Layout title="404 - プレイヤー情報">
+              <WrongUUID />
             </Layout>
           </>
         )
+      } else {
+        return (
+          <>
+            <Layout title={data.username + " - " + "プレイヤー情報"}>
+              <Players uuid={uuid} />
+            </Layout>
+          </>
+        )
+      }
     }
   }
 }
