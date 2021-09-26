@@ -34,8 +34,6 @@ export default function UUID() {
     fetchData();
   }, []);
   
-  console.log(data);
-  
   if (data.username === undefined) {
     return (
       <>
