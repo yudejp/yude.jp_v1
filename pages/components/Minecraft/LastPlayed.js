@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import useTranslation from 'next-translate/useTranslation'
-import { useRouter } from 'next/router'
 
 function App (props) {
   const uuid = props;
-  const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router
-  const { t, lang } = useTranslation("common")  
   const [data, setData] = useState({ hits: [] });
   
   const timeAgo = (prevDate) => {

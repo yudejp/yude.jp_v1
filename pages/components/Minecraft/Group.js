@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
 
 function App (props) {
   const uuid = props;
-  const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router
-  const { t, lang } = useTranslation("common")  
   const [data, setData] = useState({ hits: [] });
 
   useEffect(() => {
@@ -19,8 +15,8 @@ function App (props) {
     };  
     fetchData();
   }, []);
-  if (data === undefined){
-    console.log("[Minecraft: PlayersBio] データの取得に失敗しました。 / Failed to retrieve data.")
+  
+  if (data === undefined || data === null){
     return <p></p>
   }else {
         if (data.toString() == "staff") {

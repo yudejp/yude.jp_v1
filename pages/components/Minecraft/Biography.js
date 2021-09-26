@@ -1,14 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import useTranslation from 'next-translate/useTranslation'
-import { useRouter } from 'next/router'
-import LastPlayed from './LastPlayed'
 
 function App (props) {
   const uuid = props;
-  const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router
-  const { t, lang } = useTranslation("common")  
   const [data, setData] = useState({ hits: [] });
 
   useEffect(() => {
@@ -24,11 +18,15 @@ function App (props) {
     console.log("[Minecraft: PlayersBio] データの取得に失敗しました。 / Failed to retrieve data.")
     return <p></p>
   }else {
+      if (data.toString() == "[object Object]"){
+        return <p>読み込み中...</p>
+      } else {
         if (data.toString() == "") {
             return <p>ひとことは設定されていません...</p>
         } else {
             return <p>ひとこと: <span className="italic">{data.toString()}</span></p>
         }
+      }
     };
 }
 

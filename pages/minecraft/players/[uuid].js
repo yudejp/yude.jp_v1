@@ -1,54 +1,49 @@
 // Base layout
 import Layout from "../../components/Layout"
 
-// i18n
-import useTranslation from 'next-translate/useTranslation'
-
 // React
-import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router'
 
 // Data fetching
-import axios from 'axios';
 import Players from '../../components/Minecraft/Players'
 import PlayerName from '../../components/Minecraft/PlayerName'
+import useSwr from 'swr'
+
+const fetcher = (url) => fetch(url).then((res) => res.json())
 
 export default function UUID() {
   const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router
-  const { t, lang } = useTranslation("index")
   const { uuid } = router.query
+  const { data, error } = useSwr(
+    router.query.id ? `/api/user/${router.query.id}` : null,
+    fetcher
+  )
   
-  const [data, setData] = useState({ hits: [] });
-  
-  let playerName = null;
-  
-  useEffect(() => {
-    const fetchData = async () => {
-      const result = await axios(
-        '/api/PlayerName/' + uuid,
-      );
-      setData(result.data);
-      
-    };  
-    fetchData();
-  }, []);
-  
-  if (data.username === undefined) {
+  if (error) {
     return (
       <>
-        <Layout title="404 - プレイヤー情報">
+        <Layout title="エラー - プレイヤー情報">
+        <p className="text-2xl">エラーが発生しました。</p>
+        </Layout>
+      </>
+    )
+  }
+  
+  if (!data) {
+    return (
+      <>
+        <Layout title="読み込み中... - プレイヤー情報">
         <Players uuid={uuid} />
         </Layout>
       </>
     )
-  } else {
+  }
+  
   return (
     <>
-      <Layout title={data.username + " - " + "プレイヤー情報"}>
+      <Layout title={<PlayerName uuid={uuid.uuid} /> + " - " + "プレイヤー情報"}>
       <Players uuid={uuid} />
       </Layout>
     </>
   )
-  }
 }
