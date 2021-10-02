@@ -10,7 +10,7 @@ const today = format(new Date(), 'yyyy-MM-dd')
 export const getName = async (props) => {
   const uuid = props;
   return fetch(
-        'https://api.fitbit.com/1/user/-/activities/heart/date/today/1d/1sec.json',
+        'https://api.fitbit.com/1/user/-/activities/heart/date/today/1d/1sec/time/00:00/23:59.json',
         {
             headers: {
                 Authorization: `Bearer ${bearer}`,
@@ -26,14 +26,16 @@ const FitbitHeartrate = async (req, res) => {
     if (response.status === 204 || response.status > 400) {
       return res.status(200).send("404");
     }
-    const heartrate = data["activities-heart"].map((item, i) => {
-            if (item.dateTime = today) {
-                return item.value.restingHeartRate
-            } else {
-                return "Failed to retrieve data."
-            }
-        }
-    )
+    // const heartrate = data.map((item, i) => {
+    //         if (item.dateTime = today) {
+    //             return item
+    //         } else {
+    //             return "Failed to retrieve data."
+    //         }
+    //     }
+    // )
+    const array = data["activities-heart-intraday"].dataset
+    const heartrate = array[array.length - 1]
     return res.status(200).json({
       heartrate,
     });

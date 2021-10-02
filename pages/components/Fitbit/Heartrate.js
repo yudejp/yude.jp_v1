@@ -26,7 +26,9 @@ function App (props) {
     } else {
         return (
             <>
-                <FontAwesomeIcon icon={faHeartbeat} className="w-5 h-5 inline ml-3"/> {data.heartrate}
+                <FontAwesomeIcon icon={faHeartbeat} className="w-5 h-5 inline ml-3"/>
+                &nbsp;
+                {data.heartrate.value}
             </>
         )
     }

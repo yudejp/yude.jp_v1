@@ -32,7 +32,9 @@ function App (props) {
         }
         return (
             <>
-                <FontAwesomeIcon icon={faBed} className="w-5 h-5 inline"/> {hours}:{minutes}
+                <FontAwesomeIcon icon={faBed} className="w-5 h-5 inline"/>
+                &nbsp;
+                {hours}:{minutes}
             </>
         )
     }
