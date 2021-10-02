@@ -25,6 +25,8 @@ import PublicKeys from './components/Profile/PublicKeys'
 import Button from './components/Profile/Button'
 import Contact from './components/Profile/Contact'
 import NintendoSW from "./components/Profile/NintendoSW"
+import FitbitSleep from "./components/Fitbit/Sleep"
+import FitbitHeartrate from "./components/Fitbit/Heartrate"
 
 // next-seo
 import { NextSeo } from 'next-seo';
@@ -61,6 +63,8 @@ export default function Profile(props) {
             <div>
             <DiscordPlaying />
             <Spotify />
+            <FitbitSleep />
+            <FitbitHeartrate />
             </div>
           </div>
           
