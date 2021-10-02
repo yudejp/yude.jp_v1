@@ -26,14 +26,6 @@ const FitbitSleep = async (req, res) => {
     if (response.status === 204 || response.status > 400) {
       return res.status(200).send("404");
     }
-    // const duration = data["sleep"].map((item, i) => {
-    //         if (item.dateOfSleep = today) {
-    //             return item.duration
-    //         } else {
-    //             return "Failed to retrieve data."
-    //         }
-    //     }
-    // )
     const duration = data.summary.totalMinutesAsleep
     return res.status(200).json({
       duration,
