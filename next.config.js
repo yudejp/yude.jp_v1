@@ -7,8 +7,8 @@ const rewrites = async () => {
       destination: '/minecraft/players/:uuid'
     },
     {
-      source: '/minecraft/players/:uuid',
-      destination: '/404'
+      source: '/minecraft/players/:ign',
+      destination: '/minecraft/lookup/:ign'
     }
   ]
 }
