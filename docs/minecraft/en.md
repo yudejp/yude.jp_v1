@@ -4,7 +4,7 @@ The following applies in addition to [yude.jp Terms of Service](https://yude.jp/
 * Don't troll.
 * Don't cheat.
 
-# List of available commands
+# Part of the list of available commands ()
 * `/ll`: Switch the visibility of spawn checker.
 * `/mvspawn`: Teleport to spawn point of the world you're in.
 
@@ -17,6 +17,12 @@ You can also create a shared block by writing the player ID across multiple line
 ![Chest Protection](/images/minecraft/lockette/chest.png)
 ## Skills
 You can use skills powered by mcMMO.
+## Warp
+You can warp to registered points.
+To show registered points, run `/warps`. To warp, run `/warp <name>`.
+
+# Game specifications
+* `keepInventory` is `true`, which means you won't drop inventory on death.
 
 # Facility introduction
 ## Shrine (by shirachan_1204)
