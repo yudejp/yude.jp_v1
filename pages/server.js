@@ -44,30 +44,6 @@ export default function Server(props) {
           <iframe className="w-full h-96" src="https://mackerel.io/embed/public/embed/heHnGhDanoIDlf7jjxUe9yPVrsG3deeH5ptD8suErrq5w46crWEIYdLfzLoukzfF?period=24h" height="400" frameBorder="0" scrolling="no"></iframe>
           
           {
-              // saika
-          }
-          <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">saika</h2>
-          <div className="flex xl:w-2/3 text-center">
-          <div className="flex-1"><p className="font-bold">CPU </p>i5-6500</div>
-          <div className="flex-1"><p className="font-bold">RAM </p>DDR4 8GB</div>
-          <div className="flex-1"><p className="font-bold">OS </p>Ubuntu Server 20.04.3 LTS</div>
-          <div className="flex-1"><p className="font-bold">{t('location')} </p>{t('hiroshima')}</div>
-          </div>
-          <iframe className="w-full h-96" src="https://mackerel.io/embed/public/embed/QCRK3wZxG7ufgunJ5iuIs9cIEJ490swAmlYMF50nNLmJw6gASXyVlzhrybiE2A1G?period=24h" height="400" frameBorder="0" scrolling="no"></iframe>
-          
-          {
-              // yukino
-          }
-          <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">yukino</h2>
-          <div className="flex xl:w-2/3 text-center">
-          <div className="flex-1"><p className="font-bold">{t('model')} </p>Raspberry Pi 4 Model B Rev 1.2</div>
-          <div className="flex-1"><p className="font-bold">RAM </p>4GB</div>
-          <div className="flex-1"><p className="font-bold">OS </p>Raspbian GNU/Linux 10 (buster)</div>
-          <div className="flex-1"><p className="font-bold">{t('location')} </p>{t('tottori')}</div>
-          </div>
-          <iframe className="w-full h-96" src="https://mackerel.io/embed/public/embed/5HVbQiwuxrMithyrGjmmQCCOVgJ6Ptf94SDA2qWSTsh2rtz7pjePihYzaW5QEml4?period=24h" height="400" frameBorder="0" scrolling="no"></iframe>
-          
-          {
               // iroha
           }
           <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">iroha</h2>
