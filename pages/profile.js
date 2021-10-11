@@ -63,8 +63,8 @@ export default function Profile(props) {
             <div>
             <DiscordPlaying />
             <Spotify />
-            <FitbitSleep />
-            <FitbitHeartrate />
+            {/* <FitbitSleep />
+            <FitbitHeartrate /> */}
             </div>
           </div>
           
