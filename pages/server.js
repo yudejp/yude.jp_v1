@@ -34,7 +34,7 @@ export default function Server(props) {
           {
               // sandy
           }
-          <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">yui</h2>
+          <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">sandy</h2>
           <div className="flex xl:w-2/3 text-center">
           <div className="flex-1"><p className="font-bold">CPU </p>i7-2600</div>
           <div className="flex-1"><p className="font-bold">RAM </p>DDR3 24GB</div>
