@@ -8,7 +8,7 @@ Built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss
 ## Development
 ### Setup
 1. Run `yarn`.
-1. Rename `.env.local.sample` as `.env.local` and set value. 
+1. Copy `.env.local.sample` as `.env.local` and set value. 
 ### Preview
 * Run `yarn dev`.
 
