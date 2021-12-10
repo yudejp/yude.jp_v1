@@ -11,7 +11,7 @@ function App () {
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
-        '/api/Spotify',
+        'https://vercel-spotify-api.vercel.app/api/Spotify',
       );
       setData(result.data);
     };  
