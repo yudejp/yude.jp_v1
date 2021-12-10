@@ -16,7 +16,7 @@ export default function UUID() {
   const router = useRouter()
   const { uuid } = router.query
   const { data, error } = useSwr(
-    uuid ? `/api/PlayerName/${uuid}` : null,
+    uuid ? `https://api.ashcon.app/mojang/v2/user/${uuid}` : null,
     fetcher
   )
   if (error) {

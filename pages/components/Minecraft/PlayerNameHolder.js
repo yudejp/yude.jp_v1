@@ -9,7 +9,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json())
 function App (props) {
   const uuid = props;
   const { data, error } = useSwr(
-    uuid.uuid ? `/api/PlayerName/${uuid.uuid}` : null,
+    uuid.uuid ? `https://api.ashcon.app/mojang/v2/user/${uuid.uuid}` : null,
     fetcher
   )
   

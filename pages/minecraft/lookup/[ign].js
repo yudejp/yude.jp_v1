@@ -5,7 +5,6 @@
  import { useRouter } from 'next/router'
  
  // Data fetching
- import Players from '../../components/Minecraft/Players'
  import useSwr from 'swr'
  const fetcher = (url) => fetch(url).then((res) => res.json())
  
