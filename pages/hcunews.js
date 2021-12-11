@@ -3,8 +3,6 @@ import Layout from "./components/Layout"
 
 // i18n
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-const { t } = useTranslation();
-const [query] = useLanguageQuery();
 
 // React
 import React from "react"
@@ -16,7 +14,8 @@ import ja from '../docs/hcunews/ja.md'
 import en from '../docs/hcunews/en.md'
 
 export default function HcuNews() {
-    const { t, lang } = useTranslation("hcunews")
+    const { t } = useTranslation();
+const [query] = useLanguageQuery();
 
     return(
         <Layout title={t('hcunews')}>

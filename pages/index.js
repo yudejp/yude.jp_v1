@@ -13,7 +13,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 // i18n
-import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
+import { useTranslation, useLanguageQuery } from 'next-export-i18n';
 
 // React Router
 import { useRouter } from 'next/router'
@@ -26,6 +26,7 @@ import { faBook, faUser, faServer, faHouseUser, faHeart } from '@fortawesome/fre
 export default function Index(props) {
   const { t } = useTranslation();
   const [query] = useLanguageQuery();
+  
   return (
     <>
       <Layout title={t('home')}>
@@ -60,7 +61,7 @@ export default function Index(props) {
           </div>
           
           {/* Avatar by */}
-          <p className="mt-3 text-sm font-bold text-gray-900 dark:text-gray-400">{t('common:icon_1')}<Link href="https://twitter.com/R_I_R_U_"><a className="hover:underline">梨留りる {t('common:icon_2')}</a></Link></p>
+          <p className="mt-3 text-sm font-bold text-gray-900 dark:text-gray-400">{t('icon_1')}<Link href="https://twitter.com/R_I_R_U_"><a className="hover:underline">梨留りる {t('icon_2')}</a></Link></p>
         </div>
       </Layout>
     </>

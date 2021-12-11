@@ -1,9 +1,15 @@
+// Tailwind CSS
 import "tailwindcss/tailwind.css";
+
+// Next.js
 import Link from 'next/link';
+
 // i18n
-import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
+import { useTranslation, useLanguageQuery } from 'next-export-i18n';
 
 export default function Footer(props) {
+  const { t } = useTranslation();
+  const [query] = useLanguageQuery();
     return (
       <>
         <div className="container mx-auto px-6">
