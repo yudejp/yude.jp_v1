@@ -18,7 +18,7 @@ const Navbar = () => {
     return (
       <>
         <nav className='flex items-center flex-wrap p-3'>
-        <Link href='/'>
+        <Link href={{ pathname: '/', query: query }}>
           <a className='inline-flex items-center p-2'>
             <span className='text-xl text-black font-bold tracking-wide dark:text-white font-mono animate-heartbeat'>
               yude.jp
@@ -27,8 +27,7 @@ const Navbar = () => {
         </Link>
             <div className="absolute right-0">
                 <ThemeSelector />
-                {/* <LangSelector /> */}
-                <LanguageSwitcher lang="ja" />
+                <LangSelector />
             </div>
       </nav>
       </>

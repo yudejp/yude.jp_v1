@@ -1,18 +1,20 @@
+// React
 import React, { useState, useEffect } from 'react';
-import useTranslation from 'next-translate/useTranslation'
+
+// i18n
+import { useTranslation, useLanguageQuery } from 'next-export-i18n';
+
+// Font Awesome
 import { faKey, faEye, faDownload } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useRouter } from 'next/router'
+
+// Next.js
 import Link from 'next/link'
 
 export default function Modal() {
   const [showModal, setShowModal] = React.useState(false);
-  const router = useRouter()
-  const close = t('common:close')
-  const keys = t('profile:keys')
-  const view = t('profile:view')
-  const fingerprint = t('profile:fingerprint')
-  const download = t('profile:download')
+  const { t } = useTranslation();
+  const [query] = useLanguageQuery();
 
   return (
     <>
@@ -21,7 +23,7 @@ export default function Modal() {
         type="button"
         onClick={() => setShowModal(true)}
       >
-        <FontAwesomeIcon icon={faKey} className="w-5 h-5 inline"/> {keys}
+        <FontAwesomeIcon icon={faKey} className="w-5 h-5 inline"/> {t('keys')}
       </button>
       {showModal ? (
         <>
@@ -34,17 +36,17 @@ export default function Modal() {
                 {/* Modal body */}
                 <div className="relative p-2 flex-auto text-black text-left">
                 
-                <p className="text-2xl"><FontAwesomeIcon icon={faKey} className="w-5 h-5 inline"/> {keys}</p>
+                <p className="text-2xl"><FontAwesomeIcon icon={faKey} className="w-5 h-5 inline"/> {t('keys')}</p>
           <ul className="list-disc my-2">
           <li>
             <span className="font-bold">PGP&nbsp;</span>
             <Link href="/yudejp.gpg">
               <a className="hover:underline">
                 <FontAwesomeIcon icon={faDownload} className="w-5 h-5 inline"/>&nbsp;
-                {download}
+                {t('download')}
               </a>
             </Link>
-            <p>{fingerprint}:</p>
+            <p>{t('fingerprint')}:</p>
             <div className="overflow-x-auto">
               <div className="whitespace-nowrap">
                 <code>3745 F270 DB4E 8975 6B07  62BE EB0F E5D9 25C4 A968</code>
@@ -56,10 +58,10 @@ export default function Modal() {
             <Link href="https://github.com/yude.keys">
               <a className="hover:underline">
                 <FontAwesomeIcon icon={faEye} className="w-5 h-5 inline"/>&nbsp;
-                {view}
+                {t('view')}
               </a>
             </Link>
-            <p>{fingerprint}:</p>
+            <p>{t('fingerprint')}:</p>
             <div className="overflow-x-auto">
               <div className="whitespace-nowrap">
               <code>2048 SHA256:xwSL4DORWmroWdC6P0GU1m1yZl/cXqjo9rCCWqqO+Dc</code>
@@ -76,7 +78,7 @@ export default function Modal() {
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
-                    {close}
+                    {t('close')}
                   </button>
                 </div>
               </div>

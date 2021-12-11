@@ -3,8 +3,6 @@ import Layout from "./components/Layout"
 
 // i18n
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-const { t } = useTranslation();
-const [query] = useLanguageQuery();
 
 // React Router etc.
 import { useRouter } from 'next/router'
@@ -20,6 +18,12 @@ import en from '../docs/mutual/en.md'
 import { NextSeo } from 'next-seo';
 
 export default function Tos(props) {
+    const { t } = useTranslation();
+    const [query] = useLanguageQuery();
+    
+    if (!query) {
+      return <p>Loading...</p>
+    } else {
     return(
           <>
             <NextSeo
@@ -28,7 +32,7 @@ export default function Tos(props) {
             />
             <Layout title={t('common:mutual')}>
               <div>
-                {lang === 'ja' ? (
+                {query["lang"] === 'ja' ? (
                   <ReactMarkdown plugins={[gfm]}>
                       {ja}
                   </ReactMarkdown>
@@ -41,4 +45,5 @@ export default function Tos(props) {
             </Layout>
           </>
         )
+      }
     }

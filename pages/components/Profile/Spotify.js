@@ -1,9 +1,16 @@
+// React
 import React, { useState, useEffect } from 'react';
+
+// Data fetching
 import axios from 'axios';
-import useTranslation from 'next-translate/useTranslation'
-import { useRouter } from 'next/router'
+
+// i18n
+import { useTranslation, useLanguageQuery } from 'next-export-i18n';
 
 function App () {
+  const { t } = useTranslation();
+  const [query] = useLanguageQuery();
+  
   const [data, setData] = useState({ hits: [] });
   useEffect(() => {
     const fetchData = async () => {

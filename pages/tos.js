@@ -3,8 +3,6 @@ import Layout from "./components/Layout"
 
 // i18n
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-const { t } = useTranslation();
-const [query] = useLanguageQuery();
 
 // Next.js, React
 import { useRouter } from 'next/router'
@@ -17,6 +15,9 @@ import ja from '../docs/tos/ja.md'
 import en from '../docs/tos/en.md'
 
 export default function Tos(props) {
+    const { t } = useTranslation();
+    const [query] = useLanguageQuery();
+  
     return(
         <Layout title={t('tos')}>
         <div>

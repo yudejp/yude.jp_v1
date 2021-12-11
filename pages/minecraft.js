@@ -7,8 +7,6 @@ import { useRouter } from 'next/router'
 
 // i18n
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-const { t } = useTranslation();
-const [query] = useLanguageQuery();
 
 // Next.js
 import Image from 'next/image'
@@ -31,11 +29,17 @@ import en from '../docs/minecraft/en.md'
 import { NextSeo } from 'next-seo';
 
 export default function About(props) {
+    const { t } = useTranslation();
+    const [query] = useLanguageQuery();
+  
     // Copy server address to clipboard
     const copyText = () => {
       navigator.clipboard.writeText("yude.jp");
     };
 
+    if (!query) {
+      return <p>Loading...</p>
+    } else {
     return (
           <>
             <NextSeo
@@ -82,7 +86,7 @@ export default function About(props) {
               </div>
               
               {/* Load markdown contents */}
-                {lang === 'ja' ? (
+                {query["lang"] === 'ja' ? (
                   <ReactMarkdown plugins={[gfm]}>
                       {ja}
                   </ReactMarkdown>
@@ -95,4 +99,5 @@ export default function About(props) {
             </Layout>
           </>
         )
+      }
 }

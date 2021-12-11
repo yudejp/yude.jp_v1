@@ -3,13 +3,14 @@ import Layout from "./components/Layout"
 
 // i18n
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-const { t } = useTranslation();
-const [query] = useLanguageQuery();
 
 // Next.js router
 import { useRouter } from 'next/router'
 
 export default function About(props) {
+  const { t } = useTranslation();
+  const [query] = useLanguageQuery();
+  
   return (
     <Layout title={t('house')}>
       <div>

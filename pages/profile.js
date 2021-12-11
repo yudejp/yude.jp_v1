@@ -2,9 +2,7 @@
 import Layout from "./components/Layout"
 
 // i18n
-import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-const { t } = useTranslation();
-const [query] = useLanguageQuery();
+import { useTranslation, useLanguageQuery } from 'next-export-i18n';
 
 // Font Awesome
 import { faDiscord, faTwitter, faGithub, faKeybase, faInstagram, faMastodon, faSteam, faAmazon } from '@fortawesome/free-brands-svg-icons'
@@ -32,6 +30,8 @@ import NintendoSW from "./components/Profile/NintendoSW"
 import { NextSeo } from 'next-seo';
 
 export default function Profile(props) {
+  const { t } = useTranslation();
+  const [query] = useLanguageQuery();
 
   return (
     <>
@@ -119,7 +119,7 @@ export default function Profile(props) {
           </div>
           
         </div>
-          <p className="mt-3 text-sm font-bold text-gray-900 dark:text-gray-400">{t('common:icon_1')}<Link href="https://twitter.com/xmnts"><a className="hover:underline">Minkasy {t('common:icon_2')}</a></Link></p>
+          <p className="mt-3 text-sm font-bold text-gray-900 dark:text-gray-400">{t('icon_1')}<Link href="https://twitter.com/xmnts"><a className="hover:underline">Minkasy {t('icon_2')}</a></Link></p>
         </div>
         
       </Layout>

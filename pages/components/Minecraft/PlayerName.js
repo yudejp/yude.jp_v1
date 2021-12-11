@@ -1,4 +1,7 @@
+// React
 import React, { useState, useEffect } from 'react';
+
+// Data fetching
 import axios from 'axios';
 
 function App (props) {

@@ -1,8 +1,9 @@
+// React
 import React, { useState, useEffect } from 'react';
-import useTranslation from 'next-translate/useTranslation'
+
+// Font Awesome
 import { faUserClock } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useRouter } from 'next/router'
 
 export default function Modal() {
   const [showModal, setShowModal] = React.useState(false);

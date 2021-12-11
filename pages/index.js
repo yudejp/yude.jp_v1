@@ -27,6 +27,9 @@ export default function Index(props) {
   const { t } = useTranslation();
   const [query] = useLanguageQuery();
   
+  if (!query) {
+     return <p>Loading...</p>
+  } else {
   return (
     <>
       <Layout title={t('home')}>
@@ -43,15 +46,15 @@ export default function Index(props) {
           
           {/* Index menu */}
           <div className="grid grid-cols-3 gap-10">
-            <FAMenu dest="/profile" icon={faUser} />
-            <FAMenu dest="/server" icon={faServer} />
-            <FAMenu dest="/house" icon={faHouseUser} />
-            <FAMenu dest="https://scrapbox.io/yude" icon={faBook} />
-            <FAMenu dest="https://discord.gg/X6srY7X" icon={faDiscord} />          
-            <FAMenu dest="https://github.com/yudejp" icon={faGithub} />
-            <FAMenu dest="https://git.yude.jp" icon={faGit} />
-            <MinecraftMenu />
-            <FAMenu dest="/mutual" icon={faHeart} />
+            <FAMenu dest="/profile" query={query} icon={faUser} />
+            <FAMenu dest="/server" query={query} icon={faServer} />
+            <FAMenu dest="/house" query={query} icon={faHouseUser} />
+            <FAMenu dest="https://scrapbox.io/yude" query={query} icon={faBook} />
+            <FAMenu dest="https://discord.gg/X6srY7X" query={query} icon={faDiscord} />          
+            <FAMenu dest="https://github.com/yudejp" query={query} icon={faGithub} />
+            <FAMenu dest="https://git.yude.jp" icon={faGit} query={query} />
+            <MinecraftMenu query={query} />
+            <FAMenu dest="/mutual" icon={faHeart} query={query} />
           </div>
           
           {/* Banner */}
@@ -66,4 +69,5 @@ export default function Index(props) {
       </Layout>
     </>
   )
+}
 }

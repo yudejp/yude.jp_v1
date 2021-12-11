@@ -1,9 +1,12 @@
 import React from "react";
 import Popper from "popper.js";
-import { useRouter } from 'next/router'
 import Link from 'next/link';
 import { faLanguage } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+// i18n
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
+
 
 const Dropdown = ({ color }) => {
   // dropdown props
@@ -45,12 +48,12 @@ const Dropdown = ({ color }) => {
   <div ref={popoverDropdownRef} className={
               (dropdownPopoverShow ? "block " : "hidden ") + "z-10 origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 dark:bg-gray-700"}>
     <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-    <Link href="#" locale="ja">
+    <LanguageSwitcher lang="ja">
       <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-700 dark:text-white dark:hover:bg-gray-800" role="menuitem">日本語</a>
-    </Link>
-    <Link href="#" locale="en">
+    </LanguageSwitcher>
+    <LanguageSwitcher lang="en">
       <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-700 dark:text-white dark:hover:bg-gray-800" role="menuitem">English</a>
-    </Link>
+    </LanguageSwitcher>
     </div>
   </div>
 </div>

@@ -15,7 +15,7 @@ import en from '../docs/hcunews/en.md'
 
 export default function HcuNews() {
     const { t } = useTranslation();
-const [query] = useLanguageQuery();
+    const [query] = useLanguageQuery();
 
     return(
         <Layout title={t('hcunews')}>

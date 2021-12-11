@@ -9,8 +9,6 @@ import { useRouter } from 'next/router'
 
 // i18n
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-const { t } = useTranslation();
-const [query] = useLanguageQuery();
 
 // microCMS library
 import { client } from "../libs/client";
@@ -19,6 +17,9 @@ import { client } from "../libs/client";
 import { NextSeo } from 'next-seo';
 
 export default function Home({ blog }) {
+    const { t } = useTranslation();
+    const [query] = useLanguageQuery();
+  
     return (
           <>
           <NextSeo

@@ -1,5 +1,5 @@
-var ja = require('./translations.en.json');
-var en = require('./translations.ja.json')
+var ja = require('./translations.ja.json');
+var en = require('./translations.en.json')
 
 const i18n = {
 	translations: {

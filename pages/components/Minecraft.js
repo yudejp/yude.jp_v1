@@ -1,11 +1,16 @@
+// React
 import React, { useState, useEffect } from 'react';
-import useTranslation from 'next-translate/useTranslation'
-import { useRouter } from 'next/router'
+
+// i18n
+import { useTranslation, useLanguageQuery } from 'next-export-i18n';
+
 import axios from 'axios';
 import Image from 'next/image'
 import { list } from 'postcss';
 
 export default function Minecraft(props) {
+  const { t } = useTranslation();
+  const [query] = useLanguageQuery();
   const [data, setData] = useState({ hits: [] });
 
   useEffect(() => {
@@ -21,7 +26,7 @@ export default function Minecraft(props) {
     if (data === undefined){
         console.log("[Minecraft Query] データの取得に失敗しました。 / Failed to retrieve data.")
         return (
-        <p>{t('minecraft:fail')}</p>
+        <p>{t('fail')}</p>
         )
       }else{
         const status = data.online
@@ -32,13 +37,13 @@ export default function Minecraft(props) {
             {(() => {
             if (status == true) {
             if (player == undefined || player == 0) {
-              return <span>{t('minecraft:no_one')}</span>
+              return <span>{t('no_one')}</span>
             } else {
-              return <span>{t('minecraft:playing', {count: player})}</span>
+              return <span>{t('playing', {count: player})}</span>
             }}else if (status == false) {
-              return <span>{t('minecraft:offline')}</span>
+              return <span>{t('offline')}</span>
             }else {
-              return <span>{t('minecraft:loading')}</span>
+              return <span>{t('loading')}</span>
             }
           })()}
 

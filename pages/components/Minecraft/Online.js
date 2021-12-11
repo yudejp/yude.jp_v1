@@ -1,10 +1,18 @@
+// React
 import React, { useState, useEffect } from 'react';
+
+// Data fetching
 import axios from 'axios';
-import useTranslation from 'next-translate/useTranslation'
-import { useRouter } from 'next/router'
+
+// i18n
+import { useTranslation, useLanguageQuery } from 'next-export-i18n';
+
+// Components
 import LastPlayed from './LastPlayed'
 
 function App (props) {
+  const { t } = useTranslation();
+  const [query] = useLanguageQuery();
   const uuid = props;
   const [data, setData] = useState({ hits: [] });
 

@@ -3,16 +3,14 @@ import Layout from "./components/Layout"
 
 // i18n
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-const { t } = useTranslation();
-const [query] = useLanguageQuery();
-
-// React Router
-import { useRouter } from 'next/router'
 
 // next-seo
 import { NextSeo } from 'next-seo';
 
 export default function Server(props) {
+  const { t } = useTranslation();
+  const [query] = useLanguageQuery();
+
   return (
     <>
       <NextSeo
