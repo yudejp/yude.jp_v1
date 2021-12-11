@@ -13,3 +13,4 @@ yarn-error.log
 .env.local
 out
 .vercel
+.DS_Store
