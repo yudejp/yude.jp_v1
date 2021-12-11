@@ -17,20 +17,24 @@ export default function HcuNews() {
     const { t } = useTranslation();
     const [query] = useLanguageQuery();
 
-    return(
-        <Layout title={t('hcunews')}>
-        <div>
-            <h1>{t('hcunews')}</h1>
-            {lang === 'ja' ? (
-                <ReactMarkdown plugins={[gfm]}>
-                    {ja}
-                </ReactMarkdown>
-            ) : (
-                <ReactMarkdown plugins={[gfm]}>
-                    {en}
-                </ReactMarkdown>
-            )}
-        </div>
-        </Layout>
-    )
+    if (!query) {
+        return <p>Loading...</p>
+    } else {
+        return (
+            <Layout title={t('hcunews')}>
+            <div>
+                <h1>{t('hcunews')}</h1>
+                {query["lang"] === 'ja' ? (
+                    <ReactMarkdown plugins={[gfm]}>
+                        {ja}
+                    </ReactMarkdown>
+                ) : (
+                    <ReactMarkdown plugins={[gfm]}>
+                        {en}
+                    </ReactMarkdown>
+                )}
+            </div>
+            </Layout>
+        )
     }
+}

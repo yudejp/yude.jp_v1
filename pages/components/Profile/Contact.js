@@ -8,7 +8,7 @@ const Contact = (props) => {
     const { icon, dest, caption } = props
     return (
         <div className="hover:underline">
-            <Link href={{ pathname: dest, query: query }}>
+            <Link href={{ pathname: dest }}>
                 <a>
                     <FontAwesomeIcon icon={icon} className="w-7 h-7 inline lg:w-10 lg:h-10 md:w-7 md:h-7"/>
                     <p className="font-mono text-xl">{caption}</p>
