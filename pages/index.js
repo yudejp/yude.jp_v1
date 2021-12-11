@@ -5,7 +5,6 @@ import Layout from "./components/Layout"
 import FAMenu from "./components/Menu/FontAwesomeMenu"
 
 // Banner
-import BlueRibbon from "./components/Footer/BlueRibbon"
 import HappyBusy from "./components/Footer/HappyBusy"
 
 // Next.js
@@ -15,11 +14,10 @@ import Link from 'next/link'
 import { useTranslation, useLanguageQuery } from 'next-export-i18n';
 
 // React Router
-import { useRouter } from 'next/router'
 import MinecraftMenu from "./components/Menu/MinecraftMenu"
 
 // Font Awesome
-import { faDiscord, faGit, faMastodon, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faDiscord, faGit, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faBook, faUser, faServer, faHouseUser, faHeart } from '@fortawesome/free-solid-svg-icons'
 
 export default function Index(props) {
@@ -35,6 +33,7 @@ export default function Index(props) {
         <div className="my-9 text-center">
           <div className="m-10">
           <img
+              className   = "mx-auto"
               src         = "/images/avatar_riru.png"
               alt         = "yude's avatar"
               width       = {200}
@@ -57,7 +56,6 @@ export default function Index(props) {
           
           {/* Banner */}
           <div className="mx-auto mt-10">
-            <BlueRibbon />
             <HappyBusy />
           </div>
           
