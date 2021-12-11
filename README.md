@@ -6,11 +6,8 @@ Source code of [yude.jp](https://yude.jp).\
 Built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/) and deployed on [Vercel](https://vercel.com).
 
 ## Development
-### Setup
-1. Run `yarn`.
-1. Copy `.env.local.sample` as `.env.local` and set value. 
-### Preview
-* Run `yarn dev`.
+1. Run `yarn` to install dependencies.
+2. Run `yarn dev` to serve.
 
 ## License
 This repository is provided under the MIT License.
