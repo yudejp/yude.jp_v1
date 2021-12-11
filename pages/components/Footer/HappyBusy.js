@@ -10,6 +10,7 @@ const HappyBusy = (props) => {
             width={200}
             height={42}
             alt="時間のないサイト運営者リング"
+            className="mx-auto"
           />
         </a>
     </Link>
