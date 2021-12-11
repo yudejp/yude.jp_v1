@@ -1,12 +1,15 @@
+// Base layout
 import Layout from "./components/Layout"
-import useTranslation from 'next-translate/useTranslation'
+
+// i18n
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
+const { t } = useTranslation();
+const [query] = useLanguageQuery();
+
+// Next.js router
 import { useRouter } from 'next/router'
 
 export default function About(props) {
-  const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router
-  const { t, lang } = useTranslation("house")
-
   return (
     <Layout title={t('house')}>
       <div>

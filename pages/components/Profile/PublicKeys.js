@@ -8,8 +8,6 @@ import Link from 'next/link'
 export default function Modal() {
   const [showModal, setShowModal] = React.useState(false);
   const router = useRouter()
-  const { t, lang } = useTranslation("common")
-  const { locale, locales, defaultLocale, pathname } = router
   const close = t('common:close')
   const keys = t('profile:keys')
   const view = t('profile:view')

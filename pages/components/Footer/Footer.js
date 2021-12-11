@@ -1,13 +1,9 @@
 import "tailwindcss/tailwind.css";
 import Link from 'next/link';
-import useTranslation from 'next-translate/useTranslation'
-import { useRouter } from 'next/router'
-export default function Footer(props) {
-    
-    const router = useRouter()
-    const { locale, locales, defaultLocale, pathname } = router
-    const { t, lang } = useTranslation("common")
+// i18n
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
+export default function Footer(props) {
     return (
       <>
         <div className="container mx-auto px-6">

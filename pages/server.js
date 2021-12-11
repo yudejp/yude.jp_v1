@@ -2,7 +2,9 @@
 import Layout from "./components/Layout"
 
 // i18n
-import useTranslation from 'next-translate/useTranslation'
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
+const { t } = useTranslation();
+const [query] = useLanguageQuery();
 
 // React Router
 import { useRouter } from 'next/router'
@@ -11,10 +13,6 @@ import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo';
 
 export default function Server(props) {
-  const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router
-  const { t, lang } = useTranslation("server")
-
   return (
     <>
       <NextSeo

@@ -6,10 +6,7 @@ import { useRouter } from 'next/router'
 
 export default function Modal() {
   const [showModal, setShowModal] = React.useState(false);
-  const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router
-  const { t, lang } = useTranslation("common")
-  const close = t('common:close')
+  
   return (
     <>
       <button

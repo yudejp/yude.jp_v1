@@ -16,7 +16,8 @@ const Navbar = () => {
         </Link>
             <div className="absolute right-0">
                 <ThemeSelector />
-                <LangSelector />
+                {/* <LangSelector /> */}
+                <LanguageSwitcher lang="ja" />
             </div>
       </nav>
       </>

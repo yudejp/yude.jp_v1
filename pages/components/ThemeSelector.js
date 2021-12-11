@@ -7,9 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ThemeSelector = (props) => {
   const { title, children } = props
-  const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router
-  
   const [isMounted, setIsMounted] = useState(false);
   const { theme, setTheme, getTheme } = useTheme();
   useEffect(() => {

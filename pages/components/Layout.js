@@ -1,21 +1,19 @@
+// Next.js
 import Head from "next/head"
+
+// Tailwind CSS
 import "tailwindcss/tailwind.css";
-import useTranslation from 'next-translate/useTranslation'
-import { useRouter } from 'next/router'
+
+// React
 import React, { useEffect, useState } from 'react'
+
+// Components
 import Footer from "./Footer/Footer"
 import Navbar from "./Navbar"
 
 const Layout = (props) => {
   const { title, children } = props
   const siteTitle = "yude.jp"
-  const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router
-
-  const { t, lang } = useTranslation("common")
-  const footer = t('footer')
-  const source = t('source')
-  const tos = t('tos')
   return (
     <div className="page">
       <Head>

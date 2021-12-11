@@ -6,10 +6,6 @@ import Image from 'next/image'
 import { list } from 'postcss';
 
 export default function Minecraft(props) {
-  const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router
-  const { t, lang } = useTranslation("minecraft")
-
   const [data, setData] = useState({ hits: [] });
 
   useEffect(() => {

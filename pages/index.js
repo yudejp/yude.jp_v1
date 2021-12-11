@@ -13,7 +13,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 // i18n
-import useTranslation from 'next-translate/useTranslation'
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 // React Router
 import { useRouter } from 'next/router'
@@ -24,10 +24,8 @@ import { faDiscord, faGit, faMastodon, faGithub } from '@fortawesome/free-brands
 import { faBook, faUser, faServer, faHouseUser, faHeart } from '@fortawesome/free-solid-svg-icons'
 
 export default function Index(props) {
-  const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router
-  const { t, lang } = useTranslation("index")
-
+  const { t } = useTranslation();
+  const [query] = useLanguageQuery();
   return (
     <>
       <Layout title={t('home')}>

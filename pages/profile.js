@@ -2,7 +2,9 @@
 import Layout from "./components/Layout"
 
 // i18n
-import useTranslation from 'next-translate/useTranslation'
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
+const { t } = useTranslation();
+const [query] = useLanguageQuery();
 
 // Font Awesome
 import { faDiscord, faTwitter, faGithub, faKeybase, faInstagram, faMastodon, faSteam, faAmazon } from '@fortawesome/free-brands-svg-icons'
@@ -30,9 +32,6 @@ import NintendoSW from "./components/Profile/NintendoSW"
 import { NextSeo } from 'next-seo';
 
 export default function Profile(props) {
-  const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router
-  const { t, lang } = useTranslation("profile")
 
   return (
     <>

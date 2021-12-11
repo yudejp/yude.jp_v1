@@ -1,5 +1,3 @@
-const nextTranslate = require('next-translate')
-
 const rewrites = async () => {
   return [
     {
@@ -13,11 +11,7 @@ const rewrites = async () => {
   ]
 }
 
-module.exports = nextTranslate({
-    i18n: {
-      locales: ['ja', 'en'],
-      defaultLocale: 'ja',
-    },
+module.exports = {
     images: {
       domains: ['mackerel.io', 'mc-heads.net', 'crafatar.com'],
     },
@@ -43,4 +37,4 @@ module.exports = nextTranslate({
       ]
     },
     rewrites,
-  })
+  }

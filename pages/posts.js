@@ -4,9 +4,13 @@ import Layout from "./components/Layout"
 // Next.js
 import Link from "next/link";
 
-// i18n
+// React
 import { useRouter } from 'next/router'
-import useTranslation from 'next-translate/useTranslation'
+
+// i18n
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
+const { t } = useTranslation();
+const [query] = useLanguageQuery();
 
 // microCMS library
 import { client } from "../libs/client";
@@ -15,9 +19,6 @@ import { client } from "../libs/client";
 import { NextSeo } from 'next-seo';
 
 export default function Home({ blog }) {
-    const router = useRouter()
-    const { locale, locales, defaultLocale, pathname } = router
-    const { t, lang } = useTranslation("common")
     return (
           <>
           <NextSeo

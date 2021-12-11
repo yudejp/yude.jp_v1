@@ -6,9 +6,6 @@ import { faLanguage } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Dropdown = ({ color }) => {
-  const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router
-
   // dropdown props
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
   const btnDropdownRef = React.createRef();

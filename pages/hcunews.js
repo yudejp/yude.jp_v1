@@ -1,8 +1,12 @@
 // Base layout
 import Layout from "./components/Layout"
 
-// React, i18n
-import useTranslation from 'next-translate/useTranslation'
+// i18n
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
+const { t } = useTranslation();
+const [query] = useLanguageQuery();
+
+// React
 import React from "react"
 import ReactMarkdown from "react-markdown"
 

@@ -6,7 +6,9 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router'
 
 // i18n
-import useTranslation from 'next-translate/useTranslation'
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
+const { t } = useTranslation();
+const [query] = useLanguageQuery();
 
 // Next.js
 import Image from 'next/image'
@@ -29,12 +31,6 @@ import en from '../docs/minecraft/en.md'
 import { NextSeo } from 'next-seo';
 
 export default function About(props) {
-    const router = useRouter()
-    
-    // i18n
-    const { locale, locales, defaultLocale, pathname } = router
-    const { t, lang } = useTranslation("minecraft")
-    
     // Copy server address to clipboard
     const copyText = () => {
       navigator.clipboard.writeText("yude.jp");

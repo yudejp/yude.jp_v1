@@ -6,9 +6,6 @@ import LastPlayed from './LastPlayed'
 
 function App (props) {
   const uuid = props;
-  const router = useRouter()
-  const { locale, locales, defaultLocale, pathname } = router
-  const { t, lang } = useTranslation("common")  
   const [data, setData] = useState({ hits: [] });
 
   useEffect(() => {

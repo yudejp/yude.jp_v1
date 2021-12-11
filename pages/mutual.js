@@ -2,7 +2,9 @@
 import Layout from "./components/Layout"
 
 // i18n
-import useTranslation from 'next-translate/useTranslation'
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
+const { t } = useTranslation();
+const [query] = useLanguageQuery();
 
 // React Router etc.
 import { useRouter } from 'next/router'
@@ -18,9 +20,6 @@ import en from '../docs/mutual/en.md'
 import { NextSeo } from 'next-seo';
 
 export default function Tos(props) {
-    const router = useRouter()
-    const { locale, locales, defaultLocale, pathname } = router
-    const { t, lang } = useTranslation("common")
     return(
           <>
             <NextSeo
