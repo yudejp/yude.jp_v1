@@ -11,8 +11,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // Next.js, React
 import Link from 'next/link'
-import Image from 'next/image'
-import { useRouter } from 'next/router'
 
 // Discord
 import DiscordStatus from './components/Discord/DiscordStatus'
@@ -46,7 +44,7 @@ export default function Profile(props) {
           }
           <div>
             <div className="flex mb-10 justify-center">
-            <Image
+            <img
               className   = "rounded-full hover:animate-rumble z-0 p-15"
               src         = "/images/avatar_mel.png"
               alt         = "yude's avatar"

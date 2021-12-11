@@ -9,7 +9,6 @@ import BlueRibbon from "./components/Footer/BlueRibbon"
 import HappyBusy from "./components/Footer/HappyBusy"
 
 // Next.js
-import Image from 'next/image'
 import Link from 'next/link'
 
 // i18n
@@ -35,12 +34,11 @@ export default function Index(props) {
       <Layout title={t('home')}>
         <div className="my-9 text-center">
           <div className="m-10">
-          <Image
+          <img
               src         = "/images/avatar_riru.png"
               alt         = "yude's avatar"
               width       = {200}
               height      = {200}
-              unoptimized = {true}
           />
           </div>
           

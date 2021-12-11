@@ -5,8 +5,6 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation, useLanguageQuery } from 'next-export-i18n';
 
 import axios from 'axios';
-import Image from 'next/image'
-import { list } from 'postcss';
 
 export default function Minecraft(props) {
   const { t } = useTranslation();
@@ -55,7 +53,7 @@ export default function Minecraft(props) {
                 url.push('https://mc-heads.net/avatar/' + data.players.list[i])
               }
               for (var i in url){
-                list.push(<Image src={url[i]} key={i} className="inline" height="50" width="50" alt={i}/>)
+                list.push(<img src={url[i]} key={i} className="inline" height="50" width="50" alt={i}/>)
               }
               return <div>{list}</div>
             }
