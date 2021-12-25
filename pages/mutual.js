@@ -30,7 +30,7 @@ export default function Tos(props) {
               title="相互リンク"
               description="yude.jp と相互にリンクを貼っている Web サイトの一覧"
             />
-            <Layout title={t('common:mutual')}>
+            <Layout title={t('mutual')}>
               <div>
                 {query["lang"] === 'ja' ? (
                   <ReactMarkdown plugins={[gfm]}>
