@@ -18,7 +18,7 @@ import MinecraftMenu from "./components/Menu/MinecraftMenu"
 
 // Font Awesome
 import { faDiscord, faGit, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faBook, faUser, faServer, faHouseUser, faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faBook, faUser, faServer, faScrewdriver, faHeart } from '@fortawesome/free-solid-svg-icons'
 
 export default function Index(props) {
   const { t } = useTranslation();
@@ -45,7 +45,7 @@ export default function Index(props) {
           <div className="grid grid-cols-3 gap-10">
             <FAMenu dest="/profile" query={query} icon={faUser} />
             <FAMenu dest="/server" query={query} icon={faServer} />
-            <FAMenu dest="/house" query={query} icon={faHouseUser} />
+            <FAMenu dest="/services" query={query} icon={faScrewdriver} />
             <FAMenu dest="https://scrapbox.io/yude" query={query} icon={faBook} />
             <FAMenu dest="https://discord.gg/X6srY7X" query={query} icon={faDiscord} />          
             <FAMenu dest="https://github.com/yudejp" query={query} icon={faGithub} />
