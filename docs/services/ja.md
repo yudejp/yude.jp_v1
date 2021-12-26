@@ -7,7 +7,7 @@ Among Us の自動ミュートボット; API: [`galactus.yude.jp`](https://galac
 * [Mastodon](https://mstdn.yude.jp)
 * [Misskey](https://misskey.yude.jp)
 * [Pleroma](https//pleroma.yude.jp)
-* [TeamSpeak 3](ts3server://yude.jp)
+* TeamSpeak 3: `yude.jp`
 * [Gitea](https://git.yude.jp)
 * [h5ai](https://files.yude.jp)
 * [JMusicBot (フォーク)](https://discord.com/oauth2/authorize?client_id=429638220456656896&scope=bot&permissions=338963472)
