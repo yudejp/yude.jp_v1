@@ -14,7 +14,7 @@ Among Us helper; API: [`galactus.yude.jp`](https://galactus.yude.jp)
 * [Owncast](https://live.yude.jp)
 * [Minecraft Server](https://yude.jp/minecraft)
 
-## 秘匿化ネットワーク
+## Anonymous communication
 ### Tor
 * Relay: [yudejp]
 * Hidden Service: [yude3mzscyufx5u3zup72ium7tgecy3bd67p7t6vqhaywvr7e2gqpcqd.onion](yude3mzscyufx5u3zup72ium7tgecy3bd67p7t6vqhaywvr7e2gqpcqd.onion)
