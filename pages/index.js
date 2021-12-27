@@ -46,10 +46,10 @@ export default function Index(props) {
             <FAMenu dest="/profile" query={query} icon={faUser} />
             <FAMenu dest="/server" query={query} icon={faServer} />
             <FAMenu dest="/services" query={query} icon={faScrewdriver} />
-            <FAMenu dest="https://scrapbox.io/yude" query={query} icon={faBook} />
-            <FAMenu dest="https://discord.gg/X6srY7X" query={query} icon={faDiscord} />          
-            <FAMenu dest="https://github.com/yudejp" query={query} icon={faGithub} />
-            <FAMenu dest="https://git.yude.jp" icon={faGit} query={query} />
+            <FAMenu dest="https://scrapbox.io/yude" icon={faBook} />
+            <FAMenu dest="https://discord.gg/X6srY7X" icon={faDiscord} />          
+            <FAMenu dest="https://github.com/yudejp" icon={faGithub} />
+            <FAMenu dest="https://git.yude.jp" icon={faGit} />
             <MinecraftMenu query={query} />
             <FAMenu dest="/mutual" icon={faHeart} query={query} />
           </div>
