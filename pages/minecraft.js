@@ -71,7 +71,7 @@ export default function About(props) {
                   </button>
                 </p>
                 
-                <p>{t('version')}: 1.17</p>
+                <p>{t('version')}: 1.18.1</p>
                 
                 <Link href="https://bluemap.yude.jp">
                   <a>
