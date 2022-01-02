@@ -10,7 +10,7 @@ const Contact = (props) => {
         <div className="hover:underline">
             <Link href={{ pathname: dest }}>
                 <a>
-                    <FontAwesomeIcon icon={icon} className="text-3xl inline lg:text-4xl md:w-7 md:h-7"/>
+                    <FontAwesomeIcon icon={icon} size="5x" className="w-9 h-9 fill-current inline transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110" />
                     <p className="font-mono text-xl">{caption}</p>
                 </a>
             </Link>
