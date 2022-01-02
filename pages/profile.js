@@ -6,7 +6,7 @@ import { useTranslation, useLanguageQuery } from 'next-export-i18n';
 
 // Font Awesome
 import { faDiscord, faTwitter, faGithub, faKeybase, faInstagram, faMastodon, faSteam, faAmazon } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faBirthdayCake, faMapPin, faSchool, faPhone, faInfo, faLink, faMobile } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faBirthdayCake, faMapPin, faSchool, faPhone, faBlog, faBookDead, faInfo, faBookmark, faLink, faMobile } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // Next.js, React
@@ -84,6 +84,19 @@ export default function Profile(props) {
               <FontAwesomeIcon icon={faMapPin} className="w-5 h-5 inline"/>
               <p className="inline ml-4">{t('location')}</p>
               <p className="ml-9">{t('hiroshima')}</p>
+            </div>
+          </div>
+          
+          {
+           // Contents
+          }
+          <div>
+            <div className="text-left">
+                <p className="text-2xl"><FontAwesomeIcon icon={faBookDead} className="w-5 h-5 inline"/> {t('contents')}</p>
+            </div>
+            <div className="my-2 grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2justify-items-center gap-y-6">
+              <Contact dest="https://blog.yude.jp" icon={faBlog} caption={t('blog')} />
+              <Contact dest="https://scrapbox.io/yude" icon={faBookmark} caption="Scrapbox" />
             </div>
           </div>
   

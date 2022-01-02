@@ -11,8 +11,8 @@ import React from "react"
 // React Markdown
 import ReactMarkdown from "react-markdown"
 import gfm from 'remark-gfm';
-import ja from '../docs/mutual/ja.md'
-import en from '../docs/mutual/en.md'
+import ja from '../docs/services/ja.md'
+import en from '../docs/services/en.md'
 
 // next-seo
 import { NextSeo } from 'next-seo';
@@ -27,10 +27,10 @@ export default function Tos(props) {
     return(
           <>
             <NextSeo
-              title="相互リンク"
-              description="yude.jp と相互にリンクを貼っている Web サイトの一覧"
+              title="サービス"
+              description="yude.jp で運用中のサービス"
             />
-            <Layout title={t('mutual')}>
+            <Layout title={t('services')}>
               <div>
                 {query["lang"] === 'ja' ? (
                   <ReactMarkdown plugins={[gfm]}>

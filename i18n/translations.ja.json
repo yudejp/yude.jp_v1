@@ -60,5 +60,8 @@
     "service": "サービス",
     "shape": "シェイプ",
     "tos": "yude.jp サービス利用規約",
-    "input": "ja"
+    "input": "ja",
+    "services": "サービス",
+    "contents": "コンテンツ",
+    "blog": "ブログ"
 }
