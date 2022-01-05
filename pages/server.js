@@ -37,7 +37,7 @@ export default function Server(props) {
           <div className="flex-1"><p className="font-bold">OS </p>Arch Linux</div>
           <div className="flex-1"><p className="font-bold">{t('location')} </p>{t('hiroshima')}</div>
           </div>
-          <iframe className="w-full h-96" src="https://mackerel.io/embed/public/embed/heHnGhDanoIDlf7jjxUe9yPVrsG3deeH5ptD8suErrq5w46crWEIYdLfzLoukzfF?period=24h" height="400" frameBorder="0" scrolling="no"></iframe>
+          <a href="https://mackerel.io/orgs/yude/hosts/4dkbQuMQjvo/-/graphs/loadavg#period=10m"><img src="https://mackerel.io/embed/public/embed/heHnGhDanoIDlf7jjxUe9yPVrsG3deeH5ptD8suErrq5w46crWEIYdLfzLoukzfF.png?period=10m" className="w-full" /></a>
           
           
           {
@@ -51,7 +51,7 @@ export default function Server(props) {
           <div className="flex-1"><p className="font-bold">OS </p>Ubuntu 20.04 LTS</div>
           <div className="flex-1"><p className="font-bold">{t('region')} </p>Japan Central (Osaka)</div>
           </div>
-          <iframe className="w-full h-96" src="https://mackerel.io/embed/public/embed/vcn6LE4P2hh6GzvtMbIAWxsXpDh6eSoNyAXdhfYaj9yDN6FJwOHIiz9ktqToj1HG?period=24h" height="400" frameBorder="0" scrolling="no"></iframe>
+          <a href="https://mackerel.io/orgs/yude/hosts/4ftHfeojMCU/-/graphs/loadavg#period=10m"><img src="https://mackerel.io/embed/public/embed/vcn6LE4P2hh6GzvtMbIAWxsXpDh6eSoNyAXdhfYaj9yDN6FJwOHIiz9ktqToj1HG.png?period=10m" className="w-full" /></a>
           
           {
               // oracle2
@@ -64,7 +64,20 @@ export default function Server(props) {
           <div className="flex-1"><p className="font-bold">OS </p>Ubuntu 20.04 LTS</div>
           <div className="flex-1"><p className="font-bold">{t('region')} </p>Japan Central (Osaka)</div>
           </div>
-          <iframe className="w-full h-96" src="https://mackerel.io/embed/public/embed/wgmTz7aTgvwfyU6qVHrJJmQlpOHCUJK6qw0W9sJTX68WOI8TFtc27YvJ7dwkQEGv?period=24h" height="400" frameBorder="0" scrolling="no"></iframe>
+          <a href="https://mackerel.io/orgs/yude/hosts/4frgQ1QuivJ/-/graphs/loadavg#period=10m"><img src="https://mackerel.io/embed/public/embed/wgmTz7aTgvwfyU6qVHrJJmQlpOHCUJK6qw0W9sJTX68WOI8TFtc27YvJ7dwkQEGv.png?period=10m" className="w-full" /></a>
+          
+          {
+              // oracle-a1-1
+          }
+          <h2 className="text-2xl text-left font-bold leading-7 sm:text-3xl sm:truncate">oracle-a1-1</h2>
+          <div className="flex xl:w-2/3 text-center">
+          <div className="flex-1"><p className="font-bold">{t('service')} </p>Oracle Cloud</div>
+          <div className="flex-1"><p className="font-bold">{t('shape')} </p>VM.Standard.A1.Flex</div>
+          <div className="flex-1"><p className="font-bold">RAM </p>6GB</div>
+          <div className="flex-1"><p className="font-bold">OS </p>Ubuntu 20.04.3 LTS</div>
+          <div className="flex-1"><p className="font-bold">{t('region')} </p>Japan Central (Osaka)</div>
+          </div>
+          <a href="https://mackerel.io/orgs/yude/hosts/4qzeqT6kToQ/-/graphs/loadavg#period=10m"><img src="https://mackerel.io/embed/public/embed/2C7NdtqLgGFGPiO2IctDGuaMdjBwhXyp0i8imkaJT2GFI55syPaxxACEYIRWDHnS.png?period=10m" className="w-full" /></a>
           
         </div>
       </Layout>
