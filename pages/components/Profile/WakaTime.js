@@ -1,12 +1,16 @@
 // React
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 // Font Awesome
 import { faUserClock } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+// i18n
+import { useTranslation } from 'next-export-i18n';
+
 export default function Modal() {
   const [showModal, setShowModal] = React.useState(false);
+  const { t } = useTranslation();
   
   return (
     <>
@@ -36,7 +40,7 @@ export default function Modal() {
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
-                    {close}
+                    {t('close')}
                   </button>
                 </div>
               </div>
