@@ -16,7 +16,7 @@ Among Us の自動ミュートボット; API: [`galactus.yude.jp`](https://galac
 
 ## 秘匿化ネットワーク
 ### Tor
-* リレー: [yudejp]
+* リレー: [yudejp](https://metrics.torproject.org/rs.html#details/CF762EF3C86B104C301511894547C72371F952A4)
 * Hidden Service: [yude3mzscyufx5u3zup72ium7tgecy3bd67p7t6vqhaywvr7e2gqpcqd.onion](yude3mzscyufx5u3zup72ium7tgecy3bd67p7t6vqhaywvr7e2gqpcqd.onion)
 
 ### I2P
