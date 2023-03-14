@@ -52,7 +52,7 @@
     "tailwindcss": "^2.2.15",
     "tailwindcss-filters": "^3.0.0",
     "tailwindcss-responsive-embed": "^1.0.0",
-    "webpack": "^5.53.0"
+    "webpack": "^5.76.0"
   },
   "devDependencies": {
     "@types/node": "^16.9.6",
